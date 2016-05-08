@@ -1,0 +1,5 @@
+### BOWER ###
+bower_components/
+
+### NPM ###
+node_modules

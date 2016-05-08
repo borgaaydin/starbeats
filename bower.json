@@ -1,0 +1,21 @@
+{
+  "name": "starbeats",
+  "homepage": "https://github.com/borgaaydin/starbeats",
+  "authors": [
+    "borga <borgaaydin@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}
