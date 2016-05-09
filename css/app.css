@@ -59,7 +59,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
+h1, h2, h3, h4 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -851,6 +851,11 @@ th {
 
   .col-lg-offset-12 {
     margin-left: 100%; } }
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden; }
+
 @font-face {
   font-family: Lato-Light;
   src: url(../fonts/Lato-Light.ttf); }
@@ -860,5 +865,48 @@ th {
 @font-face {
   font-family: Lato-Bold;
   src: url(../fonts/Lato-Bold.ttf); }
+h1, h2, h3, h4 {
+  font-size: 30px;
+  font-family: "Lato-Bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 14px; }
+
+a {
+  font-size: 16px;
+  font-family: "Lato-Bold", sans-serif;
+  color: #ff005e; }
+
+p {
+  font-size: 14px;
+  font-family: "Lato-Regular", sans-serif;
+  color: white;
+  line-height: 1.2; }
+
+caption,
+.caption {
+  font-size: 12px;
+  font-family: "Lato-Regular", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.333; }
+
+.title {
+  font-size: 50px;
+  font-family: "Lato-Light", sans-serif;
+  color: white;
+  line-height: 1.2; }
+
+.container {
+  background-color: #150022; }
 
 /*# sourceMappingURL=app.css.map */
