@@ -2,9 +2,7 @@
 
 ## Requirements
 
-Bower for package management
-Grunt for task running
-Sass for Preprocessing
+Bower / Grunt / Sass
 
 
 ## Getting started
