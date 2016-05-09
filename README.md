@@ -1,4 +1,4 @@
-# starbeats.es Front-End Dev
+# starbeats.es Front-end Development
 
 ## Requirements
 
