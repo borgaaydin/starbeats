@@ -56,6 +56,7 @@ caption,
   line-height: 1.2;
 }
 
-.container {
-  background-color: $background-color;
+.sliderContainer {
+  //background-color: $background-color;
+  background: $background-color url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
 }

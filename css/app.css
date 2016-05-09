@@ -906,7 +906,7 @@ caption,
   color: white;
   line-height: 1.2; }
 
-.container {
-  background-color: #150022; }
+.sliderContainer {
+  background: #150022 url("../img/SliderContainerBackground.jpg") top/cover no-repeat; }
 
 /*# sourceMappingURL=app.css.map */

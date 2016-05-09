@@ -8,7 +8,7 @@ module.exports = function (grunt) {
             options:{
 
             },
-            files: ['./js/*.min.js', './index.html', './css/main.css.map', './css/main.css', './css/main.min.css']
+            files: ['./js/*.min.js', './index.html', './css/app.css.map', './css/app.css', './css/app.min.css']
         },
         jshint: {
             options: {
