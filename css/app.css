@@ -1914,7 +1914,8 @@ p, a {
   line-height: 1.2; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 a:hover {
   text-decoration: none; }
@@ -1957,7 +1958,6 @@ caption,
   font-size: 14px; }
 
 .upNavBar > a {
-  cursor: pointer;
   color: rgba(255, 255, 255, 0.702); }
 
 .upNavBar > a:focus {
@@ -1970,7 +1970,6 @@ caption,
   display: inline-block;
   margin-left: -4px; }
   .memberArea a {
-    cursor: pointer;
     font-family: Lato-Bold;
     font-size: 13px;
     color: #070011;
@@ -2010,6 +2009,8 @@ caption,
       font-family: Lato-Bold;
       color: rgba(255, 255, 255, 0.702);
       font-size: 15px; }
+    .mainMenu li a:hover {
+      color: white; }
 
 .submitEvent {
   display: inline-block;
@@ -2020,5 +2021,9 @@ caption,
   font-family: Lato-Bold; }
   .submitEvent span {
     font-size: 10px; }
+
+.submitEvent:hover {
+  color: yellow;
+  border-color: yellow; }
 
 /*# sourceMappingURL=app.css.map */

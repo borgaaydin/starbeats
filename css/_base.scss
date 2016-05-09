@@ -49,6 +49,7 @@ p {
 a {
   @extend p;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -101,7 +102,6 @@ caption,
 }
 
 .upNavBar>a {
-  cursor: pointer;
   color: $text-color-transparent;
 }
 
@@ -118,7 +118,6 @@ caption,
   margin-left: -4px;
 
   a {
-    cursor: pointer;
     font-family: Lato-Bold;
     font-size: 13px;
     color: $text-color-dark;
@@ -169,6 +168,9 @@ caption,
       color: $text-color-transparent;
       font-size: 15px;
     }
+    a:hover {
+      color: $text-color;
+    }
   }
 }
 
@@ -183,5 +185,10 @@ caption,
   span {
     font-size: 10px;
   }
+}
+
+.submitEvent:hover {
+  color: $secondary-color;
+  border-color: $secondary-color;
 }
 
