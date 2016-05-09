@@ -1,8 +1,14 @@
 $primary-color: rgb(255, 0, 94);
 $secondary-color: rgb(255, 255, 0);
 $text-color: rgb(255,255,255);
-$background-color: rgb(21, 0, 34);
+$text-color-transparent: rgba(255, 255, 255, 0.702);
+$text-color-dark:  rgb(7, 0, 17);
+$background-color-navy: rgb(21, 0, 34);
+$background-color-dark: rgb(7, 0, 17);
 
+body {
+  background-color: $background-color-navy;
+}
 
 h1 {
   font-size: 30px;
@@ -27,7 +33,7 @@ h4 {
   font-size: 14px;
 }
 
-a {
+.link {
   font-size: 16px;
   font-family: "Lato-Bold", sans-serif;
   color: $primary-color;
@@ -38,6 +44,11 @@ p {
   font-family: "Lato-Regular", sans-serif;
   color: $text-color;
   line-height: 1.2;
+}
+
+a {
+  @extend p;
+  text-decoration: none;
 }
 
 caption,
@@ -56,7 +67,60 @@ caption,
   line-height: 1.2;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .sliderContainer {
   //background-color: $background-color;
-  background: $background-color url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
+  background: $background-color-navy url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
+}
+
+.upNavBar{
+  display: inline-block;
+  background-color: $background-color-dark;
+  height: 20px;
+  padding: 2px 6px 2px 6px;
+}
+
+.upNavBar>span{
+  color: $secondary-color;
+  text-align: right;
+  padding: 0 4px 0 4px;
+  font-size: 14px;
+}
+
+.upNavBar>a {
+  cursor: pointer;
+  color: $text-color-transparent;
+}
+
+.upNavBar>a:focus {
+  color: $text-color;
+}
+
+.upNavBar>a:hover {
+  color: $secondary-color;
+}
+
+.memberArea {
+  display: inline-block;
+  margin-left: -2px;
+
+  a {
+    cursor: pointer;
+    font-family: Lato-Bold;
+    font-size: 13px;
+    color: $text-color-dark;
+    height: 20px;
+    padding: 4px 12px 4px 12px;
+  }
+}
+
+.signUpButton {
+  background-color: $primary-color;
+}
+
+.loginButton {
+  background-color: $secondary-color;
 }
