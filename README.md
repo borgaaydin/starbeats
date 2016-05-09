@@ -3,8 +3,11 @@
 ## Requirements
 The project uses 
 Bower for package management
+
 Grunt for task running
+
 Sass for Preprocessing
+
 
 ## Getting started
 ```console
