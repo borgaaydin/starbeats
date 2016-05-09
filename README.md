@@ -1,11 +1,9 @@
 # starbeats.es Front-End Dev
 
 ## Requirements
-The project uses 
+
 Bower for package management
-
 Grunt for task running
-
 Sass for Preprocessing
 
 
