@@ -1,0 +1,60 @@
+$primary-color: rgb(255, 0, 94);
+$secondary-color: rgb(255, 255, 0);
+$text-color: rgb(255,255,255);
+$background-color: rgb(21, 0, 34);
+
+
+h1 {
+  font-size: 30px;
+  font-family: "Lato-Bold", sans-serif;
+  color: $text-color;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h2 {
+  @extend h1;
+  font-size: 24px;
+}
+
+h3 {
+  @extend h1;
+  font-size: 16px;
+}
+
+h4 {
+  @extend h1;
+  font-size: 14px;
+}
+
+a {
+  font-size: 16px;
+  font-family: "Lato-Bold", sans-serif;
+  color: $primary-color;
+}
+
+p {
+  font-size: 14px;
+  font-family: "Lato-Regular", sans-serif;
+  color: $text-color;
+  line-height: 1.2;
+}
+
+caption {
+  font-size: 12px;
+  font-family: "Lato-Regular", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.333;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "Lato-Light", sans-serif;
+  color: $text-color;
+  line-height: 1.2;
+}
+
+.container {
+  background-color: $background-color;
+}
