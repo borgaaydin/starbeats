@@ -51,6 +51,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 caption,
 .caption {
   font-size: 12px;
@@ -67,6 +71,12 @@ caption,
   line-height: 1.2;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .text-right {
   text-align: right;
 }
@@ -80,13 +90,13 @@ caption,
   display: inline-block;
   background-color: $background-color-dark;
   height: 20px;
-  padding: 2px 6px 2px 6px;
+  padding: 0 12px 0 12px;
 }
 
 .upNavBar>span{
   color: $secondary-color;
   text-align: right;
-  padding: 0 4px 0 4px;
+  padding: 0 6px 0 6px;
   font-size: 14px;
 }
 
@@ -105,15 +115,14 @@ caption,
 
 .memberArea {
   display: inline-block;
-  margin-left: -2px;
+  margin-left: -4px;
 
   a {
     cursor: pointer;
     font-family: Lato-Bold;
     font-size: 13px;
     color: $text-color-dark;
-    height: 20px;
-    padding: 4px 12px 4px 12px;
+    padding: 4px 10px 1px;
   }
 }
 
@@ -124,3 +133,55 @@ caption,
 .loginButton {
   background-color: $secondary-color;
 }
+
+.cityButton,
+.langButton {
+  font-family: "Lato-Bold", sans-serif;
+  color: $text-color-transparent;
+  font-size: 13px;
+}
+
+.cityButton {
+  margin-right: 4px;
+}
+
+.cityButton>span {
+   font-size: 11px;
+   padding: 2px;
+ }
+
+.cityButton>span:last-child,
+.langButton>span:last-child {
+  color: $primary-color;
+  font-size: 10px;
+}
+
+.mainMenu {
+  list-style: none;
+  margin-top: 32px;
+
+  li {
+    display: inline-block;
+    padding: 0 7% 0 7%;
+
+    a {
+      font-family: Lato-Bold;
+      color: $text-color-transparent;
+      font-size: 15px;
+    }
+  }
+}
+
+.submitEvent {
+  display: inline-block;
+  margin-top: 28px;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 8px 20px 8px 20px;
+  font-family: Lato-Bold;
+
+  span {
+    font-size: 10px;
+  }
+}
+
