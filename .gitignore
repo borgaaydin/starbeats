@@ -1,3 +1,6 @@
+.idea
+.sass-cache
+
 ### BOWER ###
 bower_components/
 
