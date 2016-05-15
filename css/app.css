@@ -2139,6 +2139,17 @@ a:focus {
   text-decoration: none;
   outline: none; }
 
+button {
+  border: 1px solid #ff005e;
+  outline: none;
+  background-color: #ff005e;
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 600;
+  color: white; }
+  button:hover {
+    color: #ff005e;
+    background-color: transparent; }
+
 caption,
 .caption {
   font-size: 12px;
@@ -2296,17 +2307,8 @@ caption,
   .searchContainer .searchBar:focus span {
     color: yellow; }
   .searchContainer button {
-    border: 1px solid #ff005e;
-    outline: none;
-    background-color: #ff005e;
     padding: 10px 44px 11px;
-    margin-left: 16px;
-    font-family: "Lato-Bold", sans-serif;
-    font-weight: 600;
-    color: white; }
-    .searchContainer button:hover {
-      color: #ff005e;
-      background-color: transparent; }
+    margin-left: 16px; }
 
 .eventsContainerTonight {
   padding: 30px 0 30px 0;
@@ -2395,7 +2397,7 @@ caption,
   width: 100%; }
 
 .appContainer {
-  background: #150022 url("../img/getAppBackground.jpg") top/cover no-repeat; }
+  background: #070011 url("../img/getAppBackground.jpg") top/cover no-repeat; }
   .appContainer h2 {
     margin: 50px 0 40px 0; }
   .appContainer p, .appContainer a {
@@ -2411,6 +2413,16 @@ caption,
     width: auto;
     height: 60px;
     margin: 30px 10px 30px 10px; }
+
+.promoteContainer {
+  background: #150022 url("../img/SliderContainerBackground.jpg") top/cover no-repeat;
+  padding: 40px; }
+  .promoteContainer h2 {
+    margin-bottom: 20px; }
+  .promoteContainer p, .promoteContainer a {
+    margin-bottom: 30px; }
+  .promoteContainer button {
+    padding: 8px 80px 8px 80px; }
 
 @font-face {
   font-family: Lato-Light;

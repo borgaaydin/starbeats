@@ -69,6 +69,20 @@ a:focus{
   outline: none;
 }
 
+button {
+  border: 1px solid $primary-color;
+  outline: none;
+  background-color: $primary-color;
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 600;
+  color: $text-color;
+
+  &:hover {
+    color: $primary-color;
+    background-color: transparent;
+  }
+}
+
 caption,
 .caption {
   font-size: 12px;
@@ -284,19 +298,10 @@ caption,
     }
   }
   button {
-    border: 1px solid $primary-color;
-    outline: none;
-    background-color: $primary-color;
+
     padding: 10px 44px 11px;
     margin-left: 16px;
-    font-family: "Lato-Bold", sans-serif;
-    font-weight: 600;
-    color: $text-color;
 
-    &:hover {
-      color: $primary-color;
-      background-color: transparent;
-    }
   }
 }
 
@@ -437,7 +442,7 @@ $eventTextColor: #0b0912;
 }
 
 .appContainer {
-  background: $background-color-navy url("../img/getAppBackground.jpg") top/cover no-repeat ;
+  background: $background-color-dark url("../img/getAppBackground.jpg") top/cover no-repeat ;
 
   h2 {
     margin: 50px 0 40px 0;
@@ -449,7 +454,7 @@ $eventTextColor: #0b0912;
     width: 320px;
     margin: 0 auto;
   }
-  
+
   h3 {
     color: $primary-color;
     margin: 0 0 40px 0;
@@ -460,5 +465,22 @@ $eventTextColor: #0b0912;
     width:auto;
     height: 60px;
     margin: 30px 10px 30px 10px;
+  }
+}
+
+.promoteContainer {
+  background: $background-color-navy url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
+  padding: 40px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  button {
+    padding: 8px 80px 8px 80px;
   }
 }
