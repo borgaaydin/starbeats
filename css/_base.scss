@@ -411,4 +411,10 @@ $eventTextColor: #0b0912;
     border-left: 2px solid $secondary-color;
     width: 100%;
   }
+
+  &:hover {
+    h3 {
+      color: $secondary-color;
+    }
+  }
 }

@@ -2378,6 +2378,8 @@ caption,
   .event25 img {
     border-left: 2px solid yellow;
     width: 100%; }
+  .event25:hover h3 {
+    color: yellow; }
 
 @font-face {
   font-family: Lato-Light;
