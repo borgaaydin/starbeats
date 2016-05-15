@@ -60,7 +60,7 @@ strong {
 dfn {
   font-style: italic; }
 
-h1 {
+h1, h2, h3, h4 {
   font-size: 2em;
   margin: 0.67em 0; }
 
@@ -2092,12 +2092,35 @@ body {
   -webkit-backface-visibility: hidden; }
 
 body {
-  background-color: #150022; }
+  background-color: #150022;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: white; }
+
+h1, h2, h3, h4 {
+  font-family: "Lato-Bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+h2 {
+  font-size: 24px;
+  text-transform: none; }
+
+h3 {
+  font-size: 16px;
+  text-transform: none; }
+
+h4 {
+  font-size: 14px;
+  text-transform: none; }
 
 .link {
   font-size: 16px;
   font-family: "Lato-Bold", sans-serif;
   color: #ff005e; }
+  .link:hover {
+    color: yellow; }
 
 p, a {
   font-size: 14px;
@@ -2106,11 +2129,13 @@ p, a {
   line-height: 1.2; }
 
 a {
+  color: #ff005e;
   text-decoration: none;
   cursor: pointer; }
 
 a:hover,
 a:focus {
+  color: yellow;
   text-decoration: none;
   outline: none; }
 
@@ -2276,6 +2301,68 @@ caption,
     .searchContainer button:hover {
       color: #ff005e;
       background-color: transparent; }
+
+.eventsContainer {
+  padding: 30px 0 30px 0;
+  background-color: #070011; }
+  .eventsContainer div {
+    max-width: 960px; }
+
+.headingGroup {
+  margin: 0 0 30px 0; }
+  .headingGroup div {
+    padding: 0; }
+    .headingGroup div h1, .headingGroup div h2, .headingGroup div h3, .headingGroup div h4 {
+      display: inline-block;
+      margin: 0; }
+    .headingGroup div span {
+      font-size: 30px;
+      color: yellow; }
+    .headingGroup div .title {
+      display: inline-block;
+      font-size: 30px;
+      margin: 0; }
+    .headingGroup div a {
+      line-height: 42px; }
+    .headingGroup div:last-child {
+      text-align: right; }
+  .headingGroup:after {
+    clear: both;
+    content: " ";
+    display: table; }
+
+.event50 {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  height: 142px;
+  overflow: hidden; }
+  .event50 img {
+    border-left: 2px solid yellow;
+    display: inline-block;
+    width: 48%;
+    float: left; }
+  .event50 .eventDescription {
+    display: inline-block;
+    float: left;
+    height: 142px;
+    width: 52%;
+    background: white;
+    padding: 20px 20px 20px 24px; }
+    .event50 .eventDescription h3 {
+      margin-top: 0;
+      color: #070011; }
+    .event50 .eventDescription h4 {
+      margin: 0;
+      color: #0b0912; }
+      .event50 .eventDescription h4 a:hover {
+        color: #ff005e;
+        text-decoration: underline; }
+  .event50:hover h3 {
+    color: #ff005e; }
+  .event50:after {
+    clear: both;
+    content: ' ';
+    display: table; }
 
 @font-face {
   font-family: Lato-Light;
