@@ -376,7 +376,10 @@
             center: {lat: 41.3835, lng: 2.1736},  // Barcelona.
             mapTypeControlOptions: {
                 mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-            }
+            },
+            disableDefaultUI: true,
+            scrollwheel: false,
+            zoomControl:true
         });
 
         map.mapTypes.set(customMapTypeId, customMapType);
