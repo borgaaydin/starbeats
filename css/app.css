@@ -2158,6 +2158,12 @@ caption,
   height: auto;
   display: block; }
 
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
 .text-right {
   text-align: right; }
 
@@ -2380,6 +2386,21 @@ caption,
     width: 100%; }
   .event25:hover h3 {
     color: yellow; }
+
+.appContainer {
+  background: #150022 url("../img/getAppBackground.jpg") top/cover no-repeat; }
+  .appContainer p, .appContainer a {
+    font-family: "Lato-Bold", sans-serif;
+    font-weight: 600;
+    width: 320px;
+    margin: 0 auto; }
+  .appContainer h3 {
+    color: #ff005e; }
+  .appContainer img {
+    display: inline-block;
+    width: auto;
+    height: 60px;
+    margin: 20px 10px 20px 10px; }
 
 @font-face {
   font-family: Lato-Light;

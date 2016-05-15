@@ -91,6 +91,14 @@ caption,
   display: block;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-right {
   text-align: right;
 }
@@ -416,5 +424,27 @@ $eventTextColor: #0b0912;
     h3 {
       color: $secondary-color;
     }
+  }
+}
+
+.appContainer {
+  background: $background-color-navy url("../img/getAppBackground.jpg") top/cover no-repeat ;
+  
+  p {
+    font-family: "Lato-Bold", sans-serif;
+    font-weight: 600;
+    width: 320px;
+    margin: 0 auto;
+  }
+  
+  h3 {
+    color: $primary-color;
+  }
+
+  img {
+    display: inline-block;
+    width:auto;
+    height: 60px;
+    margin: 20px 10px 20px 10px;
   }
 }
