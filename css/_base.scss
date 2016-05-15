@@ -292,9 +292,18 @@ caption,
   }
 }
 
-.eventsContainer {
+.eventsContainerTonight {
   padding: 30px 0 30px 0;
   background-color: $background-color-dark;
+
+  div {
+    max-width: 960px;
+  }
+}
+
+.eventsContainerThisWeek {
+  padding: 30px 0 30px 0;
+  //background-color: $background-color-dark;
 
   div {
     max-width: 960px;
@@ -368,23 +377,38 @@ $eventTextColor: #0b0912;
     h4 {
       margin: 0;
       color: $eventTextColor;
-      
+
       a:hover {
         color: $primary-color;
         text-decoration: underline;
       }
     }
   }
-  
+
   &:hover {
     h3 {
       color: $primary-color;
     }
   }
-  
+
   &:after {
     clear: both;
     content:' ';
     display: table;
+  }
+}
+
+.event25 {
+  padding: 0 10px 0 10px;
+
+  >a {
+    display: block;
+    height: $eventHeight;
+    overflow: hidden;
+  }
+
+  img {
+    border-left: 2px solid $secondary-color;
+    width: 100%;
   }
 }

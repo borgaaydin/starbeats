@@ -2302,10 +2302,15 @@ caption,
       color: #ff005e;
       background-color: transparent; }
 
-.eventsContainer {
+.eventsContainerTonight {
   padding: 30px 0 30px 0;
   background-color: #070011; }
-  .eventsContainer div {
+  .eventsContainerTonight div {
+    max-width: 960px; }
+
+.eventsContainerThisWeek {
+  padding: 30px 0 30px 0; }
+  .eventsContainerThisWeek div {
     max-width: 960px; }
 
 .headingGroup {
@@ -2363,6 +2368,16 @@ caption,
     clear: both;
     content: ' ';
     display: table; }
+
+.event25 {
+  padding: 0 10px 0 10px; }
+  .event25 > a {
+    display: block;
+    height: 142px;
+    overflow: hidden; }
+  .event25 img {
+    border-left: 2px solid yellow;
+    width: 100%; }
 
 @font-face {
   font-family: Lato-Light;
@@ -2502,7 +2517,7 @@ caption,
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: calc(50% - 512px);
+  left: calc(50% - 505px);
   top: calc(100% - 16px); }
   [dir="rtl"] .slick-prev {
     left: auto;
@@ -2513,7 +2528,7 @@ caption,
       content: ""; }
 
 .slick-next {
-  right: calc(50% - 512px);
+  right: calc(50% - 505px);
   top: 16px; }
   [dir="rtl"] .slick-next {
     left: -25px;
