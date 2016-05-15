@@ -119,13 +119,37 @@
 <script src="js/slick.min.js"></script>
 <script>
     $(document).ready(function(){
-        var centerPaddingCalc = ($(window).width()-960)/2;
-        $('.mainSlider').slick({
+        var delay = (function(){
+            var timer = 0;
+            return function(callback, ms){
+                clearTimeout (timer);
+                timer = setTimeout(callback, ms);
+            };
+        })();
+
+        var centerPaddingCalc = ($(window).width()-945)/2;
+        var slider = $('.mainSlider');
+
+        slider.slick({
             infinite: true,
             slidesToShow: 1,
             centerMode: true,
             centerPadding: centerPaddingCalc+'px',
-            arrows: false
+            arrows: true
+        });
+
+        $(window).resize(function() {
+            delay(function(){
+                var centerPaddingCalc = ($(window).width()-945)/2;
+                slider.slick('unslick');
+                slider.slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    centerMode: true,
+                    centerPadding: centerPaddingCalc+'px',
+                    arrows: true
+                });
+            }, 500);
         });
     });
 </script>
