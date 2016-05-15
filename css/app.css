@@ -1870,6 +1870,222 @@ pre {
 
   .col-lg-offset-12 {
     margin-left: 100%; } }
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+.hidden {
+  display: none !important; }
+
+.affix {
+  position: fixed; }
+
+@-ms-viewport {
+  width: device-width; }
+.visible-xs {
+  display: none !important; }
+
+.visible-sm {
+  display: none !important; }
+
+.visible-md {
+  display: none !important; }
+
+.visible-lg {
+  display: none !important; }
+
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important; }
+
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important; }
+
+  table.visible-xs {
+    display: table !important; }
+
+  tr.visible-xs {
+    display: table-row !important; }
+
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important; } }
+@media (max-width: 767px) {
+  .visible-xs-block {
+    display: block !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-inline {
+    display: inline !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important; }
+
+  table.visible-sm {
+    display: table !important; }
+
+  tr.visible-sm {
+    display: table-row !important; }
+
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-block {
+    display: block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline {
+    display: inline !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important; }
+
+  table.visible-md {
+    display: table !important; }
+
+  tr.visible-md {
+    display: table-row !important; }
+
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-block {
+    display: block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline {
+    display: inline !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important; }
+
+  table.visible-lg {
+    display: table !important; }
+
+  tr.visible-lg {
+    display: table-row !important; }
+
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important; } }
+@media (min-width: 1200px) {
+  .visible-lg-block {
+    display: block !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-inline {
+    display: inline !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important; } }
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important; } }
+.visible-print {
+  display: none !important; }
+
+@media print {
+  .visible-print {
+    display: block !important; }
+
+  table.visible-print {
+    display: table !important; }
+
+  tr.visible-print {
+    display: table-row !important; }
+
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important; } }
+.visible-print-block {
+  display: none !important; }
+  @media print {
+    .visible-print-block {
+      display: block !important; } }
+
+.visible-print-inline {
+  display: none !important; }
+  @media print {
+    .visible-print-inline {
+      display: inline !important; } }
+
+.visible-print-inline-block {
+  display: none !important; }
+  @media print {
+    .visible-print-inline-block {
+      display: inline-block !important; } }
+
+@media print {
+  .hidden-print {
+    display: none !important; } }
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -1893,8 +2109,10 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
-a:hover {
-  text-decoration: none; }
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none; }
 
 caption,
 .caption {
@@ -1926,21 +2144,19 @@ caption,
   background-color: #070011;
   height: 20px;
   padding: 0 12px 0 12px; }
-
-.upNavBar > span {
-  color: yellow;
-  text-align: right;
-  padding: 0 6px 0 6px;
-  font-size: 14px; }
-
-.upNavBar > a {
-  color: rgba(255, 255, 255, 0.702); }
-
-.upNavBar > a:focus {
-  color: white; }
-
-.upNavBar > a:hover {
-  color: yellow; }
+  .upNavBar span {
+    color: yellow;
+    text-align: right;
+    padding: 0 6px 0 6px;
+    font-size: 14px; }
+  .upNavBar a {
+    color: rgba(255, 255, 255, 0.702); }
+    .upNavBar a:focus {
+      color: white; }
+    .upNavBar a:hover {
+      color: yellow; }
+    .upNavBar a.active {
+      color: white; }
 
 .memberArea {
   display: inline-block;
@@ -1956,6 +2172,10 @@ caption,
 
 .loginButton {
   background-color: yellow; }
+
+.signUpButton:hover,
+.loginButton:hover {
+  padding-bottom: 6px; }
 
 .cityButton,
 .langButton {
@@ -1985,8 +2205,10 @@ caption,
       font-family: Lato-Bold;
       color: rgba(255, 255, 255, 0.702);
       font-size: 15px; }
-    .mainMenu li a:hover {
-      color: white; }
+      .mainMenu li a:hover {
+        color: yellow; }
+      .mainMenu li a.active {
+        color: white; }
 
 .submitEvent {
   display: inline-block;
@@ -1994,17 +2216,66 @@ caption,
   color: #ff005e;
   border: 1px solid #ff005e;
   padding: 8px 20px 8px 20px;
-  font-family: Lato-Bold; }
+  font-family: Lato-Bold;
+  background: transparent;
+  outline: none; }
   .submitEvent span {
     font-size: 10px;
     top: 0; }
-
-.submitEvent:hover {
-  color: yellow;
-  border-color: yellow; }
+  .submitEvent:hover {
+    color: white;
+    background-color: #ff005e; }
 
 .mainSlider {
   margin: 40px 0 30px 0; }
+
+.searchContainer {
+  max-width: 630px;
+  margin: 0 auto 32px;
+  padding: 0; }
+  .searchContainer div {
+    padding: 0; }
+  .searchContainer .searchBar span {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.702);
+    font-size: 16px;
+    top: 10px;
+    left: 10px; }
+  .searchContainer .searchBar input[type="text"] {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    font-family: "Lato-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: rgba(255, 255, 255, 0.702); }
+    .searchContainer .searchBar input[type="text"]:focus {
+      border-color: #ff005e;
+      color: yellow; }
+  .searchContainer .searchBar:hover span,
+  .searchContainer .searchBar:hover input {
+    color: yellow;
+    border-color: yellow; }
+  .searchContainer .searchBar:focus input {
+    border-color: yellow;
+    color: yellow; }
+  .searchContainer .searchBar:focus span {
+    color: yellow; }
+  .searchContainer button {
+    border: 1px solid #ff005e;
+    outline: none;
+    background-color: #ff005e;
+    padding: 10px 44px 11px;
+    margin-left: 16px;
+    font-family: "Lato-Bold", sans-serif;
+    font-weight: 600;
+    color: white; }
+    .searchContainer button:hover {
+      color: #ff005e;
+      background-color: transparent; }
 
 @font-face {
   font-family: Lato-Light;
@@ -2071,6 +2342,8 @@ caption,
   opacity: 0.55;
   transition: opacity 300ms;
   display: none; }
+  .slick-slide:focus {
+    outline: 0; }
   [dir="rtl"] .slick-slide {
     float: right; }
   .slick-slide img {
@@ -2123,8 +2396,7 @@ caption,
   .slick-next:hover,
   .slick-next:focus {
     outline: none;
-    background: transparent;
-    color: transparent; }
+    background-color: #070011; }
     .slick-prev:hover:before, .slick-prev:focus:before,
     .slick-next:hover:before,
     .slick-next:focus:before {

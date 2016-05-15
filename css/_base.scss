@@ -32,8 +32,10 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+a:hover,
+a:focus{
   text-decoration: none;
+  outline: none;
 }
 
 caption,
@@ -72,25 +74,30 @@ caption,
   background-color: $background-color-dark;
   height: 20px;
   padding: 0 12px 0 12px;
-}
 
-.upNavBar>span{
-  color: $secondary-color;
-  text-align: right;
-  padding: 0 6px 0 6px;
-  font-size: 14px;
-}
 
-.upNavBar>a {
-  color: $text-color-transparent;
-}
+  span{
+    color: $secondary-color;
+    text-align: right;
+    padding: 0 6px 0 6px;
+    font-size: 14px;
+  }
 
-.upNavBar>a:focus {
-  color: $text-color;
-}
+  a {
+    color: $text-color-transparent;
 
-.upNavBar>a:hover {
-  color: $secondary-color;
+    &:focus{
+      color: $text-color;
+    }
+
+    &:hover {
+      color: $secondary-color;
+    }
+    
+    &.active {
+      color: $text-color;
+    }
+  }
 }
 
 .memberArea {
@@ -112,6 +119,12 @@ caption,
 .loginButton {
   background-color: $secondary-color;
 }
+
+.signUpButton:hover,
+.loginButton:hover {
+  padding-bottom: 6px;
+}
+
 
 .cityButton,
 .langButton {
@@ -147,9 +160,12 @@ caption,
       font-family: Lato-Bold;
       color: $text-color-transparent;
       font-size: 15px;
-    }
-    a:hover {
-      color: $text-color;
+      &:hover {
+        color: $secondary-color;
+      }
+      &.active {
+        color: $text-color;
+      }
     }
   }
 }
@@ -161,18 +177,87 @@ caption,
   border: 1px solid $primary-color;
   padding: 8px 20px 8px 20px;
   font-family: Lato-Bold;
+  background: transparent;
+  outline: none;
 
   span {
     font-size: 10px;
     top: 0;
   }
+
+  &:hover {
+    color: $text-color;
+    background-color: $primary-color;
+  }
 }
 
-.submitEvent:hover {
-  color: $secondary-color;
-  border-color: $secondary-color;
-}
 
 .mainSlider {
   margin: 40px 0 30px 0;
+}
+
+.searchContainer{
+  max-width: 630px;
+  margin: 0 auto 32px;
+  padding: 0;
+
+  div {
+    padding: 0;
+  }
+
+  .searchBar {
+    span {
+      position: absolute;
+      color: $text-color-transparent;
+      font-size: 16px;
+      top:10px;
+      left:10px;
+    }
+    input[type="text"] {
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid white;
+      width: 100%;
+      padding: 10px 20px 10px 40px;
+      font-family: "Lato-Bold", sans-serif;
+      font-size: 16px;
+      line-height: 1.2em;
+      color: $text-color-transparent;
+      &:focus {
+        border-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+    &:hover {
+      span,
+      input {
+        color: $secondary-color;
+        border-color: $secondary-color;
+      }
+    }
+    &:focus {
+      input {
+        border-color: $secondary-color;
+        color: $secondary-color;
+      }
+      span {color: $secondary-color}
+    }
+  }
+  button {
+    border: 1px solid $primary-color;
+    outline: none;
+    background-color: $primary-color;
+    padding: 10px 44px 11px;
+    margin-left: 16px;
+    font-family: "Lato-Bold", sans-serif;
+    font-weight: 600;
+    color: $text-color;
+
+    &:hover {
+      color: $primary-color;
+      background-color: transparent;
+    }
+  }
+
 }
