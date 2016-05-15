@@ -192,15 +192,7 @@
 
         $(window).resize(function() {
             delay(function(){
-                var centerPaddingCalc = ($(window).width()-945)/2;
-                slider.slick('unslick');
-                slider.slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    centerMode: true,
-                    centerPadding: centerPaddingCalc+'px',
-                    arrows: true
-                });
+                location.reload();
             }, 500);
         });
     });
