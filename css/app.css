@@ -2387,6 +2387,13 @@ caption,
   .event25:hover h3 {
     color: yellow; }
 
+.mapsContainer {
+  padding: 0; }
+
+#map {
+  height: 400px;
+  width: 100%; }
+
 .appContainer {
   background: #150022 url("../img/getAppBackground.jpg") top/cover no-repeat; }
   .appContainer h2 {

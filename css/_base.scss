@@ -427,6 +427,15 @@ $eventTextColor: #0b0912;
   }
 }
 
+.mapsContainer {
+  padding: 0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .appContainer {
   background: $background-color-navy url("../img/getAppBackground.jpg") top/cover no-repeat ;
 

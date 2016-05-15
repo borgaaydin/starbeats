@@ -303,7 +303,9 @@
     </div>
 </div>
 <div class="container-fluid promoteContainer">
+    <div class="container">
 
+    </div>
 </div>
 <div class="container-fluid footerContainer">
     <div class="container">
@@ -346,19 +348,23 @@
         var customMapType = new google.maps.StyledMapType([
             {
                 stylers: [
-                    {hue: '#890000'},
-                    {visibility: 'simplified'},
-                    {gamma: 0.5},
-                    {weight: 0.5}
+                    {hue: '#241c37'},
+                    {gamma: 0.1},
+                    {lightness: -10},
+                    {saturation: 4},
                 ]
             },
             {
                 elementType: 'labels',
-                stylers: [{visibility: 'off'}]
+                stylers: [
+                    {visibility: 'on'},
+                    {hue: '#241c37'},
+                    {lightness: 10}
+                ]
             },
             {
                 featureType: 'water',
-                stylers: [{color: '#890000'}]
+                stylers: [{color: '#0b0912'}]
             }
         ], {
             name: 'Custom Style'
@@ -367,7 +373,7 @@
 
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 12,
-            center: {lat: 40.674, lng: -73.946},  // Brooklyn.
+            center: {lat: 41.3835, lng: 2.1736},  // Barcelona.
             mapTypeControlOptions: {
                 mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
             }
