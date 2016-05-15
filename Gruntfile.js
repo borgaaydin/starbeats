@@ -8,13 +8,13 @@ module.exports = function (grunt) {
             options:{
 
             },
-            files: ['./js/*.min.js', './index.html', './css/app.css.map', './css/app.css', './css/app.min.css']
+            files: ['./css/app.css.map', './css/app.css', './css/app.min.css']
         },
         jshint: {
             options: {
                 reporterOutput: './jshint.txt'
             },
-            files: ['js/*.js']
+            files: ['']
         },
         uglify: {
             development:{

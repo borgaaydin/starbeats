@@ -23,11 +23,16 @@
 //@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
 //@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
-// Custom Fonts : Lato
 @import "core";
 
 // Custom Fonts : Lato
 @import "fonts";
 
+// Slick Carousel CSS
+@import "slick";
+@import "slick-theme";
+
+
 // base.scss
 @import "base";
+

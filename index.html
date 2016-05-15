@@ -6,95 +6,128 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-    <div class="container-fluid sliderContainer" style="height: 400px;"> <!-- TODO:Remove style attribute after dev -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-right">
-                    <div class="upNavBar">
-                        <a>Get the app</a>
-                        <span>/</span>
-                        <a>How it works</a>
-                        <span>/</span>
-                        <a>Contact Us</a>
-                    </div>
-                    <div class="memberArea">
-                        <a class="signUpButton">
-                            SIGNUP
+<div class="container-fluid sliderContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <div class="upNavBar">
+                    <a>Get the app</a>
+                    <span>/</span>
+                    <a>How it works</a>
+                    <span>/</span>
+                    <a>Contact Us</a>
+                </div>
+                <div class="memberArea">
+                    <a class="signUpButton">
+                        SIGNUP
+                    </a>
+                    <a class="loginButton">
+                        LOG IN
+                    </a>
+                </div>
+                <a class="cityButton">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    BARCELONA
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a>
+                <a class="langButton">
+                    ENG
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="#">
+                    <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <ul class="mainMenu">
+                    <li>
+                        <a>
+                            HOME
                         </a>
-                        <a class="loginButton">
-                            LOG IN
+                    </li>
+                    <li>
+                        <a>
+                            EVENTS
                         </a>
-                    </div>
-                    <a class="cityButton">
-                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                        BARCELONA
-                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                    </a>
-                    <a class="langButton">
-                        ENG
-                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                    </a>
-                </div>
+                    </li>
+                    <li>
+                        <a>
+                            ARTISTS
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <a href="#">
-                        <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="mainMenu">
-                        <li>
-                            <a>
-                                HOME
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                EVENTS
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                ARTISTS
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 text-right">
-                    <a class="submitEvent">
-                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                        SUBMIT EVENT
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                
-            </div>
-            <div class="row">
-
+            <div class="col-sm-3 text-right">
+                <a class="submitEvent">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    SUBMIT EVENT
+                </a>
             </div>
         </div>
     </div>
-    <div class="container-fluid searchContainer">
-
+    <div class="row">
+        <div class="col-xs-12 mainSlider">
+            <div>
+                <a href="#">
+                    <img src="img/slider/slider1.jpg" alt="Sam Paganini" class="img-responsive">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/slider/slider2.jpg" alt="Sam Paganini" class="img-responsive">
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="img/slider/slider3.jpg" alt="Sam Paganini" class="img-responsive">
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid mainContainer">
-
-    </div>
-    <div class="container-fluid mapsContainer">
-
-    </div>
-    <div class="container-fluid appContainer">
-
-    </div>
-    <div class="container-fluid promoteContainer">
-
-    </div>
-    <div class="container-fluid footerContainer">
-        <div class="container">
+    <div class="container">
+        <div class="row">
 
         </div>
     </div>
+</div>
+<div class="container-fluid searchContainer">
+
+</div>
+<div class="container-fluid mainContainer">
+
+</div>
+<div class="container-fluid mapsContainer">
+
+</div>
+<div class="container-fluid appContainer">
+
+</div>
+<div class="container-fluid promoteContainer">
+
+</div>
+<div class="container-fluid footerContainer">
+    <div class="container">
+
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var centerPaddingCalc = ($(window).width()-960)/2;
+        $('.mainSlider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: centerPaddingCalc+'px',
+            arrows: false
+        });
+    });
+</script>
 </body>
 </html>
