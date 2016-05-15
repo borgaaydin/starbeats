@@ -2389,18 +2389,21 @@ caption,
 
 .appContainer {
   background: #150022 url("../img/getAppBackground.jpg") top/cover no-repeat; }
+  .appContainer h2 {
+    margin: 50px 0 40px 0; }
   .appContainer p, .appContainer a {
     font-family: "Lato-Bold", sans-serif;
     font-weight: 600;
     width: 320px;
     margin: 0 auto; }
   .appContainer h3 {
-    color: #ff005e; }
+    color: #ff005e;
+    margin: 0 0 40px 0; }
   .appContainer img {
     display: inline-block;
     width: auto;
     height: 60px;
-    margin: 20px 10px 20px 10px; }
+    margin: 30px 10px 30px 10px; }
 
 @font-face {
   font-family: Lato-Light;

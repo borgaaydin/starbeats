@@ -429,7 +429,11 @@ $eventTextColor: #0b0912;
 
 .appContainer {
   background: $background-color-navy url("../img/getAppBackground.jpg") top/cover no-repeat ;
-  
+
+  h2 {
+    margin: 50px 0 40px 0;
+  }
+
   p {
     font-family: "Lato-Bold", sans-serif;
     font-weight: 600;
@@ -439,12 +443,13 @@ $eventTextColor: #0b0912;
   
   h3 {
     color: $primary-color;
+    margin: 0 0 40px 0;
   }
 
   img {
     display: inline-block;
     width:auto;
     height: 60px;
-    margin: 20px 10px 20px 10px;
+    margin: 30px 10px 30px 10px;
   }
 }
