@@ -2199,7 +2199,7 @@ caption,
     padding: 0 6px 0 6px;
     font-size: 14px; }
   .upNavBar a {
-    color: rgba(255, 255, 255, 0.702); }
+    color: rgba(255, 255, 255, 0.6); }
     .upNavBar a:focus {
       color: white; }
     .upNavBar a:hover {
@@ -2231,7 +2231,7 @@ caption,
 .langButton {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.702);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 13px; }
 
 .cityButton {
@@ -2254,7 +2254,7 @@ caption,
     padding: 0 7% 0 7%; }
     .mainMenu li a, .footerMenu li a {
       font-family: Lato-Bold;
-      color: rgba(255, 255, 255, 0.702);
+      color: rgba(255, 255, 255, 0.6);
       font-size: 15px; }
       .mainMenu li a:hover, .footerMenu li a:hover {
         color: yellow; }
@@ -2289,7 +2289,7 @@ caption,
     padding: 0; }
   .searchContainer .searchBar span {
     position: absolute;
-    color: rgba(255, 255, 255, 0.702);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     top: 10px;
     left: 10px; }
@@ -2304,7 +2304,7 @@ caption,
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2em;
-    color: rgba(255, 255, 255, 0.702); }
+    color: rgba(255, 255, 255, 0.6); }
     .searchContainer .searchBar input[type="text"]:focus {
       border-color: #ff005e;
       color: yellow; }
@@ -2453,7 +2453,7 @@ caption,
     .copyrightMenu li a {
       font-family: "Lato", sans-serif;
       font-weight: 400;
-      color: rgba(255, 255, 255, 0.702);
+      color: rgba(255, 255, 255, 0.6);
       font-size: 18px; }
       .copyrightMenu li a:hover {
         color: yellow; }
@@ -2468,36 +2468,48 @@ caption,
 
 .authContainer {
   height: 100%;
-  background: #150022 url("../img/SliderContainerBackground.jpg") bottom/cover no-repeat; }
+  background: #150022 url("../img/SliderContainerBackground.jpg") bottom/cover no-repeat;
+  font-weight: 700; }
+  .authContainer a {
+    font-weight: 700; }
+  .authContainer h3 {
+    opacity: 0.66; }
   .authContainer .container {
     background-color: rgba(21, 0, 34, 0.6);
     width: 480px;
-    height: 600px;
     margin: 100px auto;
     padding: 40px; }
+  .authContainer button {
+    width: 100%;
+    padding: 12px 0 12px;
+    margin-top: 30px; }
+  .authContainer .line {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    opacity: 0.66;
+    margin-top: 18px; }
 
 .inputFields {
-  margin-top: 20px; }
+  margin: 20px 0 10px 0; }
   .inputFields span {
     position: absolute;
-    color: rgba(255, 255, 255, 0.702);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     top: 12px;
     left: 24px; }
-  .inputFields input[type="text"],
+  .inputFields input[type="email"],
   .inputFields input[type="password"] {
     background: none;
     border: none;
     outline: none;
     border-bottom: 2px solid white;
     width: 100%;
-    padding: 10px 20px 10px 40px;
+    padding: 10px 20px 16px 40px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2em;
-    color: rgba(255, 255, 255, 0.702); }
-    .inputFields input[type="text"]:focus,
+    color: rgba(255, 255, 255, 0.6); }
+    .inputFields input[type="email"]:focus,
     .inputFields input[type="password"]:focus {
       border-color: #ff005e;
       color: yellow; }
@@ -2513,13 +2525,13 @@ caption,
 
 .facebookSignIn {
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 12px 0 12px 0;
   margin: 30px 0 30px 0;
   border: none;
   color: white;
   background-color: #3b5998; }
   .facebookSignIn:hover {
-    color: yellow;
+    color: whitesmoke;
     background-color: #3b5998;
     border: none; }
   .facebookSignIn i {

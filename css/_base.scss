@@ -1,7 +1,7 @@
 $primary-color: rgb(255, 0, 94);
 $secondary-color: rgb(255, 255, 0);
 $text-color: rgb(255,255,255);
-$text-color-transparent: rgba(255, 255, 255, 0.702);
+$text-color-transparent: rgba(255, 255, 255, 0.6);
 $text-color-dark:  rgb(7, 0, 17);
 $background-color-navy: rgb(21, 0, 34);
 $background-color-navy-transparent: rgba(21, 0, 34, 0.60);
@@ -549,18 +549,38 @@ $eventTextColor: #0b0912;
 .authContainer {
   height: 100%;
   background: $background-color-navy url("../img/SliderContainerBackground.jpg") bottom/cover no-repeat ;
+  font-weight: 700;
+
+  a {
+    font-weight: 700;
+  }
+
+  h3 {
+    opacity: 0.66;
+  }
 
   .container {
     background-color: $background-color-navy-transparent;
     width: 480px;
-    height: 600px;
     margin: 100px auto;
     padding: 40px;
+  }
+
+  button {
+    width:100%;
+    padding: 12px 0 12px;
+    margin-top: 30px;
+  }
+
+  .line {
+    border-bottom: 2px solid $text-color-transparent ;
+    opacity: 0.66;
+    margin-top: 18px;
   }
 }
 
 .inputFields {
-  margin-top: 20px;
+  margin: 20px 0 10px 0;
 
   span {
     position: absolute;
@@ -569,14 +589,14 @@ $eventTextColor: #0b0912;
     top: 12px;
     left: 24px;
   }
-  input[type="text"],
+  input[type="email"],
   input[type="password"]{
     background: none;
     border: none;
     outline: none;
     border-bottom: 2px solid white;
     width: 100%;
-    padding: 10px 20px 10px 40px;
+    padding: 10px 20px 16px 40px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -605,18 +625,17 @@ $eventTextColor: #0b0912;
 
 .facebookSignIn {
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 12px 0 12px 0;
   margin: 30px 0 30px 0;
   border: none;
   color: white;
   background-color: #3b5998;
 
   &:hover {
-    color: $secondary-color;
+    color: whitesmoke;
     background-color: #3b5998;
     border: none;
   }
-
   i {
     font-size: 16px;
   }
