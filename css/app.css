@@ -2092,6 +2092,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden; }
 
+html {
+  height: 100%; }
+
 body {
   background-color: #150022;
   font-family: "Lato", sans-serif;
@@ -2456,6 +2459,71 @@ caption,
         color: yellow; }
       .copyrightMenu li a.active {
         color: white; }
+
+.eventsContainer {
+  padding: 20px 0 0 0; }
+
+#auth {
+  height: 100%; }
+
+.authContainer {
+  height: 100%;
+  background: #150022 url("../img/SliderContainerBackground.jpg") bottom/cover no-repeat; }
+  .authContainer .container {
+    background-color: rgba(21, 0, 34, 0.6);
+    width: 480px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 40px; }
+
+.inputFields {
+  margin-top: 20px; }
+  .inputFields span {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.702);
+    font-size: 16px;
+    top: 12px;
+    left: 24px; }
+  .inputFields input[type="text"],
+  .inputFields input[type="password"] {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: rgba(255, 255, 255, 0.702); }
+    .inputFields input[type="text"]:focus,
+    .inputFields input[type="password"]:focus {
+      border-color: #ff005e;
+      color: yellow; }
+  .inputFields:hover span,
+  .inputFields:hover input {
+    color: yellow;
+    border-color: yellow; }
+  .inputFields:focus input {
+    border-color: yellow;
+    color: yellow; }
+  .inputFields:focus span {
+    color: yellow; }
+
+.facebookSignIn {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: 30px 0 30px 0;
+  border: none;
+  color: white;
+  background-color: #3b5998; }
+  .facebookSignIn:hover {
+    color: yellow;
+    background-color: #3b5998;
+    border: none; }
+  .facebookSignIn i {
+    font-size: 16px; }
 
 /* Slider */
 .slick-slider {

@@ -4,8 +4,13 @@ $text-color: rgb(255,255,255);
 $text-color-transparent: rgba(255, 255, 255, 0.702);
 $text-color-dark:  rgb(7, 0, 17);
 $background-color-navy: rgb(21, 0, 34);
+$background-color-navy-transparent: rgba(21, 0, 34, 0.60);
 $background-color-dark: rgb(7, 0, 17);
 $background-color-dark-transparent : rgba(0,0,0,0.502);
+
+html {
+  height: 100%;
+}
 
 body {
   background-color: $background-color-navy;
@@ -530,6 +535,90 @@ $eventTextColor: #0b0912;
         color: $text-color;
       }
     }
+  }
+}
+
+.eventsContainer {
+  padding: 20px 0 0 0;
+}
+
+#auth {
+  height: 100%;
+}
+
+.authContainer {
+  height: 100%;
+  background: $background-color-navy url("../img/SliderContainerBackground.jpg") bottom/cover no-repeat ;
+
+  .container {
+    background-color: $background-color-navy-transparent;
+    width: 480px;
+    height: 600px;
+    margin: 100px auto;
+    padding: 40px;
+  }
+}
+
+.inputFields {
+  margin-top: 20px;
+
+  span {
+    position: absolute;
+    color: $text-color-transparent;
+    font-size: 16px;
+    top: 12px;
+    left: 24px;
+  }
+  input[type="text"],
+  input[type="password"]{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: 10px 20px 10px 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: $text-color-transparent;
+    &:focus {
+      border-color: $primary-color;
+      color: $secondary-color;
+    }
+  }
+  &:hover {
+    span,
+    input {
+      color: $secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+  &:focus {
+    input {
+      border-color: $secondary-color;
+      color: $secondary-color;
+    }
+    span {color: $secondary-color}
+  }
+}
+
+.facebookSignIn {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin: 30px 0 30px 0;
+  border: none;
+  color: white;
+  background-color: #3b5998;
+
+  &:hover {
+    color: $secondary-color;
+    background-color: #3b5998;
+    border: none;
+  }
+
+  i {
+    font-size: 16px;
   }
 }
 
