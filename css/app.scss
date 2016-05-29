@@ -27,17 +27,20 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-@import "core";
-
-// base.scss
-@import "base";
-
 // Custom Fonts : Lato
 @import "fonts";
+
+@import "core";
+
+@import "base";
 
 // Slick Carousel CSS
 @import "slick";
 @import "slick-theme";
+
+@import "media400";
+
+
 
 
 

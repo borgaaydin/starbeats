@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
-<div class="container-fluid sliderContainer">
+<div class="container-fluid headContainer">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-right">
-                <div class="upNavBar">
+                <div class="upNavBar hidden-xs">
                     <a>Get the app</a>
                     <span>/</span>
                     <a>How it works</a>
                     <span>/</span>
                     <a>Contact Us</a>
                 </div>
-                <div class="memberArea">
+                <div class="memberArea hidden-xs">
                     <a class="signUpButton">
                         SIGNUP
                     </a>
@@ -25,25 +25,25 @@
                         LOG IN
                     </a>
                 </div>
-                <a class="cityButton">
+                <a class="cityButton hidden-xs">
                     <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
                     BARCELONA
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </a>
-                <a class="langButton">
+                <a class="langButton hidden-xs">
                     ENG
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-xs-9 col-sm-3">
                 <a href="#">
                     <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
                 </a>
             </div>
             <div class="col-sm-6">
-                <ul class="mainMenu">
+                <ul class="mainMenu hidden-xs">
                     <li>
                         <a class="active">
                             HOME
@@ -61,7 +61,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-3 text-right">
+            <div class="col-sm-3 text-right hidden-xs">
                 <button class="submitEvent">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                     SUBMIT EVENT
@@ -69,6 +69,8 @@
             </div>
         </div>
     </div>
+</div>
+<div class="container-fluid sliderContainer">
     <div class="row">
         <div class="col-xs-12 mainSlider">
             <div>
@@ -90,7 +92,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="container searchContainer">
+            <div class="container searchContainer hidden-xs">
                 <div class="col-xs-12 col-sm-8">
                     <div class="searchBar">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -114,7 +116,7 @@
                 <span>/</span>
                 <p class="title">MARCH 12 th</p>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-6 hidden-xs">
                 <a class="link">See More</a>
             </div>
         </div>
@@ -188,8 +190,10 @@
                         </div>
                     </a>
                 </div>
-                
             </div>
+        </div>
+        <div class="col-xs-12 text-center visible-xs">
+            <a class="link">See More</a>
         </div>
     </div>
 </div>
@@ -201,7 +205,7 @@
                 <span>/</span>
                 <p class="title">MARCH 12 - 19 th</p>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-6 hidden-xs">
                 <a class="link">See More</a>
             </div>
         </div>
@@ -276,6 +280,9 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="col-xs-12 text-center visible-xs">
+            <a class="link">See More</a>
         </div>
     </div>
 </div>
@@ -313,7 +320,7 @@
 <div class="container-fluid footerContainer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-xs-9 col-sm-3">
                 <a href="#">
                     <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
                 </a>
@@ -328,11 +335,6 @@
                     <li>
                         <a>
                             EVENTS
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            CLUBS
                         </a>
                     </li>
                     <li>
@@ -372,77 +374,8 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
-<script>
-    $(document).ready(function(){
-        var delay = (function(){
-            var timer = 0;
-            return function(callback, ms){
-                clearTimeout (timer);
-                timer = setTimeout(callback, ms);
-            };
-        })();
-
-        var centerPaddingCalc = ($(window).width()-945)/2;
-        var slider = $('.mainSlider');
-
-        slider.slick({
-            infinite: true,
-            slidesToShow: 1,
-            centerMode: true,
-            centerPadding: centerPaddingCalc+'px',
-            arrows: true
-        });
-
-//        $(window).resize(function() {
-//            delay(function(){
-//                location.reload();
-//            }, 500);
-//        });
-    });
-</script>
-<script>
-    function initMap() {
-        var customMapType = new google.maps.StyledMapType([
-            {
-                stylers: [
-                    {hue: '#241c37'},
-                    {gamma: 0.1},
-                    {lightness: -10},
-                    {saturation: 4},
-                ]
-            },
-            {
-                elementType: 'labels',
-                stylers: [
-                    {visibility: 'on'},
-                    {hue: '#241c37'},
-                    {lightness: 10}
-                ]
-            },
-            {
-                featureType: 'water',
-                stylers: [{color: '#0b0912'}]
-            }
-        ], {
-            name: 'Custom Style'
-        });
-        var customMapTypeId = 'custom_style';
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: {lat: 41.3835, lng: 2.1736},  // Barcelona.
-            mapTypeControlOptions: {
-                mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
-            },
-            disableDefaultUI: true,
-            scrollwheel: false,
-            zoomControl:true
-        });
-
-        map.mapTypes.set(customMapTypeId, customMapType);
-        map.setMapTypeId(customMapTypeId);
-    }
-</script>
+<script src="js/slider.js"></script>
+<script src="js/maps.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIm1oifthT2AcUJCGDhj6EiIAhzrCxQro&callback=initMap">
 </script>
