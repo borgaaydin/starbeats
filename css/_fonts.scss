@@ -1,16 +1,21 @@
 // fonts.scss
 
-@font-face{
-  font-family: Lato-Light;
-  src: url(../fonts/Lato-Light.ttf);
-}
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 
-@font-face{
-  font-family: Lato-Regular;
-  src: url(../fonts/Lato-Regular.ttf);
-}
 
-@font-face{
-  font-family: Lato-Bold;
-  src: url(../fonts/Lato-Bold.ttf);
-}
+// Local Backup
+
+//@font-face{
+//  font-family: Lato-Light;
+//  src: url(../fonts/Lato-Light.ttf);
+//}
+//
+//@font-face{
+//  font-family: Lato-Regular;
+//  src: url(../fonts/Lato-Regular.ttf);
+//}
+//
+//@font-face{
+//  font-family: Lato-Bold;
+//  src: url(../fonts/Lato-Bold.ttf);
+//}

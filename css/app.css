@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2098,7 +2099,8 @@ body {
   color: white; }
 
 h1, h2, h3, h4 {
-  font-family: "Lato-Bold", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   color: white;
   text-transform: uppercase;
   line-height: 1.2; }
@@ -2117,14 +2119,16 @@ h4 {
 
 .link {
   font-size: 16px;
-  font-family: "Lato-Bold", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   color: #ff005e; }
   .link:hover {
     color: yellow; }
 
 p, a {
   font-size: 14px;
-  font-family: "Lato-Regular", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   color: white;
   line-height: 1.2; }
 
@@ -2143,8 +2147,8 @@ button {
   border: 1px solid #ff005e;
   outline: none;
   background-color: #ff005e;
-  font-family: "Lato-Bold", sans-serif;
-  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   color: white; }
   button:hover {
     color: #ff005e;
@@ -2153,21 +2157,18 @@ button {
 caption,
 .caption {
   font-size: 12px;
-  font-family: "Lato-Regular", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   color: white;
   text-transform: uppercase;
   line-height: 1.333; }
 
 .title {
   font-size: 50px;
-  font-family: "Lato-Light", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   color: white;
   line-height: 1.2; }
-
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-  display: block; }
 
 .text-left {
   text-align: left; }
@@ -2204,7 +2205,8 @@ caption,
   display: inline-block;
   margin-left: -4px; }
   .memberArea a {
-    font-family: Lato-Bold;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
     font-size: 13px;
     color: #070011;
     padding: 4px 10px 1px; }
@@ -2221,7 +2223,8 @@ caption,
 
 .cityButton,
 .langButton {
-  font-family: "Lato-Bold", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.702);
   font-size: 13px; }
 
@@ -2237,19 +2240,19 @@ caption,
   color: #ff005e;
   font-size: 10px; }
 
-.mainMenu {
+.mainMenu, .footerMenu {
   list-style: none;
   margin-top: 32px; }
-  .mainMenu li {
+  .mainMenu li, .footerMenu li {
     display: inline-block;
     padding: 0 7% 0 7%; }
-    .mainMenu li a {
+    .mainMenu li a, .footerMenu li a {
       font-family: Lato-Bold;
       color: rgba(255, 255, 255, 0.702);
       font-size: 15px; }
-      .mainMenu li a:hover {
+      .mainMenu li a:hover, .footerMenu li a:hover {
         color: yellow; }
-      .mainMenu li a.active {
+      .mainMenu li a.active, .footerMenu li a.active {
         color: white; }
 
 .submitEvent {
@@ -2258,7 +2261,8 @@ caption,
   color: #ff005e;
   border: 1px solid #ff005e;
   padding: 8px 20px 8px 20px;
-  font-family: Lato-Bold;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
   background: transparent;
   outline: none; }
   .submitEvent span {
@@ -2290,7 +2294,8 @@ caption,
     border-bottom: 2px solid white;
     width: 100%;
     padding: 10px 20px 10px 40px;
-    font-family: "Lato-Bold", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.2em;
     color: rgba(255, 255, 255, 0.702); }
@@ -2401,8 +2406,8 @@ caption,
   .appContainer h2 {
     margin: 50px 0 40px 0; }
   .appContainer p, .appContainer a {
-    font-family: "Lato-Bold", sans-serif;
-    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
     width: 320px;
     margin: 0 auto; }
   .appContainer h3 {
@@ -2416,23 +2421,35 @@ caption,
 
 .promoteContainer {
   background: #150022 url("../img/SliderContainerBackground.jpg") top/cover no-repeat;
-  padding: 40px; }
+  padding: 50px; }
   .promoteContainer h2 {
     margin-bottom: 20px; }
   .promoteContainer p, .promoteContainer a {
-    margin-bottom: 30px; }
+    margin-bottom: 50px;
+    font-weight: 700; }
   .promoteContainer button {
     padding: 8px 80px 8px 80px; }
 
-@font-face {
-  font-family: Lato-Light;
-  src: url(../fonts/Lato-Light.ttf); }
-@font-face {
-  font-family: Lato-Regular;
-  src: url(../fonts/Lato-Regular.ttf); }
-@font-face {
-  font-family: Lato-Bold;
-  src: url(../fonts/Lato-Bold.ttf); }
+.footerContainer {
+  padding: 60px 0 10px 0;
+  background-color: #070011; }
+
+.copyrightMenu {
+  list-style: none;
+  margin-top: 70px; }
+  .copyrightMenu li {
+    display: inline-block;
+    padding: 0 2% 0 2%; }
+    .copyrightMenu li a {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.702);
+      font-size: 18px; }
+      .copyrightMenu li a:hover {
+        color: yellow; }
+      .copyrightMenu li a.active {
+        color: white; }
+
 /* Slider */
 .slick-slider {
   position: relative;
