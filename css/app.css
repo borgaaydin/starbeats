@@ -2167,6 +2167,7 @@ caption,
   line-height: 1.333; }
 
 .title {
+  text-transform: none;
   font-size: 50px;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -2232,12 +2233,15 @@ caption,
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 13px; }
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px; }
 
 .cityButton {
   margin-right: 4px; }
 
-.cityButton > span {
+.cityButton .glyphicon {
   font-size: 11px;
   padding: 2px; }
 
@@ -2245,6 +2249,44 @@ caption,
 .langButton > span:last-child {
   color: #ff005e;
   font-size: 10px; }
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  background: white;
+  z-index: 10;
+  border-radius: 2px; }
+  .dropdown ul {
+    text-align: left;
+    list-style: none;
+    padding: 0 16px 0 16px; }
+    .dropdown ul li {
+      font-weight: 700;
+      margin-top: 6px;
+      color: #ff005e; }
+      .dropdown ul li a {
+        color: #070011;
+        font-weight: 700; }
+        .dropdown ul li a:hover, .dropdown ul li a.active {
+          color: #ff005e; }
+  .dropdown:before {
+    content: " ";
+    position: absolute;
+    top: -14px;
+    left: calc(50% - 15px);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white; }
+
+.cityButton:hover .dropdown {
+  display: block; }
+
+.langButton:hover .dropdown {
+  display: block; }
 
 .mainMenu, .footerMenu {
   list-style: none;
@@ -2536,6 +2578,27 @@ caption,
     border: none; }
   .facebookSignIn i {
     font-size: 16px; }
+
+.eventImageContainer {
+  padding: 0;
+  position: relative;
+  overflow: hidden; }
+  .eventImageContainer .blurredBackground {
+    background-size: cover;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    height: 355px; }
+  .eventImageContainer img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    margin: 0 auto; }
 
 /* Slider */
 .slick-slider {

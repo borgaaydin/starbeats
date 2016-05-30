@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbeats</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+<div class="container-fluid headContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <div class="upNavBar hidden-xs">
+                    <a>Get the app</a>
+                    <span>/</span>
+                    <a>How it works</a>
+                    <span>/</span>
+                    <a>Contact Us</a>
+                </div>
+                <div class="memberArea hidden-xs">
+                    <a class="signUpButton">
+                        SIGNUP
+                    </a>
+                    <a class="loginButton">
+                        LOG IN
+                    </a>
+                </div>
+                <a class="cityButton hidden-xs">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    BARCELONA
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a>
+                <a class="langButton hidden-xs">
+                    ENG
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9 col-sm-3">
+                <a href="#">
+                    <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <ul class="mainMenu hidden-xs">
+                    <li>
+                        <a>
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a class="active">
+                            EVENTS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            ARTISTS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 text-right hidden-xs">
+                <button class="submitEvent">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    SUBMIT EVENT
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="eventSingleContainer">
+    <div class="container-fluid eventImageContainer">
+        <div class="blurredBackground" style="background-image:url('img/slider/slider1.jpg')">
+        </div>
+        <img src="img/slider/slider1.jpg" alt="Event Image" class="img-responsive">
+    </div>
+    <div class="container-fluid eventHeaderContainer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="title">
+                        Under Club presents Sam Paganini
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 text-left">
+                    <p class="eventDate">
+                        Saturday March 12th
+                    </p>
+                    <p class="eventTime">
+                        23:59 - 06:00
+                    </p>
+                    <br>
+                    <p class="eventAddress">
+                        Calle tarragona 141, Barcelona, Spain
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container-fluid eventDescriptionContainer">
+
+    </div>
+</div>
+
+<div class="container-fluid moreEventsContainer">
+
+</div>
+
+<div class="container-fluid mapsContainer">
+    <div id="map">
+
+    </div>
+</div>
+
+
+<div class="container-fluid footerContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-9 col-sm-3">
+                <a href="#">
+                    <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <ul class="footerMenu">
+                    <li>
+                        <a class="active">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            EVENTS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            ARTISTS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="copyrightMenu text-center">
+                <li>
+                    <a>
+                        How It Works
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Terms & Conditions
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/maps.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIm1oifthT2AcUJCGDhj6EiIAhzrCxQro&callback=initMap">
+</script>
+</body>
+</html>
