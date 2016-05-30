@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Starbeats</title>
     <link rel="stylesheet" href="./css/app.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="container-fluid headContainer">
@@ -77,7 +79,7 @@
         </div>
         <img src="img/slider/slider1.jpg" alt="Event Image" class="img-responsive">
     </div>
-    <div class="container-fluid eventHeaderContainer">
+    <div class="container-fluid eventHeaderContainerFluid">
         <div class="container text-center">
             <div class="row">
                 <div class="col-xs-12">
@@ -86,8 +88,14 @@
                     </h1>
                 </div>
             </div>
+        </div>
+        <div class="container eventInfoContainer">
             <div class="row">
-                
+                <div class="col-xs-12">
+                    <div class="rating text-center">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 text-left">
@@ -98,20 +106,99 @@
                         23:59 - 06:00
                     </p>
                     <br>
+                    <p class="eventLocation">
+                        at <a href="#">UNDERCLUB</a>
+                    </p>
                     <p class="eventAddress">
                         Calle tarragona 141, Barcelona, Spain
                     </p>
                 </div>
                 <div class="col-xs-12 col-sm-6">
-
+                    <div class="col-xs-6 onlineTicket">
+                        <h4>
+                            ONLINE TICKET
+                        </h4>
+                        <h2>
+                            30.00 EUR
+                        </h2>
+                        <button>
+                            BUY TICKET
+                        </button>
+                        <h4>
+                            AT THE DOORS: <br>
+                            50.00 EUR
+                        </h4>
+                    </div>
+                    <div class="col-xs-6 starbeatsList">
+                        <h4>
+                            STARBEATS LIST
+                        </h4>
+                        <h2>
+                            FREE
+                        </h2>
+                        <button>
+                            ADD ME TO THE LIST
+                        </button>
+                        <h4>
+                            Free Entrance From: <br>
+                            20:00 - 22:00
+                        </h4>
+                    </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-    <div class="container-fluid eventDescriptionContainer">
-
+    <div class="container-fluid eventDetailsContainerFluid">
+        <div class="container eventDetailsContainer">
+            <div class="col-xs-12 col-sm-6 text-left">
+                <h4>ORGANIZER:</h4>
+                <a href="#" class="eventOrganizer">
+                    UNDERClub Barcelona
+                </a>
+                <h4>LINEUP:</h4>
+                <ul class="eventLineup">
+                    <li>
+                        <a href="#">Sam Paganini</a>
+                    </li>
+                    <li>
+                        <a href="#">Zoe</a>
+                    </li>
+                    <li>
+                        <a href="#">Baldo</a>
+                    </li>
+                </ul>
+                <h4>SHARE LINK:</h4>
+                <ul class="eventShareLink">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h4>MUSIC GENRE:</h4>
+                <ul class="eventMusicGenre">
+                    <li>
+                        <a href="#">TECHNO</a>
+                    </li>
+                    <li>
+                        <a href="#">HOUSE</a>
+                    </li>
+                </ul>
+                <h4>DESCRIPTION</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada, massa et cursus convallis, nibh urna pharetra sem, in congue ex neque vitae tortor. Nullam rhoncus suscipit sem ut suscipit. Morbi interdum, ligula quis gravida molestie, enim leo viverra sapien, et aliquet ligula nibh vitae ipsum. Phasellus non ligula eu tellus hendrerit congue id non risus. Aliquam elementum dictum tortor, a lacinia enim iaculis et. Aliquam lobortis leo id ligula scelerisque vulputate. Maecenas eget massa ac risus ultricies condimentum. Vestibulum ultrices efficitur lorem, eget placerat arcu dapibus sit amet. Nunc massa ipsum, pellentesque non commodo et, auctor imperdiet urna.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 

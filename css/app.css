@@ -2098,6 +2098,7 @@ html {
 body {
   background-color: #150022;
   font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-size: 14px;
   color: white; }
 
@@ -2131,7 +2132,7 @@ h4 {
 p, a {
   font-size: 14px;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: white;
   line-height: 1.2; }
 
@@ -2599,6 +2600,51 @@ caption,
     left: 0;
     z-index: 2;
     margin: 0 auto; }
+
+.eventInfoContainer {
+  max-width: 900px;
+  padding-bottom: 40px; }
+  .eventInfoContainer p, .eventInfoContainer a {
+    margin: 0;
+    font-size: 16px; }
+  .eventInfoContainer h4 {
+    font-weight: 400; }
+    .eventInfoContainer h4 .starbeatsList {
+      color: #ff005e; }
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl; }
+
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em; }
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute; }
+
+.eventDetailsContainerFluid {
+  background-color: white;
+  padding: 30px 0 90px 0; }
+
+.eventDetailsContainer {
+  max-width: 900px; }
+  .eventDetailsContainer p, .eventDetailsContainer a {
+    color: #070011;
+    font-weight: 400; }
+  .eventDetailsContainer h4 {
+    color: #070011;
+    font-weight: 400; }
+  .eventDetailsContainer ul {
+    padding: 0; }
+  .eventDetailsContainer a {
+    color: #ff005e; }
+
+.eventMusicGenre li {
+  display: inline-block; }
 
 /* Slider */
 .slick-slider {

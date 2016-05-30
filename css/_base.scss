@@ -15,6 +15,7 @@ html {
 body {
   background-color: $background-color-navy;
   font-family: "Lato", sans-serif;
+  font-weight: 700;
   font-size: 14px;
   color: $text-color;
 }
@@ -58,7 +59,7 @@ h4 {
 p {
   font-size: 14px;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: $text-color;
   line-height: 1.2;
 }
@@ -728,5 +729,68 @@ $eventTextColor: #0b0912;
     left:0;
     z-index: 2;
     margin: 0 auto;
+  }
+}
+
+.eventInfoContainer {
+  max-width: 900px;
+  padding-bottom: 40px;
+
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  h4 {
+    font-weight: 400;
+
+    .starbeatsList {
+      color: $primary-color;
+    }
+  }
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+}
+
+.eventDetailsContainerFluid {
+  background-color: white;
+  padding: 30px 0 90px 0;
+}
+
+.eventDetailsContainer {
+  max-width: 900px;
+
+  p {
+    color: $text-color-dark;
+    font-weight: 400;
+  }
+  h4 {
+    color: $text-color-dark;
+    font-weight: 400;
+  }
+  ul {
+    padding: 0;
+  }
+  a {
+    color: $primary-color;
+  }
+}
+
+.eventMusicGenre {
+  li{
+    display: inline-block;
   }
 }
