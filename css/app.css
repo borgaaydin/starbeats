@@ -2580,6 +2580,9 @@ caption,
   .facebookSignIn i {
     font-size: 16px; }
 
+.eventHeaderContainerFluid .title {
+  margin: 40px 0 20px 0; }
+
 .eventImageContainer {
   padding: 0;
   position: relative;
@@ -2609,12 +2612,24 @@ caption,
     font-size: 16px; }
   .eventInfoContainer h4 {
     font-weight: 400; }
-    .eventInfoContainer h4 .starbeatsList {
+  .eventInfoContainer button {
+    font-size: 12px;
+    padding: 5px 16px 5px 16px;
+    margin-bottom: 10px; }
+  .eventInfoContainer .onlineTicket button {
+    background-color: transparent;
+    border-color: white;
+    color: white; }
+    .eventInfoContainer .onlineTicket button:hover {
+      border-color: #ff005e;
       color: #ff005e; }
+  .eventInfoContainer .starbeatsList h2, .eventInfoContainer .starbeatsList h4, .eventInfoContainer .starbeatsList p, .eventInfoContainer .starbeatsList a {
+    color: #ff005e; }
 
 .rating {
   unicode-bidi: bidi-override;
-  direction: rtl; }
+  direction: rtl;
+  margin-bottom: 20px; }
 
 .rating > span {
   display: inline-block;
@@ -2624,7 +2639,8 @@ caption,
 .rating > span:hover:before,
 .rating > span:hover ~ span:before {
   content: "\2605";
-  position: absolute; }
+  position: absolute;
+  color: #ff005e; }
 
 .eventDetailsContainerFluid {
   background-color: white;
@@ -2645,6 +2661,58 @@ caption,
 
 .eventMusicGenre li {
   display: inline-block; }
+
+.event25Full {
+  padding: 0;
+  background-color: white; }
+  .event25Full h2, .event25Full h4, .event25Full p, .event25Full a {
+    color: #070011; }
+  .event25Full h4, .event25Full p, .event25Full a {
+    font-weight: 400; }
+  .event25Full > a {
+    display: block;
+    height: 200px;
+    overflow: hidden; }
+  .event25Full a {
+    color: #ff005e; }
+  .event25Full p, .event25Full a {
+    font-size: 12px; }
+  .event25Full h2 > span {
+    font-size: 12px;
+    vertical-align: super; }
+  .event25Full img {
+    width: 100%; }
+  .event25Full:hover h3 {
+    color: yellow; }
+  .event25Full h2 {
+    margin: 4px 0; }
+  .event25Full h4 {
+    font-size: 12px;
+    margin: 4px 0; }
+    .event25Full h4 a:hover {
+      color: #ff005e;
+      text-decoration: underline; }
+  .event25Full button {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px; }
+  .event25Full .eventTitle {
+    margin: 10px; }
+  .event25Full .eventDetails {
+    border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  .event25Full .eventDescription div,
+  .event25Full .eventDetails div {
+    padding: 0 10px; }
+  .event25Full .eventDescription {
+    padding: 0 10px; }
+  .event25Full .eventDetails {
+    padding: 12px 10px; }
+  .event25Full .onlineTicket,
+  .event25Full .starbeatsList {
+    padding: 0 10px; }
+  .event25Full .starbeatsList h4:first-child,
+  .event25Full .starbeatsList h2 {
+    color: #ff005e; }
 
 /* Slider */
 .slick-slider {

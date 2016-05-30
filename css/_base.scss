@@ -707,6 +707,12 @@ $eventTextColor: #0b0912;
   }
 }
 
+.eventHeaderContainerFluid {
+  .title {
+    margin: 40px 0 20px 0;
+  }
+}
+
 .eventImageContainer {
   padding: 0;
   position: relative;
@@ -743,16 +749,38 @@ $eventTextColor: #0b0912;
 
   h4 {
     font-weight: 400;
+  }
 
-    .starbeatsList {
-      color: $primary-color;
+  button {
+    font-size: 12px;
+    padding: 5px 16px 5px 16px;
+    margin-bottom: 10px;
+  }
+
+  .onlineTicket {
+    button {
+      background-color: transparent;
+      border-color: white;
+      color: white;
+
+      &:hover {
+        border-color: $primary-color;
+        color: $primary-color;
+      }
     }
   }
+
+  .starbeatsList {
+     h2, h4, p {
+       color: $primary-color;
+     }
+   }
 }
 
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
+  margin-bottom: 20px;
 }
 .rating > span {
   display: inline-block;
@@ -763,6 +791,7 @@ $eventTextColor: #0b0912;
 .rating > span:hover ~ span:before {
   content: "\2605";
   position: absolute;
+  color: $primary-color;
 }
 
 .eventDetailsContainerFluid {
@@ -792,5 +821,98 @@ $eventTextColor: #0b0912;
 .eventMusicGenre {
   li{
     display: inline-block;
+  }
+}
+
+.event25Full {
+  padding: 0 ;
+  background-color: white;
+
+  h2, h4, p {
+    color: $text-color-dark;
+  }
+
+  h4, p {
+    font-weight: 400;
+  }
+
+  >a {
+    display: block;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h2>span {
+    font-size: 12px;
+    vertical-align: super;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    h3 {
+      color: $secondary-color;
+    }
+  }
+
+  h2 {
+    margin: 4px 0;
+  }
+
+  h4 {
+    font-size: 12px;
+    margin: 4px 0;
+    a:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  .eventTitle {
+    margin: 10px;
+  }
+
+  .eventDetails {
+    border-top: 1px solid rgba(0,0,0,0.15);
+
+  }
+
+  .eventDescription div,
+  .eventDetails div{
+    padding: 0 10px;
+  }
+
+  .eventDescription {
+    padding: 0 10px;
+  }
+
+  .eventDetails {
+    padding: 12px 10px;
+  }
+
+  .onlineTicket,
+  .starbeatsList {
+    padding: 0 10px;
+  }
+
+  .starbeatsList h4:first-child,
+  .starbeatsList h2 {
+    color: $primary-color;
   }
 }
