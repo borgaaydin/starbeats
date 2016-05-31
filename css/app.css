@@ -2663,8 +2663,7 @@ caption,
   display: inline-block; }
 
 .event25Full {
-  padding: 0;
-  background-color: white; }
+  padding: 10px; }
   .event25Full h2, .event25Full h4, .event25Full p, .event25Full a {
     color: #070011; }
   .event25Full h4, .event25Full p, .event25Full a {
@@ -2699,12 +2698,14 @@ caption,
   .event25Full .eventTitle {
     margin: 10px; }
   .event25Full .eventDetails {
-    border-top: 1px solid rgba(0, 0, 0, 0.15); }
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: white; }
   .event25Full .eventDescription div,
   .event25Full .eventDetails div {
     padding: 0 10px; }
   .event25Full .eventDescription {
-    padding: 0 10px; }
+    padding: 0 10px;
+    background-color: white; }
   .event25Full .eventDetails {
     padding: 12px 10px; }
   .event25Full .onlineTicket,
@@ -2713,6 +2714,14 @@ caption,
   .event25Full .starbeatsList h4:first-child,
   .event25Full .starbeatsList h2 {
     color: #ff005e; }
+  .event25Full div.eventTags {
+    padding: 0; }
+  .event25Full .tag {
+    color: #150022;
+    background-color: #e7e5e8;
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 12px; }
 
 /* Slider */
 .slick-slider {

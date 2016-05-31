@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbeats</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+
+<div class="container-fluid headContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <div class="upNavBar hidden-xs">
+                    <a>Get the app</a>
+                    <span>/</span>
+                    <a>How it works</a>
+                    <span>/</span>
+                    <a>Contact Us</a>
+                </div>
+                <div class="memberArea hidden-xs">
+                    <a class="signUpButton">
+                        SIGNUP
+                    </a>
+                    <a class="loginButton">
+                        LOG IN
+                    </a>
+                </div>
+                <div class="cityButton hidden-xs">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    <span>BARCELONA</span>
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">Barcelona</a>
+                            </li>
+                            <li>
+                                <a href="#">Madrid</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="langButton hidden-xs">
+                    <span>ENG</span>
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Español</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9 col-sm-3">
+                <a href="#">
+                    <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <ul class="mainMenu hidden-xs">
+                    <li>
+                        <a class="active">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            EVENTS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            ARTISTS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 text-right hidden-xs">
+                <button class="submitEvent">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    SUBMIT EVENT
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form>
+    <div class="row">
+        <div class="col-xs-12 inputFields">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            <input type="email" name="E-mail Address" placeholder="Your E-mail Address" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 inputFields">
+            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+            <input type="password" name="Password" placeholder="Password" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 inputFields">
+            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>   x
+            <input type="password" name="Password" placeholder="Confirm Password" required>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <button>
+                SIGN UP
+            </button>
+        </div>
+    </div>
+</form>
+
+<div class="container-fluid footerContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-9 col-sm-3">
+                <a href="#">
+                    <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <ul class="footerMenu">
+                    <li>
+                        <a class="active">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            EVENTS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            ARTISTS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="copyrightMenu text-center">
+                <li>
+                    <a>
+                        How It Works
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Terms & Conditions
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/maps.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIm1oifthT2AcUJCGDhj6EiIAhzrCxQro&callback=initMap">
+</script>
+</body>
+</html>

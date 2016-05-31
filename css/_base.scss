@@ -825,8 +825,7 @@ $eventTextColor: #0b0912;
 }
 
 .event25Full {
-  padding: 0 ;
-  background-color: white;
+  padding: 10px ;
 
   h2, h4, p {
     color: $text-color-dark;
@@ -890,7 +889,7 @@ $eventTextColor: #0b0912;
 
   .eventDetails {
     border-top: 1px solid rgba(0,0,0,0.15);
-
+    background-color:white;
   }
 
   .eventDescription div,
@@ -900,6 +899,7 @@ $eventTextColor: #0b0912;
 
   .eventDescription {
     padding: 0 10px;
+    background-color:white;
   }
 
   .eventDetails {
@@ -914,5 +914,17 @@ $eventTextColor: #0b0912;
   .starbeatsList h4:first-child,
   .starbeatsList h2 {
     color: $primary-color;
+  }
+
+  div.eventTags {
+    padding: 0;
+  }
+
+  .tag {
+    color: $background-color-navy;
+    background-color: #e7e5e8;
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: 12px;
   }
 }
