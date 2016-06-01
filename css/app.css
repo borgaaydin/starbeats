@@ -2097,14 +2097,20 @@ html {
 
 body {
   background-color: #150022;
-  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png), url(../img/SliderContainerBackground.jpg);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top left, top right, top center;
-  background-size: auto, auto, cover;
+  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top right;
+  background-size: auto, auto;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: white; }
+
+.index {
+  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png), url(../img/SliderContainerBackground.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, top center;
+  background-size: auto, auto, contain; }
 
 h1, h2, h3, h4 {
   font-family: "Lato", sans-serif;
@@ -2422,7 +2428,11 @@ caption,
     .event50 .eventDescription h4 {
       margin: 0;
       color: #0b0912; }
-      .event50 .eventDescription h4 a:hover {
+      .event50 .eventDescription h4 a:first-child {
+        color: #0b0912; }
+        .event50 .eventDescription h4 a:first-child:hover {
+          color: #0b0912; }
+      .event50 .eventDescription h4 a:last-child:hover {
         color: #ff005e;
         text-decoration: underline; }
   .event50:hover h3 {
@@ -2443,7 +2453,11 @@ caption,
     width: 100%; }
   .event25:hover h3 {
     color: yellow; }
-  .event25 h4 a:hover {
+  .event25 h4 a:first-child {
+    color: white; }
+    .event25 h4 a:first-child:hover {
+      color: white; }
+  .event25 h4 a:last-child:hover {
     color: #ff005e;
     text-decoration: underline; }
 

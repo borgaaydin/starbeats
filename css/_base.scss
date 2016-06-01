@@ -14,14 +14,21 @@ html {
 
 body {
   background-color: $background-color-navy;
-  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png) ,url(../img/SliderContainerBackground.jpg);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top left, top right, top center;
-  background-size: auto, auto, cover;
+  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png) ;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, top right;
+  background-size: auto, auto;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: $text-color;
+}
+
+.index {
+  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png), url(../img/SliderContainerBackground.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, top center;
+  background-size: auto, auto, contain;
 }
 
 h1 {
@@ -477,7 +484,15 @@ $eventTextColor: #0b0912;
       margin: 0;
       color: $eventTextColor;
 
-      a:hover {
+      a:first-child {
+        color: $eventTextColor;
+
+        &:hover {
+          color: $eventTextColor;
+        }
+      }
+
+      a:last-child:hover {
         color: $primary-color;
         text-decoration: underline;
       }
@@ -518,7 +533,14 @@ $eventTextColor: #0b0912;
   }
 
   h4 {
-    a:hover {
+    a:first-child {
+      color: $text-color;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+    a:last-child:hover {
       color: $primary-color;
       text-decoration: underline;
     }
