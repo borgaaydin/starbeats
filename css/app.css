@@ -2097,6 +2097,10 @@ html {
 
 body {
   background-color: #150022;
+  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png), url(../img/SliderContainerBackground.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, top center;
+  background-size: auto, auto, cover;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -2186,9 +2190,6 @@ caption,
 
 .headContainer {
   margin-bottom: 40px; }
-
-.sliderContainer {
-  background: #150022 url("../img/SliderContainerBackground.jpg") top/cover no-repeat; }
 
 .upNavBar {
   display: inline-block;
@@ -2540,6 +2541,9 @@ caption,
     top: 12px;
     left: 24px; }
   .inputFields input[type="email"],
+  .inputFields input[type="text"],
+  .inputFields input[type="date"],
+  .inputFields input[type="dropdown"],
   .inputFields input[type="password"] {
     background: none;
     border: none;
@@ -2553,6 +2557,9 @@ caption,
     line-height: 1.2em;
     color: rgba(255, 255, 255, 0.6); }
     .inputFields input[type="email"]:focus,
+    .inputFields input[type="text"]:focus,
+    .inputFields input[type="date"]:focus,
+    .inputFields input[type="dropdown"]:focus,
     .inputFields input[type="password"]:focus {
       border-color: #ff005e;
       color: yellow; }
@@ -2722,6 +2729,14 @@ caption,
     border-radius: 2px;
     padding: 4px 8px;
     font-size: 12px; }
+
+.titleContainer {
+  background-color: black; }
+
+.createEventForm .inputFields input[type="text"],
+.createEventForm .inputFields input[type="date"],
+.createEventForm .inputFields input[type="email"] {
+  padding-left: 0; }
 
 /* Slider */
 .slick-slider {

@@ -92,33 +92,62 @@
     </div>
 </div>
 
-<form>
-    <div class="row">
-        <div class="col-xs-12 inputFields">
-            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-            <input type="email" name="E-mail Address" placeholder="Your E-mail Address" required>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 inputFields">
-            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-            <input type="password" name="Password" placeholder="Password" required>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 inputFields">
-            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>   x
-            <input type="password" name="Password" placeholder="Confirm Password" required>
-        </div>
-    </div>
-    <div class="row">
+<div class="container-fluid titleContainer">
+    <div class="container text-center">
         <div class="col-xs-12">
-            <button>
-                SIGN UP
-            </button>
+            <h1 class="title">
+                Create Your Event
+            </h1>
+            <h3>
+                Insert the details below or import Facebook event to create your event on Starbeats
+            </h3>
         </div>
     </div>
-</form>
+</div>
+
+<div class="container-fluid formContainer">
+    <div class="container">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <form class="createEventForm">
+                <h1>
+                    EVENT
+                </h1>
+                <div class="row">
+                    <div class="col-xs-12 inputFields">
+                        <input type="text" name="Name of the Event" placeholder="Name of the Event" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 inputFields">
+                        <input type="date" name="Date" placeholder="Date" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 inputFields">
+                        <input type="text" name="Artist/Headliner" placeholder="Artist" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 inputFields">
+                        <select name="Genre">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button>
+                            SIGN UP
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid footerContainer">
     <div class="container">

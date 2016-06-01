@@ -14,6 +14,10 @@ html {
 
 body {
   background-color: $background-color-navy;
+  background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png) ,url(../img/SliderContainerBackground.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, top center;
+  background-size: auto, auto, cover;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -129,7 +133,7 @@ caption,
 
 .sliderContainer {
   //background-color: $background-color;
-  background: $background-color-navy url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
+  //background: $background-color-navy url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
 }
 
 .upNavBar{
@@ -656,6 +660,9 @@ $eventTextColor: #0b0912;
     left: 24px;
   }
   input[type="email"],
+  input[type="text"],
+  input[type="date"],
+  input[type="dropdown"],
   input[type="password"]{
     background: none;
     border: none;
@@ -926,5 +933,19 @@ $eventTextColor: #0b0912;
     border-radius: 2px;
     padding: 4px 8px;
     font-size: 12px;
+  }
+}
+
+.titleContainer {
+  background-color: black;
+}
+
+.createEventForm {
+  .inputFields {
+    input[type="text"],
+    input[type="date"],
+    input[type="email"] {
+      padding-left: 0;
+    }
   }
 }
