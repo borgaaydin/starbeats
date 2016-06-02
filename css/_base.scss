@@ -232,13 +232,9 @@ caption,
   margin-right: 4px;
 }
 
-.cityButton .glyphicon {
-   font-size: 11px;
-   padding: 2px;
- }
 
-.cityButton>span:last-child,
-.langButton>span:last-child {
+.cityButton .glyphicon-chevron-down,
+.langButton .glyphicon-chevron-down {
   color: $primary-color;
   font-size: 10px;
 }
