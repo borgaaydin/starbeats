@@ -30,6 +30,7 @@ $(document).ready(function(){
         variableWidth: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 2000,
+        mobileFirst: true
     });
 });
