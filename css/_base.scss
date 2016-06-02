@@ -969,5 +969,38 @@ $eventTextColor: #0b0912;
     input[type="email"] {
       padding-left: 0;
     }
+    select,
+    textarea {
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid white;
+      width: 100%;
+      padding: 10px 20px 10px 0;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.2em;
+      color: $text-color-transparent;
+    }
+
+    textarea {
+      text-align: left;
+    }
+
   }
+}
+
+.artistTitleContainer {
+  max-height: 300px;
+}
+
+.artistTitleDetails span,
+.artistTitleDetails h3,
+.artistTitleDetails a {
+  display: inline-block;
+}
+
+.artistTopTracks {
+
 }

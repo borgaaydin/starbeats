@@ -8,7 +8,6 @@
 
 </head>
 <body>
-
 <div class="container-fluid headContainer">
     <div class="container">
         <div class="row">
@@ -28,35 +27,15 @@
                         LOG IN
                     </a>
                 </div>
-                <div class="cityButton hidden-xs">
+                <a class="cityButton hidden-xs">
                     <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                    <span>BARCELONA</span>
+                    BARCELONA
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                    <div class="dropdown">
-                        <ul>
-                            <li>
-                                <a href="#" class="active">Barcelona</a>
-                            </li>
-                            <li>
-                                <a href="#">Madrid</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="langButton hidden-xs">
-                    <span>ENG</span>
+                </a>
+                <a class="langButton hidden-xs">
+                    ENG
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                    <div class="dropdown">
-                        <ul>
-                            <li>
-                                <a href="#" class="active">English</a>
-                            </li>
-                            <li>
-                                <a href="#">Español</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="row">
@@ -68,12 +47,12 @@
             <div class="col-sm-6">
                 <ul class="mainMenu hidden-xs">
                     <li>
-                        <a class="active">
+                        <a>
                             HOME
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a class="active">
                             EVENTS
                         </a>
                     </li>
@@ -95,90 +74,55 @@
 </div>
 
 <div class="container-fluid titleContainer">
-    <div class="container text-center">
-        <div class="col-xs-12">
+    <div class="container artistTitleContainer text-left">
+        <div class="col-xs-12 col-sm-6">
+            <img src="img/SamPaganini.jpeg" alt="Sam Paganini" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-6 text-left">
             <h1 class="title">
-                Create Your Event
+                Sam Paganini
             </h1>
-            <h3>
-                Insert the details below or import Facebook event to create your event on Starbeats
-            </h3>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid formContainer">
-    <div class="container">
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-            <div class="row">
-                <div class="col-xs-12">
-                    <button class="facebookSignIn">
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        IMPORT FACEBOOK EVENT
-                    </button>
-                </div>
+            <div class="rating text-left">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
             </div>
-            <form class="createEventForm">
-                <h1>
-                    EVENT
-                </h1>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Name of the Event" placeholder="Name of the Event" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="date" name="Date" placeholder="Date" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Artist/Headliner" placeholder="Artist/Headliner" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="Ticket price at the door" placeholder="Ticket price at the door" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="Ticket price online" placeholder="Ticket price online" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <select name="Genre">
-                            <option value="" disabled selected>Genre</option>
-                            <option value="Techno">Techno</option>
-                            <option value="House">House</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <textarea placeholder="Description" required></textarea>
-                    </div>
-                </div>
-
-                <h1>
-                    VENUE
-                </h1>
-
-
-                <div class="row">
-                    <div class="col-xs-12">
-                        <button>
-                            SIGN UP
-                        </button>
-                    </div>
-                </div>
-            </form>
+            <div class="artistTitleDetails">
+                <span>
+                    Italy
+                </span>
+                <h3>
+                    GENRE
+                </h3>
+                <a href="#">TECHNO</a>
+            </div>
         </div>
     </div>
 </div>
+
+<div class="container-fluid artistSingleContainer">
+    <div class="container">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-6">
+            <h1>TOP 5 TRACKS</h1>
+            <ol class="artistTopTracks">
+                <li><a href="#">RAVE</a></li>
+                <li><a href="#">DUSTY</a></li>
+                <li><a href="#">ANOTHER CHANCE</a></li>
+                <li><a href="#">ANOTHER CHANCE</a></li>
+                <li><a href="#">ANOTHER CHANCE</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid moreEventsContainer">
+
+</div>
+
+<div class="container-fluid mapsContainer">
+    <div id="map">
+
+    </div>
+</div>
+
 
 <div class="container-fluid footerContainer">
     <div class="container">
@@ -236,6 +180,11 @@
 </div>
 
 <script src="js/jquery.min.js"></script>
-
+<script src="js/slick.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/maps.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIm1oifthT2AcUJCGDhj6EiIAhzrCxQro&callback=initMap">
+</script>
 </body>
 </html>

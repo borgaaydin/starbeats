@@ -2751,6 +2751,29 @@ caption,
 .createEventForm .inputFields input[type="date"],
 .createEventForm .inputFields input[type="email"] {
   padding-left: 0; }
+.createEventForm .inputFields select,
+.createEventForm .inputFields textarea {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding: 10px 20px 10px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: rgba(255, 255, 255, 0.6); }
+.createEventForm .inputFields textarea {
+  text-align: left; }
+
+.artistTitleContainer {
+  max-height: 300px; }
+
+.artistTitleDetails span,
+.artistTitleDetails h3,
+.artistTitleDetails a {
+  display: inline-block; }
 
 /* Slider */
 .slick-slider {
