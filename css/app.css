@@ -2092,6 +2092,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden; }
 
+::-webkit-scrollbar {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background: #ff005e;
+  opacity: 0.77; }
+
 html {
   height: 100%; }
 
@@ -2784,6 +2791,9 @@ ol.artistTopTracks {
   ol.artistTopTracks:last-child {
     border-bottom: none; }
 
+.artistSliderContainer {
+  padding: 0; }
+
 .artistSingleContainer h3 a {
   font-size: 16px;
   color: yellow; }
@@ -2923,7 +2933,7 @@ ol.artistTopTracks {
     -moz-osx-font-smoothing: grayscale; }
 
 .slick-prev {
-  left: calc(50% - 505px);
+  left: calc(50% - 512px);
   top: calc(100% - 16px); }
   [dir="rtl"] .slick-prev {
     left: auto;
@@ -2934,7 +2944,7 @@ ol.artistTopTracks {
       content: ""; }
 
 .slick-next {
-  right: calc(50% - 505px);
+  right: calc(50% - 512px);
   top: 16px; }
   [dir="rtl"] .slick-next {
     left: -25px;

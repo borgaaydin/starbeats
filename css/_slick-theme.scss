@@ -106,7 +106,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev {
-    left: calc(50% - 505px);
+    left: calc(50% - 512px);
     top: calc(100% - 16px);
 
     [dir="rtl"] & {
@@ -120,9 +120,8 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
-
 .slick-next {
-    right: calc(50% - 505px);
+    right: calc(50% - 512px);
     top: 16px;
 
 

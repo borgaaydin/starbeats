@@ -8,6 +8,15 @@ $background-color-navy-transparent: rgba(21, 0, 34, 0.60);
 $background-color-dark: rgb(7, 0, 17);
 $background-color-dark-transparent : rgba(0,0,0,0.502);
 
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  opacity: 0.77;
+}
+
 html {
   height: 100%;
 }
@@ -1012,6 +1021,10 @@ ol.artistTopTracks {
   &:last-child {
     border-bottom: none;
   }
+}
+
+.artistSliderContainer {
+  padding: 0;
 }
 
 .artistSingleContainer {
