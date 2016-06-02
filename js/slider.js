@@ -17,13 +17,16 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: centerPaddingCalc+'px',
+        variableWidth: true,
         arrows: true
     });
 
-//        $(window).resize(function() {
-//            delay(function(){
-//                location.reload();
-//            }, 500);
-//        });
+    $('.artistPhotosSlider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+    });
 });

@@ -2768,12 +2768,31 @@ caption,
   text-align: left; }
 
 .artistTitleContainer {
-  max-height: 300px; }
+  max-height: 250px;
+  overflow: hidden; }
 
 .artistTitleDetails span,
-.artistTitleDetails h3,
+.artistTitleDetails h4,
 .artistTitleDetails a {
   display: inline-block; }
+
+ol.artistTopTracks {
+  padding-left: 18px; }
+  ol.artistTopTracks li {
+    padding: 12px 30px;
+    border-bottom: 1px solid rgba(148, 116, 130, 0.29); }
+  ol.artistTopTracks:last-child {
+    border-bottom: none; }
+
+.artistSingleContainer h3 a {
+  font-size: 16px;
+  color: yellow; }
+  .artistSingleContainer h3 a:hover {
+    color: #ff005e; }
+.artistSingleContainer ul {
+  font-size: 14px;
+  list-style: none;
+  padding: 0; }
 
 /* Slider */
 .slick-slider {

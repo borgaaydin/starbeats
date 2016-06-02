@@ -992,15 +992,43 @@ $eventTextColor: #0b0912;
 }
 
 .artistTitleContainer {
-  max-height: 300px;
+  max-height: 250px;
+  overflow: hidden;
 }
 
 .artistTitleDetails span,
-.artistTitleDetails h3,
+.artistTitleDetails h4,
 .artistTitleDetails a {
   display: inline-block;
 }
 
-.artistTopTracks {
+ol.artistTopTracks {
+  padding-left: 18px;
 
+  li {
+    padding: 12px 30px;
+    border-bottom: 1px solid rgba(148, 116, 130, 0.29);
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.artistSingleContainer {
+  h3 {
+    a {
+      font-size: 16px;
+      color: $secondary-color;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  ul {
+    font-size: 14px;
+    list-style: none;
+    padding: 0;
+  }
 }
