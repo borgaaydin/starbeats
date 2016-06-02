@@ -2306,7 +2306,8 @@ caption,
     display: inline-block;
     padding: 0 7% 0 7%; }
     .mainMenu li a, .footerMenu li a {
-      font-family: Lato-Bold;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
       color: rgba(255, 255, 255, 0.6);
       font-size: 15px; }
       .mainMenu li a:hover, .footerMenu li a:hover {

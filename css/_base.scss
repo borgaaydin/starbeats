@@ -302,7 +302,8 @@ caption,
     padding: 0 7% 0 7%;
 
     a {
-      font-family: Lato-Bold;
+      font-family:"Lato", sans-serif;
+      font-weight: 700;
       color: $text-color-transparent;
       font-size: 15px;
       &:hover {
