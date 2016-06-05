@@ -21,6 +21,19 @@ $(document).ready(function(){
         arrows: true
     });
 
+    $('.artistListSlider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        mobileFirst: true
+    });
+
     $('.artistPhotosSlider').slick({
         dots: true,
         infinite: true,

@@ -2801,6 +2801,29 @@ ol.artistTopTracks {
   list-style: none;
   padding: 0; }
 
+.alphabeticList {
+  list-style: none;
+  float: right; }
+  .alphabeticList li {
+    display: block; }
+
+.artistList {
+  list-style: none; }
+  .artistList li a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700; }
+    .artistList li a:hover {
+      color: #ff005e; }
+
+.artistListSlider {
+  position: relative; }
+  .artistListSlider .title {
+    top: 100px;
+    position: absolute;
+    background-color: black;
+    padding: 6px 6px 6px 60px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
