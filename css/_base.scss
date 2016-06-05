@@ -681,7 +681,7 @@ $eventTextColor: #0b0912;
 .inputFields {
   margin: 20px 0 10px 0;
 
-  span {
+  span, >i {
     position: absolute;
     color: $text-color-transparent;
     font-size: 16px;
@@ -689,6 +689,7 @@ $eventTextColor: #0b0912;
     left: 24px;
   }
   input[type="email"],
+  input[type="url"],
   input[type="text"],
   input[type="date"],
   input[type="dropdown"],
@@ -1079,6 +1080,7 @@ ol.artistTopTracks {
 .artistList {
   list-style: none;
   padding: 0;
+
   li {
     a {
       color: white;
@@ -1097,7 +1099,7 @@ ol.artistTopTracks {
   .title {
     top: 100px;
     position: absolute;
-    background-color: black ;
+    background-color: black;
     padding: 6px 6px 6px 60px;
   }
 }
@@ -1119,5 +1121,25 @@ ol.artistTopTracks {
     &:hover {
 
     }
+  }
+}
+
+.imageArtistGallery {
+  margin:0;
+  padding: 0;
+  cursor: pointer;
+
+  div {
+    border: 2px dashed #43334e;
+    padding: 40px 10px;
+    margin: 6px;
+  }
+
+  .fa-plus {
+    font-size: 30px;
+    color: $primary-color;
+  }
+  &:hover .fa-plus {
+    color: $secondary-color;
   }
 }

@@ -2553,13 +2553,14 @@ caption,
 
 .inputFields {
   margin: 20px 0 10px 0; }
-  .inputFields span {
+  .inputFields span, .inputFields > i {
     position: absolute;
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     top: 12px;
     left: 24px; }
   .inputFields input[type="email"],
+  .inputFields input[type="url"],
   .inputFields input[type="text"],
   .inputFields input[type="date"],
   .inputFields input[type="dropdown"],
@@ -2576,6 +2577,7 @@ caption,
     line-height: 1.2em;
     color: rgba(255, 255, 255, 0.6); }
     .inputFields input[type="email"]:focus,
+    .inputFields input[type="url"]:focus,
     .inputFields input[type="text"]:focus,
     .inputFields input[type="date"]:focus,
     .inputFields input[type="dropdown"]:focus,
@@ -2824,7 +2826,8 @@ ol.artistTopTracks {
     display: block; }
 
 .artistList {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
   .artistList li a {
     color: white;
     font-size: 14px;
@@ -2851,6 +2854,20 @@ ol.artistTopTracks {
     cursor: pointer;
     font-size: 12px;
     padding: 8px; }
+
+.imageArtistGallery {
+  margin: 0;
+  padding: 0;
+  cursor: pointer; }
+  .imageArtistGallery div {
+    border: 2px dashed #43334e;
+    padding: 40px 10px;
+    margin: 6px; }
+  .imageArtistGallery .fa-plus {
+    font-size: 30px;
+    color: #ff005e; }
+  .imageArtistGallery:hover .fa-plus {
+    color: yellow; }
 
 /* Slider */
 .slick-slider {
