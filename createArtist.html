@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbeats</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container-fluid headContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-right">
+                <div class="upNavBar hidden-xs">
+                    <a>Get the app</a>
+                    <span>/</span>
+                    <a>How it works</a>
+                    <span>/</span>
+                    <a>Contact Us</a>
+                </div>
+                <div class="memberArea hidden-xs">
+                    <a class="signUpButton">
+                        SIGNUP
+                    </a>
+                    <a class="loginButton">
+                        LOG IN
+                    </a>
+                </div>
+                <div class="cityButton hidden-xs">
+                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    <span>BARCELONA</span>
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">Barcelona</a>
+                            </li>
+                            <li>
+                                <a href="#">Madrid</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="langButton hidden-xs">
+                    <span>ENG</span>
+                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Español</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-9 col-sm-3">
+                <a href="#">
+                    <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <ul class="mainMenu hidden-xs">
+                    <li>
+                        <a class="active">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            EVENTS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            ARTISTS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3 text-right hidden-xs">
+                <button class="submitEvent">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    SUBMIT EVENT
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid titleContainer">
+    <div class="container text-center">
+        <div class="col-xs-12">
+            <h1 class="title">
+                Create an Artist Profile
+            </h1>
+            <h3>
+                Your artist profile on Starbeats is only few clicks ahead. Insert the details below to create your profile
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid formContainer">
+    <div class="container">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="facebookSignIn">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        IMPORT FACEBOOK EVENT
+                    </button>
+                </div>
+            </div>
+            <form class="createEventForm">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-12 inputFields">
+                            <div class="imagePlaceholder text-center">
+                                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                <button>
+                                    UPLOAD FLYER
+                                </button>
+                            </div>
+                            <p>Image should be at least 940px and 350px height</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-xs-12 inputFields">
+                            <input type="text" name="Name of the Event" placeholder="Name of the Event" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 inputFields">
+                            <input type="date" name="Date" placeholder="Date" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 inputFields">
+                            <input type="text" name="Start Time" placeholder="Start Time (hh:mm)" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 inputFields">
+                            <input type="text" name="End Time" placeholder="End Time (hh:mm)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 inputFields">
+                            <input type="text" name="Artist/Headliner" placeholder="Artist/Headliner" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 inputFields">
+                            <input type="text" name="Ticket price at the door" placeholder="Ticket price at the door" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 inputFields">
+                            <input type="text" name="Ticket price online" placeholder="Ticket price online" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 inputFields">
+                            <select name="Genre">
+                                <option value="" disabled selected>Genre</option>
+                                <option value="Techno">Techno</option>
+                                <option value="House">House</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 inputFields">
+                            <textarea placeholder="Description" required></textarea>
+                        </div>
+                    </div>
+
+                    <h1>
+                        VENUE
+                    </h1>
+                    <div class="row">
+                        <div class="col-xs-12 inputFields">
+                            <select name="Venue Name" required>
+                                <option value="" disabled selected>Venue Name</option>
+                                <option value="Techno">UnderClub</option>
+                                <option value="House">House</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <button>
+                                SIGN UP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid footerContainer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-9 col-sm-3">
+                <a href="#">
+                    <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-6">
+                <ul class="footerMenu">
+                    <li>
+                        <a class="active">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            EVENTS
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            ARTISTS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="copyrightMenu text-center">
+                <li>
+                    <a>
+                        How It Works
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Terms & Conditions
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Privacy Policy
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+
+</body>
+</html>

@@ -735,12 +735,16 @@ $eventTextColor: #0b0912;
   .fa-picture-o {
     font-size: 80px;
     padding-bottom: 10px;
-    color: #595959;
+    color: rgba(89, 89, 89, 0.77);
   }
 
   button {
     padding: 6px;
     margin: 0 auto;
+  }
+
+  p {
+    color: $text-color-transparent;
   }
 }
 
@@ -1074,6 +1078,7 @@ ol.artistTopTracks {
 
 .artistList {
   list-style: none;
+  padding: 0;
   li {
     a {
       color: white;

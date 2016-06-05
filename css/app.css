@@ -2600,10 +2600,12 @@ caption,
   .imagePlaceholder .fa-picture-o {
     font-size: 80px;
     padding-bottom: 10px;
-    color: #595959; }
+    color: rgba(89, 89, 89, 0.77); }
   .imagePlaceholder button {
     padding: 6px;
     margin: 0 auto; }
+  .imagePlaceholder p, .imagePlaceholder a {
+    color: rgba(255, 255, 255, 0.6); }
 
 .facebookSignIn {
   width: 100%;
