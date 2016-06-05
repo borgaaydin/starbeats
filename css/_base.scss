@@ -76,6 +76,11 @@ h4 {
   }
 }
 
+
+.error {
+  color: $primary-color;
+}
+
 p {
   font-size: 14px;
   font-family: "Lato", sans-serif;
@@ -1141,8 +1146,18 @@ ol.artistTopTracks {
   }
 }
 
-.createEventForm button,
-.createArtistForm button {
+#createEventForm button,
+#createArtistForm button {
   margin-bottom: 60px;
 }
 
+#successModal {
+
+  .modal-content {
+    padding: 50px 30px 80px 30px;
+    background-color: $background-color-navy;
+    background-image: url(../img/FlareTopLeft.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+}
