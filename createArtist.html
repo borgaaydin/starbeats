@@ -115,7 +115,7 @@
                     <div class="col-xs-12 inputFields">
                         <div class="imagePlaceholder text-center">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <button>
+                            <button type="button">
                                 UPLOAD FLYER
                             </button>
                         </div>
@@ -274,7 +274,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <button id="createArtistButton">
+                        <button type="submit" id="createArtistButton">
                             FINISH AND PUBLISH
                         </button>
                     </div>
@@ -367,7 +367,7 @@
         });
 
         $( "#createArtistButton" ).click(function(){
-            form.validate();
+//            form.validate();
             if(form.valid()) {
                 $('#successModal').modal('show');
             }
