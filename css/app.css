@@ -2170,7 +2170,8 @@ button {
   background-color: #ff005e;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  color: white; }
+  color: white;
+  font-size: 12px; }
   button:hover {
     color: #ff005e;
     background-color: transparent; }
@@ -2590,6 +2591,19 @@ caption,
     color: yellow; }
   .inputFields:focus span {
     color: yellow; }
+
+.imagePlaceholder {
+  background-color: #43334e;
+  padding: 40px 0; }
+  .imagePlaceholder * {
+    display: block; }
+  .imagePlaceholder .fa-picture-o {
+    font-size: 80px;
+    padding-bottom: 10px;
+    color: #595959; }
+  .imagePlaceholder button {
+    padding: 6px;
+    margin: 0 auto; }
 
 .facebookSignIn {
   width: 100%;
