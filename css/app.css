@@ -2171,7 +2171,8 @@ button {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: white;
-  font-size: 12px; }
+  font-size: 12px;
+  padding: 10px 30px; }
   button:hover {
     color: #ff005e;
     background-color: transparent; }
@@ -2769,12 +2770,12 @@ caption,
 .titleContainer {
   background-color: black; }
 
-.createEventForm .inputFields input[type="text"],
-.createEventForm .inputFields input[type="date"],
-.createEventForm .inputFields input[type="email"] {
+.inputFields input[type="text"],
+.inputFields input[type="date"],
+.inputFields input[type="email"] {
   padding-left: 0; }
-.createEventForm .inputFields select,
-.createEventForm .inputFields textarea {
+.inputFields select,
+.inputFields textarea {
   background: none;
   border: none;
   outline: none;
@@ -2786,7 +2787,7 @@ caption,
   font-size: 16px;
   line-height: 1.2em;
   color: rgba(255, 255, 255, 0.6); }
-.createEventForm .inputFields textarea {
+.inputFields textarea {
   text-align: left; }
 
 .artistTitleContainer {
@@ -2868,6 +2869,10 @@ ol.artistTopTracks {
     color: #ff005e; }
   .imageArtistGallery:hover .fa-plus {
     color: yellow; }
+
+.createEventForm button,
+.createArtistForm button {
+  margin-bottom: 60px; }
 
 /* Slider */
 .slick-slider {

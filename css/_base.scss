@@ -106,6 +106,7 @@ button {
   font-weight: 700;
   color: $text-color;
   font-size: 12px;
+  padding: 10px 30px;
 
   &:hover {
     color: $primary-color;
@@ -993,32 +994,28 @@ $eventTextColor: #0b0912;
   background-color: black;
 }
 
-.createEventForm {
-  .inputFields {
-    input[type="text"],
-    input[type="date"],
-    input[type="email"] {
-      padding-left: 0;
-    }
-    select,
-    textarea {
-      background: none;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid white;
-      width: 100%;
-      padding: 10px 20px 10px 0;
-      font-family: "Lato", sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.2em;
-      color: $text-color-transparent;
-    }
-
-    textarea {
-      text-align: left;
-    }
-
+.inputFields {
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    padding-left: 0;
+  }
+  select,
+  textarea {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    padding: 10px 20px 10px 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2em;
+    color: $text-color-transparent;
+  }
+  textarea {
+    text-align: left;
   }
 }
 
@@ -1143,3 +1140,9 @@ ol.artistTopTracks {
     color: $secondary-color;
   }
 }
+
+.createEventForm button,
+.createArtistForm button {
+  margin-bottom: 60px;
+}
+
