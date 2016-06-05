@@ -2824,6 +2824,18 @@ ol.artistTopTracks {
     background-color: black;
     padding: 6px 6px 6px 60px; }
 
+.registerArtist {
+  position: fixed;
+  right: 16px;
+  background-color: #ff005e;
+  border-radius: 4px;
+  padding: 20px 12px 10px 12px;
+  background: url("../img/registerArtistBack.png"); }
+  .registerArtist button {
+    cursor: pointer;
+    font-size: 12px;
+    padding: 8px; }
+
 /* Slider */
 .slick-slider {
   position: relative;

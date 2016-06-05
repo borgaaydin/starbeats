@@ -68,7 +68,7 @@
             <div class="col-sm-6">
                 <ul class="mainMenu hidden-xs">
                     <li>
-                        <a class="active">
+                        <a>
                             HOME
                         </a>
                     </li>
@@ -78,7 +78,7 @@
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a class="active">
                             ARTISTS
                         </a>
                     </li>
@@ -122,6 +122,22 @@
 
 <div class="container-fluid artistIndexContainer" ng-controller="ArtistSearchController">
     <div class="container">
+        <div class="row">
+            <div class="text-center registerArtist">
+                <h2>
+                    Artist ?
+                </h2>
+                <p>
+                    Setup your profile<br>
+                    and grow <br>
+                    your audience <br>
+                    now !
+                </p>
+                <button>
+                    REGISTER FOR FREE
+                </button>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xs-2 col-sm-2">
                 <ul class="alphabeticList">
@@ -215,10 +231,6 @@
 
 <script src="js/slick.min.js"></script>
 <script src="js/slider.js"></script>
-<script src="js/maps.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIm1oifthT2AcUJCGDhj6EiIAhzrCxQro&callback=initMap">
-</script>
 
 </body>
 </html>

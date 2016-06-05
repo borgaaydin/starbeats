@@ -1076,3 +1076,23 @@ ol.artistTopTracks {
     padding: 6px 6px 6px 60px;
   }
 }
+
+.registerArtist {
+  position: fixed;
+  right: 16px;
+  background-color: $primary-color ;
+  border-radius: 4px;
+  padding: 20px 12px 10px 12px;
+  background: url("../img/registerArtistBack.png");
+
+
+  button {
+    cursor: pointer;
+    font-size: 12px;
+    padding: 8px;
+
+    &:hover {
+
+    }
+  }
+}

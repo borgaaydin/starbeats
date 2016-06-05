@@ -28,7 +28,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
-        arrows: false,
+        arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
         mobileFirst: true
