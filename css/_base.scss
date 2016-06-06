@@ -77,8 +77,21 @@ h4 {
 }
 
 
-.error {
+.error,
+.field-validation-error {
   color: $primary-color;
+}
+
+.field-validation-error {
+  margin-left: 16px;
+}
+
+.validation-summary-errors {
+  text-align: center;
+}
+
+.validation-summary-errors ul {
+  padding: 0;
 }
 
 p {
@@ -1000,11 +1013,6 @@ $eventTextColor: #0b0912;
 }
 
 .inputFields {
-  input[type="text"],
-  input[type="date"],
-  input[type="email"] {
-    padding-left: 0;
-  }
   select,
   textarea {
     background: none;
@@ -1143,6 +1151,22 @@ ol.artistTopTracks {
   }
   &:hover .fa-plus {
     color: $secondary-color;
+  }
+}
+
+#createEventForm {
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    padding-left: 0;
+  }
+}
+
+#createArtistForm {
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    padding-left: 0;
   }
 }
 

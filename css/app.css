@@ -2268,8 +2268,18 @@ h4 {
   .link:hover {
     color: yellow; }
 
-.error {
+.error,
+.field-validation-error {
   color: #ff005e; }
+
+.field-validation-error {
+  margin-left: 16px; }
+
+.validation-summary-errors {
+  text-align: center; }
+
+.validation-summary-errors ul {
+  padding: 0; }
 
 p, a {
   font-size: 14px;
@@ -2895,10 +2905,6 @@ caption,
 .titleContainer {
   background-color: black; }
 
-.inputFields input[type="text"],
-.inputFields input[type="date"],
-.inputFields input[type="email"] {
-  padding-left: 0; }
 .inputFields select,
 .inputFields textarea {
   background: none;
@@ -2994,6 +3000,16 @@ ol.artistTopTracks {
     color: #ff005e; }
   .imageArtistGallery:hover .fa-plus {
     color: yellow; }
+
+#createEventForm input[type="text"],
+#createEventForm input[type="date"],
+#createEventForm input[type="email"] {
+  padding-left: 0; }
+
+#createArtistForm input[type="text"],
+#createArtistForm input[type="date"],
+#createArtistForm input[type="email"] {
+  padding-left: 0; }
 
 #createEventForm button,
 #createArtistForm button {
