@@ -746,6 +746,7 @@ $eventTextColor: #0b0912;
 }
 
 .imagePlaceholder {
+  position: relative;
   background-color: #43334e;
   padding: 20px 0;
   * {
@@ -1188,4 +1189,8 @@ ol.artistTopTracks {
     background-repeat: no-repeat;
     background-position: top left;
   }
+}
+
+.imagePlaceholder input[type="file"] {
+  margin: 0 auto;
 }
