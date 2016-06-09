@@ -747,7 +747,7 @@ $eventTextColor: #0b0912;
 
 .imagePlaceholder {
   background-color: #43334e;
-  padding: 40px 0;
+  padding: 20px 0;
   * {
     display: block;
   }
@@ -1030,6 +1030,10 @@ $eventTextColor: #0b0912;
   textarea {
     text-align: left;
   }
+}
+
+.selectContainer {
+
 }
 
 .artistTitleContainer {

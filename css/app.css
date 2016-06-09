@@ -2732,7 +2732,7 @@ caption,
 
 .imagePlaceholder {
   background-color: #43334e;
-  padding: 40px 0; }
+  padding: 20px 0; }
   .imagePlaceholder * {
     display: block; }
   .imagePlaceholder .fa-picture-o {

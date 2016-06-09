@@ -3,4 +3,7 @@
  */
 'use strict';
 
-var starbeats = angular.module('starbeats', []);
+var starbeats = angular.module('starbeats', [])
+    .run(function ($rootScope) {
+        $rootScope.API = "http://localhost/";
+    });
