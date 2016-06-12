@@ -110,14 +110,14 @@
 <div class="container-fluid formContainer">
     <div class="container">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-            <div class="row">
-                <div class="col-xs-12">
-                    <button class="facebookSignIn">
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        IMPORT FACEBOOK EVENT
-                    </button>
-                </div>
-            </div>
+            <!--<div class="row">-->
+                <!--<div class="col-xs-12">-->
+                    <!--<button class="facebookSignIn">-->
+                        <!--<i class="fa fa-facebook-official" aria-hidden="true"></i>-->
+                        <!--IMPORT FACEBOOK EVENT-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</div>-->
             <form id="createEventForm">
                 <div class="row">
                     <div class="col-xs-12 inputFields">
@@ -166,13 +166,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="Ticket price online" placeholder="Ticket price online" required>
-                    </div>
-                </div>
-                <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <select name="Genre">
+                        <select name="Genre" required>
                             <option value="" disabled selected>Genre</option>
                             <option value="Techno">Techno</option>
                             <option value="House">House</option>

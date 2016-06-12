@@ -114,20 +114,28 @@
                 <div class="row">
                     <div class="col-xs-12 inputFields">
                         <div class="imagePlaceholder text-center">
-
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <button ngf-select ng-model="picFile" accept="image/*" ng-click="reveal=!reveal">
+                            <button ngf-select ng-model="picFile" accept="image/*">
                                 UPLOAD FLYER
                             </button>
-                            <div ng-show="reveal" ngf-drop ng-model="picFile" ngf-pattern="image/*"
+                            <div ng-show="picFile" ngf-drop ng-model="picFile" ngf-pattern="image/*"
                                  class="cropArea" style="position:absolute; top: 0; overflow: hidden; height: 100%; width: 100%;">
-                                <img-crop image="picFile  | ngfDataUrl"
+                                <img-crop image="picFile  | ngfDataUrl" ng-hide="cropped"
                                           result-image="croppedDataUrl" ng-init="croppedDataUrl=''"
-                                          area-type="rectangle" aspect-ratio="2.69">
+                                          area-type="rectangle" aspect-ratio="2.695" result-image-size="940">
                                 </img-crop>
+                                <div ng-show="cropped">
+                                    <img style="width: 100%;" ng-src="{{croppedDataUrl}}" />
+                                </div>
                             </div>
-
                         </div>
+
+                        <button ng-show="picFile" accept="image/*" ng-click="cropped=!cropped">
+                            CROP
+                        </button>
+                        <button ng-click="picFile = null; cropped = null;" ng-show="picFile">
+                            REMOVE
+                        </button>
                         <p>Image should be at least 940px and 350px height</p>
                     </div>
                 </div>
