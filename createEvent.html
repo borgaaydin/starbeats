@@ -123,7 +123,7 @@
                     <!--</button>-->
                 <!--</div>-->
             <!--</div>-->
-            <form id="createEventForm">
+            <form id="createEventForm" name="createEventForm">
                 <div class="row">
                     <div class="col-xs-12 inputFields">
                         <div class="imagePlaceholder text-center">
@@ -160,13 +160,13 @@
 
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <input type="text" name="Name of the Event" placeholder="Name of the Event" required>
+                        <input type="text" name="Name of the Event" ng-model="event.name" placeholder="Name of the Event" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6 inputFields">
                         <div class='date' >
-                            <input type='text' name="date" class="" id='datetimepicker' required>
+                            <input type='text' name="date" ng-model="event.date" class="" id='datetimepicker' required>
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
 
@@ -176,27 +176,27 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-6 inputFields">
-                        <input type="text" name="Start Time" placeholder="Start Time (hh:mm)" required>
+                        <input type="text" name="Start Time" ng-model="event.start_time" placeholder="Start Time (hh:mm)" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6 inputFields">
-                        <input type="text" name="End Time" placeholder="End Time (hh:mm)">
+                        <input type="text" name="End Time" ng-model="event.end_time" placeholder="End Time (hh:mm)">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <input type="text" name="Artist/Headliner" placeholder="Artist/Headliner" required>
+                        <input type="text" name="Artist/Headliner" ng-model="event.artist" placeholder="Artist/Headliner" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6 inputFields">
-                        <input type="text" name="Ticket price at the door" placeholder="Ticket price at the door" required>
+                        <input type="text" name="Ticket price at the door" ng-model="event.price" placeholder="Ticket price at the door" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <select name="Genre" required>
+                        <select name="Genre" ng-model="event.genre" required>
                             <option value="" disabled selected>Genre</option>
                             <option value="Techno">Techno</option>
                             <option value="House">House</option>
@@ -206,7 +206,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <textarea placeholder="Description" required></textarea>
+                        <textarea placeholder="Description" ng-model="event.description" required></textarea>
                     </div>
                 </div>
 
@@ -215,9 +215,9 @@
                 </h1>
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <select name="Venue Name" required>
+                        <select name="Venue Name" ng-model="event.venue" required>
                             <option value="" disabled selected>Venue Name</option>
-                            <option value="Techno">UnderClub</option>
+                            <option value="UnderClub">UnderClub</option>
                             <option value="House">House</option>
                         </select>
                     </div>
@@ -226,7 +226,7 @@
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <button type="submit" id="createEventButton">
+                        <button type="submit" id="createEventButton"  ng-click="createEvent(event, createEventForm)">
                             CREATE EVENT
                         </button>
                     </div>

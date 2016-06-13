@@ -5,7 +5,7 @@
 starbeats.controller('CreateEventController',
     function CreateEventController($scope, $http, $rootScope, CreateEventService, Upload){
         $scope.createEvent = function(artist, createEventForm) {
-            console.log(event);
+            console.log($scope.event);
 
             if(createEventForm.$valid) {
                 CreateEventService.createEvent(event).then(function (response) {
