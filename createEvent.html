@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Starbeats</title>
+
+    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet"
+          href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css">
+
     <link rel="stylesheet" href="./css/app.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
@@ -160,7 +165,13 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-6 inputFields">
-                        <input type="date" name="Date" placeholder="Date" required>
+                        <div class='date' >
+                            <input type='text' name="date" class="" id='datetimepicker' required>
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+
+                        <!--<input type="date" name="Date" placeholder="Date" required>-->
+
                     </div>
                 </div>
                 <div class="row">
@@ -300,6 +311,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/modal.js"></script>
+
 <script>
     $( document ).ready(function() {
         var form = $("#createEventForm");
@@ -320,6 +332,21 @@
 <script src="js/app.js"></script>
 <script src="js/services/CreateEventService.js"></script>
 <script src="js/controllers/CreateEventController.js"></script>
+
+<script src="js/transition.js"></script>
+<script src="js/collapse.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+//        var tomorrow = new Date(today.getTime() + 24 * 60 * 60 * 1000);
+        $('#datetimepicker').datetimepicker({
+            format: 'DD/MM/YYYY',
+            minDate: moment().add(1,'days'),
+            debug: true
+        });
+    });
+</script>
 
 </body>
 </html>
