@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="starbeats">
 <head>
     <meta charset="UTF-8">
     <title>Starbeats</title>
@@ -7,7 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 </head>
-<body>
+<body ng-controller="CreateEventController">
 
 <div class="container-fluid headContainer">
     <div class="container">
@@ -123,8 +123,26 @@
                     <div class="col-xs-12 inputFields">
                         <div class="imagePlaceholder text-center">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <button type="button">
+                            <button ngf-select type="button" ng-model="picFile" accept="image/*">
                                 UPLOAD FLYER
+                            </button>
+                            <div ng-show="picFile" ngf-drop ng-model="picFile" ngf-pattern="image/*"
+                                 class="cropArea" style="position:absolute; top: 0; overflow: hidden; height: 100%; width: 100%;">
+                                <img-crop image="picFile  | ngfDataUrl" ng-hide="cropped"
+                                          result-image="croppedDataUrl" ng-init="croppedDataUrl=''"
+                                          area-type="rectangle" aspect-ratio="2.695" result-image-size="940">
+                                </img-crop>
+                                <div ng-show="cropped">
+                                    <img style="width: 100%;" ng-src="{{croppedDataUrl}}" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <button ng-show="picFile" accept="image/*" ng-click="cropped=!cropped">
+                                CROP
+                            </button>
+                            <button ng-click="picFile = null; cropped = null;" ng-show="picFile">
+                                REMOVE
                             </button>
                         </div>
                         <p>Image should be at least 940px and 350px height</p>
@@ -296,6 +314,12 @@
         });
     });
 </script>
+<script src="js/angular.min.js"></script>
+<script src="js/ng-file-upload.min.js"></script>
+<script src="js/ng-img-crop.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services/CreateEventService.js"></script>
+<script src="js/controllers/CreateEventController.js"></script>
 
 </body>
 </html>
