@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <title>Starbeats</title>
 
-    <link rel="stylesheet"
-          href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css">
-
     <link rel="stylesheet" href="./css/app.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 </head>
-<body ng-controller="CreateEventController">
+<body ng-controller="ContactUsController">
 
 <div class="container-fluid headContainer">
     <div class="container">
@@ -102,146 +99,54 @@
     <div class="container text-center">
         <div class="col-xs-12">
             <h1 class="title">
-                Create Your Event
+                Contact Us
             </h1>
             <h3>
-                Insert the details below or import Facebook event to create your event on Starbeats
+                Get in touch with us.
             </h3>
         </div>
     </div>
 </div>
 
-<div class="container-fluid formContainer">
+<div class="container-fluid contactUsContainer">
     <div class="container">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-            <!--<div class="row">-->
-                <!--<div class="col-xs-12">-->
-                    <!--<button class="facebookSignIn">-->
-                        <!--<i class="fa fa-facebook-official" aria-hidden="true"></i>-->
-                        <!--IMPORT FACEBOOK EVENT-->
-                    <!--</button>-->
-                <!--</div>-->
-            <!--</div>-->
-            <form id="createEventForm" name="createEventForm">
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <div class="imagePlaceholder text-center">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <button ngf-select type="button" ng-model="picFile" accept="image/*">
-                                UPLOAD FLYER
-                            </button>
-                            <div ng-show="picFile" ngf-drop ng-model="picFile" ngf-pattern="image/*"
-                                 class="cropArea" style="position:absolute; top: 0; overflow: hidden; height: 100%; width: 100%;">
-                                <img-crop image="picFile  | ngfDataUrl" ng-hide="cropped"
-                                          result-image="croppedDataUrl" ng-init="croppedDataUrl=''"
-                                          area-type="rectangle" aspect-ratio="2.695" result-image-size="940">
-                                </img-crop>
-                                <div ng-show="cropped">
-                                    <img style="width: 100%;" ng-src="{{croppedDataUrl}}" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <button ng-show="picFile" accept="image/*" ng-click="cropped=!cropped">
-                                CROP
-                            </button>
-                            <button ng-click="picFile = null; cropped = null;" ng-show="picFile">
-                                REMOVE
-                            </button>
-                        </div>
-                        <p>Image should be at least 940px and 350px height</p>
-                    </div>
-                </div>
+            <form id="contactUsForm" name="contactUsForm">
 
-                <h1>
-                    EVENT
-                </h1>
 
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <input type="text" name="Name of the Event" ng-model="event.name" placeholder="Name of the Event" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <div class='date' >
-                            <input type='text' name="date" ng-model="event.date" class="" id='datetimepicker' required>
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text"
-                               class="form-control"
-                               ng-model="vm.dateTime"
-                               data-date-time-picker
-                               data-language="{{ru}}"
-                               data-pick12HourFormat="false"
-                               data-use-current="{{false}}"
-                               data-location="{{testProject}}"
-                        />
-                        <br/>
-                        <pre>{{vm|json}}</pre>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="Start Time" ng-model="event.start_time" placeholder="Start Time (hh:mm)" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="End Time" ng-model="event.end_time" placeholder="End Time (hh:mm)">
+                        <input type="text" name="First Name" ng-model="message.first_name" placeholder="First Name" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <input type="text" name="Artist/Headliner" ng-model="event.artist" placeholder="Artist/Headliner" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="Ticket price at the door" ng-model="event.price" placeholder="Ticket price at the door" required>
+                        <input type="text" name="Last Name" ng-model="message.last_name" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <select name="Genre" ng-model="event.genre" required>
-                            <option value="" disabled selected>Genre</option>
-                            <option value="Techno">Techno</option>
-                            <option value="House">House</option>
+                        <input type="email" name="Email" ng-model="message.email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 inputFields">
+                        <select name="User Type" ng-model="message.user_type" required>
+                            <option value="" disabled selected>I'm a...</option>
+                            <option value="Artist">Artist</option>
+                            <option value="Producer">Producer</option>
                         </select>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-xs-12 inputFields">
-                        <textarea placeholder="Description" ng-model="event.description" required></textarea>
+                        <textarea placeholder="Description" ng-model="message.content" required></textarea>
                     </div>
                 </div>
-
-                <h1>
-                    VENUE
-                </h1>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <select name="Venue Name" ng-model="event.venue" required>
-                            <option value="" disabled selected>Venue Name</option>
-                            <option value="UnderClub">UnderClub</option>
-                            <option value="House">House</option>
-                        </select>
-                    </div>
-                </div>
-
-
                 <div class="row">
                     <div class="col-xs-12">
-                        <button type="submit" id="createEventButton"  ng-click="createEvent(event, createEventForm)">
-                            CREATE EVENT
+                        <button type="submit" id="contactUsButton"  ng-click="sendMessage(message, contactUsForm)">
+                            SUBMIT
                         </button>
                     </div>
                 </div>
@@ -308,16 +213,24 @@
 <div id="successModal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content text-center">
-            <h1 class="title">Nice !</h1>
-            <h2>
-                You Have Successfuly Submited <br>
-                Your Event
-            </h2>
-            <p>
-                You should get email notification once your <br>
-                event will be reviewed by admin.
-            </p>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">OK, GOT IT</span></button>
+            <div ng-show="success">
+                <h1 class="title">Nice !</h1>
+                <h2>
+                    You Have Successfuly Submited <br>
+                    Your Message
+                </h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">OK, GOT IT</span></button>
+
+            </div>
+            <div ng-show="error">
+                <h1 class="title">Error !</h1>
+                <h2>
+                    An error occured...
+                </h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">TRY AGAIN</span></button>
+
+            </div>
+
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
@@ -341,25 +254,9 @@
     });
 </script>
 <script src="js/angular.min.js"></script>
-<script src="js/ng-file-upload.min.js"></script>
-<script src="js/ng-img-crop.js"></script>
 <script src="js/app.js"></script>
-<script src="js/services/CreateEventService.js"></script>
-<script src="js/controllers/CreateEventController.js"></script>
-
-<script src="js/transition.js"></script>
-<script src="js/collapse.js"></script>
-<script type="text/javascript" src="js/moment.min.js"></script>
-<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        $('#datetimepicker').datetimepicker({
-            format: 'DD/MM/YYYY',
-            minDate: moment().add(1,'days'), // minimum Date : tomorrow
-            debug: true // keep the datetimepicker open
-        });
-    });
-</script>
+<script src="js/services/ContactUsService.js"></script>
+<script src="js/controllers/ContactUsController.js"></script>
 
 </body>
 </html>
