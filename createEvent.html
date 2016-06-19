@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="starbeats">
+<html lang="en" ng-app="starbeats_event">
 <head>
     <meta charset="UTF-8">
     <title>Starbeats</title>
@@ -162,28 +162,27 @@
                         <input type="text" name="Name of the Event" ng-model="event.name" placeholder="Name of the Event" required>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <div class='date' >
-                            <input type='text' name="date" ng-model="event.date" class="" id='datetimepicker' required>
-                            <span class="glyphicon glyphicon-calendar"></span>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="row">-->
+                    <!--<div class="col-xs-6 inputFields">-->
+                        <!--<div class='date' >-->
+                            <!--<input type='text' name="date" ng-model="event.date" class="" id='datetimepicker' required>-->
+                            <!--<span class="glyphicon glyphicon-calendar"></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
 
                 <div class="row">
                     <div class="col-xs-6 inputFields">
-                        <input type="text"
-                               class="form-control"
-                               ng-model="vm.dateTime"
-                               data-date-time-picker
-                               data-language="{{ru}}"
-                               data-pick12HourFormat="false"
-                               data-use-current="{{false}}"
-                               data-location="{{testProject}}"
-                        />
+                        <div class='date' >
+                            <input type="text"
+                                   datetimepicker
+                                   placeholder="Date"
+                                   name="date"
+                                   ng-model="event.date"
+                            />
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
                         <br/>
-                        <pre>{{vm|json}}</pre>
                     </div>
                 </div>
 
@@ -346,6 +345,7 @@
 <script src="js/app.js"></script>
 <script src="js/services/CreateEventService.js"></script>
 <script src="js/controllers/CreateEventController.js"></script>
+<script src="js/directives/angular-bootstrap-datetimepicker-directive.min.js"></script>
 
 <script src="js/transition.js"></script>
 <script src="js/collapse.js"></script>

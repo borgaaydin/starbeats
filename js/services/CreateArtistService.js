@@ -1,7 +1,7 @@
 /**
  * Created by borga on 08/06/16.
  */
-starbeats.factory('CreateArtistService', function ($http, $rootScope) {
+starbeats_artist.factory('CreateArtistService', function ($http, $rootScope) {
     var CreateArtistService = {};
 
     CreateArtistService.createArtist = function (artist) {

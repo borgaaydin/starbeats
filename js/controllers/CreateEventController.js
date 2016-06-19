@@ -2,7 +2,7 @@
  * Created by borga on 13/06/16.
  */
 
-starbeats.controller('CreateEventController',
+starbeats_event.controller('CreateEventController',
     function CreateEventController($scope, $http, $rootScope, CreateEventService, Upload){
         $scope.createEvent = function(artist, createEventForm) {
             console.log($scope.event);

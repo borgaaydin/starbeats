@@ -1,7 +1,7 @@
 /**
  * Created by borga on 13/06/16.
  */
-starbeats.factory('CreateEventService', function ($http, $rootScope) {
+starbeats_event.factory('CreateEventService', function ($http, $rootScope) {
     var CreateEventService = {};
 
     CreateEventService.createEvent = function (event) {

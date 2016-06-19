@@ -2,7 +2,7 @@
  * Created by borga on 08/06/16.
  */
 
-starbeats.controller('CreateArtistController',
+starbeats_artist.controller('CreateArtistController',
     function CreateArtistController($scope, $http, $rootScope, CreateArtistService, Upload){
         $scope.reveal = false;
 

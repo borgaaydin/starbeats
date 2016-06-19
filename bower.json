@@ -21,6 +21,7 @@
     "ng-file-upload": "^12.0.4",
     "ng-img-crop": "ngImgCrop#^0.3.2",
     "ng-img-crop-full-extended": "ngImgCropFullExtended#^0.5.5",
-    "eonasdan-bootstrap-datetimepicker": "^4.17.37"
+    "eonasdan-bootstrap-datetimepicker": "^4.17.37",
+    "angular-bootstrap-datetimepicker-directive": "^0.1.3"
   }
 }
