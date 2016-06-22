@@ -7,7 +7,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 </head>
-<body ng-controller="CreateArtistController">
+<body>
 
 <div class="container-fluid headContainer">
     <div class="container">
@@ -107,7 +107,7 @@
     </div>
 </div>
 
-<div class="container-fluid formContainer">
+<div class="container-fluid formContainer" ng-controller="CreateArtistController">
     <div class="container">
         <form id="createArtistForm" name="createArtistForm">
             <div class="col-sm-6">
@@ -148,53 +148,12 @@
                         <p>
                             You can add up to 10 pictures to your gallery
                         </p>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
+                        <div ng-repeat="f in files"  class="col-xs-6">
+                            <img ngf-src="f" class="img-responsive">
                         </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 imageArtistGallery text-center">
-                            <div>
+
+                        <div ng-repeat="i in getNumber(number) track by $index" class="col-xs-6 imageArtistGallery text-center">
+                            <div class="newImageButton" ngf-select="uploadFiles($files)" multiple ngf-max-files="6" ng-model="files" accept="image/*" >
                                 <i class="fa fa-plus" aria-hidden="true"></i>
                             </div>
                         </div>
