@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <button ng-show="picFile" accept="image/*" ng-click="cropped=!cropped">
+                            <button ng-show="picFile" accept="image/*" ng-click="cropImage(croppedDataUrl)">
                                 CROP
                             </button>
                             <button ng-click="picFile = null; cropped = null;" ng-show="picFile">
