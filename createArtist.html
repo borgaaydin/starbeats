@@ -148,12 +148,12 @@
                         <p>
                             You can add up to 10 pictures to your gallery
                         </p>
-                        <div ng-repeat="f in files"  class="col-xs-6">
+                        <div ng-repeat="f in files"  class="col-xs-6 newImageButton">
                             <img ngf-src="f" class="img-responsive">
                         </div>
 
                         <div ng-repeat="i in getNumber(number) track by $index" class="col-xs-6 imageArtistGallery text-center">
-                            <div class="newImageButton" ngf-select="uploadFiles($files)" multiple ngf-max-files="6" ng-model="files" accept="image/*" >
+                            <div class="newImageButton" ngf-select="uploadFiles($files)" multiple ngf-max-files="6" ngf-keep="true" ng-model="files" accept="image/*" >
                                 <i class="fa fa-plus" aria-hidden="true"></i>
                             </div>
                         </div>

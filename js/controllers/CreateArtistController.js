@@ -31,6 +31,7 @@ starbeats_artist.controller('CreateArtistController',
                 });
             }
         };
+        
         $scope.upload = function (file) {
             console.log(croppedDataUrl);
             Upload.upload({
