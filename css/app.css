@@ -3238,6 +3238,11 @@ ol.artistTopTracks {
   .imageArtistGallery:hover .fa-plus {
     color: yellow; }
 
+.filled div {
+  height: 114px;
+  overflow: hidden;
+  padding: 4px; }
+
 #createEventForm input[type="text"],
 #createEventForm input[type="date"],
 #createEventForm input[type="email"] {

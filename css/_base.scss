@@ -1157,6 +1157,15 @@ ol.artistTopTracks {
   &:hover .fa-plus {
     color: $secondary-color;
   }
+
+}
+
+.filled {
+  div {
+    height: 114px;
+    overflow: hidden;
+    padding: 4px;
+  }
 }
 
 #createEventForm {

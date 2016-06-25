@@ -44,10 +44,10 @@ starbeats_artist.controller('CreateArtistController',
             });
         };
 
-        $scope.uploadFiles = function (files) {
-            $scope.number = $scope.number - Object.size(files);
+        $scope.uploadFiles = function (files, newFiles) {
+            $scope.number = $scope.number - Object.size(newFiles);
             $scope.files = files;
-            console.log(files);
+            console.log(newFiles);
             if (files && files.length) {
                 Upload.upload({
                     url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
