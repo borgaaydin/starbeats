@@ -142,10 +142,10 @@
                             </div>
                         </div>
                         <div class="col-xs-12">
-                            <button ng-show="picFile" accept="image/*" ng-click="cropImage(croppedDataUrl)">
+                            <button ng-show="picFile" accept="image/*" ng-click="cropImage(croppedDataUrl)" formnovalidate>
                                 CROP
                             </button>
-                            <button ng-click="picFile = null; cropped = null;" ng-show="picFile">
+                            <button ng-click="picFile = null; cropped = null;" ng-show="picFile" formnovalidate>
                                 REMOVE
                             </button>
                         </div>
