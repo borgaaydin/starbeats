@@ -15,6 +15,12 @@ starbeats_event.controller('CreateEventController',
                 });
             }
         };
+
+        $scope.cropImage = function(file) {
+            $scope.cropped = !$scope.cropped;
+            $scope.upload(file);
+        };
+
         $scope.upload = function (file) {
             Upload.upload({
                 url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
