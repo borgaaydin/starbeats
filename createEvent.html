@@ -126,18 +126,20 @@
                 <div class="row">
                     <div class="col-xs-12 inputFields">
                         <div class="imagePlaceholder text-center">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <button ngf-select type="button" ng-model="picFile" accept="image/*">
-                                UPLOAD FLYER
-                            </button>
-                            <div ng-show="picFile" ngf-drop ng-model="picFile" ngf-pattern="image/*"
-                                 class="cropArea" style="position:absolute; top: 0; overflow: hidden; height: 100%; width: 100%;">
-                                <img-crop image="picFile  | ngfDataUrl" ng-hide="cropped"
-                                          result-image="croppedDataUrl" ng-init="croppedDataUrl=''"
-                                          area-type="rectangle" aspect-ratio="2.695" result-image-size="940">
-                                </img-crop>
-                                <div ng-show="cropped">
-                                    <img style="width: 100%;" ng-src="{{croppedDataUrl}}" />
+                            <div class="content">
+                                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                <button ngf-select type="button" ng-model="picFile" accept="image/*">
+                                    UPLOAD FLYER
+                                </button>
+                                <div ng-show="picFile" ngf-drop ng-model="picFile" ngf-pattern="image/*"
+                                     class="cropArea" style="position:absolute; top: 0; overflow: hidden; height: 100%; width: 100%;">
+                                    <img-crop image="picFile  | ngfDataUrl" ng-hide="cropped"
+                                              result-image="croppedDataUrl" ng-init="croppedDataUrl=''"
+                                              area-type="rectangle" aspect-ratio="2.695" result-image-size="940">
+                                    </img-crop>
+                                    <div ng-show="cropped">
+                                        <img style="width: 100%;" ng-src="{{croppedDataUrl}}" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +354,7 @@
 <script type="text/javascript">
     $(function () {
         $('#datetimepicker').datetimepicker({
-            format: 'DD/MM/YYYY',
+//            format: 'DD/MM/YYYY',
             minDate: moment().add(1,'days'), // minimum Date : tomorrow
             debug: true // keep the datetimepicker open
         });
