@@ -2968,8 +2968,19 @@ caption,
 
 .imagePlaceholder {
   position: relative;
-  background-color: #43334e;
-  padding: 20px 0; }
+  position: relative;
+  background-color: #43334e; }
+  .imagePlaceholder:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 37.23404%; }
+  .imagePlaceholder > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .imagePlaceholder * {
     display: block; }
   .imagePlaceholder .fa-picture-o {

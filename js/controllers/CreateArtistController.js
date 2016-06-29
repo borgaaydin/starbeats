@@ -31,22 +31,23 @@ starbeats_artist.controller('CreateArtistController',
                 });
             }
         };
-        
-        $scope.cropImage = function(file) {
-            $scope.cropped = !$scope.cropped;
-            $scope.upload(file);
-        };
 
         $scope.upload = function (file) {
+            console.log(file);
             Upload.upload({
                 url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
-                data: {file: file, 'username': $scope.username}
+                data: file
             }).then(function (resp) {
                 console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
                 console.log(resp.data);
             }, function (resp) {
                 console.log('Error status: ' + resp.status);
             });
+        };
+
+        $scope.cropImage = function(file) {
+            $scope.cropped = !$scope.cropped;
+            $scope.upload(file);
         };
 
         $scope.uploadFiles = function (files, newFiles) {

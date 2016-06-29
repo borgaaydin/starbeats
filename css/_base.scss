@@ -746,9 +746,10 @@ $eventTextColor: #0b0912;
 }
 
 .imagePlaceholder {
+  @include aspect-ratio(940, 350);
+
   position: relative;
   background-color: #43334e;
-  padding: 20px 0;
   * {
     display: block;
   }
@@ -1140,6 +1141,7 @@ ol.artistTopTracks {
 }
 
 .imageArtistGallery {
+
   margin:0;
   padding: 0;
   cursor: pointer;
