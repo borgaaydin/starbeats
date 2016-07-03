@@ -8,7 +8,7 @@ var starbeats = angular.module('starbeats', [])
         $rootScope.API = "http://localhost/";
     });
 
-var starbeats_artist = angular.module('starbeats_artist', ['starbeats', 'ngFileUpload', 'ngImgCrop']);
+var starbeats_artist = angular.module('starbeats_artist', ['starbeats', 'ngFileUpload', 'ngImgCrop', 'countrySelect']);
 
 var starbeats_event = angular.module('starbeats_event', ['starbeats', 'ngFileUpload', 'ngImgCrop', 'datetimepicker'])
     .config(['datetimepickerProvider',

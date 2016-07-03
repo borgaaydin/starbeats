@@ -35,7 +35,7 @@ starbeats_artist.controller('CreateArtistController',
         $scope.upload = function (file) {
             Upload.upload({
                 url: 'https://angular-file-upload-cors-srv.appspot.com/upload',
-                data: file
+                data: {key: file}
             }).then(function (resp) {
                 console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
                 console.log(resp.data);
