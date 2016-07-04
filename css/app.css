@@ -3333,6 +3333,23 @@ ol.artistTopTracks {
   background-color: #ff005e;
   color: white; }
 
+.getInTouch {
+  width: 100%;
+  border: 1px solid #ff005e;
+  text-align: center;
+  margin-top: 16px; }
+  .getInTouch h4 {
+    color: #ff005e; }
+  .getInTouch button {
+    width: 100%;
+    color: #ff005e;
+    border: 1px solid #ff005e;
+    padding: 8px 20px 8px 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    background: transparent;
+    outline: none; }
+
 /* Slider */
 .slick-slider {
   position: relative;
