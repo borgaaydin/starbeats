@@ -1,6 +1,7 @@
 {
   "name": "starbeats",
   "version": "0.1.0",
+  "main": "app.js",
   "devDependencies": {
     "angular": "^1.5.5",
     "grunt": "^0.4.5",
@@ -14,5 +15,11 @@
     "grunt-htmlhint": "^0.9.13",
     "grunt-typescript": "^0.8.0",
     "grunt-uncss": "^0.5.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
