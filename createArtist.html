@@ -171,16 +171,16 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <country-select ng-model="artist.country" required></country-select>
+                    <div class="col-xs-12">
+                        <country-select class="selectpicker" data-live-search="true" ng-model="artist.country" required></country-select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields selectContainer">
-                        <select name="Genre" ng-model="artist.genre" required>
-                            <option value="" disabled selected>Genre</option>
-                            <option value="Techno">Techno</option>
-                            <option value="House">House</option>
+                    <div class="col-xs-12">
+                        <select class="selectpicker" title="Genre" ng-model="artist.genre" multiple>
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
                         </select>
                     </div>
                 </div>
@@ -376,7 +376,9 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
-<script src="js/modal.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+
 <script>
     $( document ).ready(function() {
         var form = $("#createArtistForm");
@@ -389,6 +391,12 @@
             if(form.valid()) {
                 $('#successModal').modal('show');
             }
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.selectpicker').selectpicker({
         });
     });
 </script>

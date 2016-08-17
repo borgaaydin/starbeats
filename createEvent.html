@@ -252,11 +252,11 @@
                     VENUE
                 </h1>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <select name="Venue Name" ng-model="event.venue" required>
-                            <option value="" disabled selected>Venue Name</option>
-                            <option value="UnderClub">UnderClub</option>
-                            <option value="House">House</option>
+                    <div class="col-xs-12">
+                        <select class="selectpicker" title="Venue Name">
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
                         </select>
                     </div>
                 </div>
@@ -270,13 +270,6 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-xs-12">
-                        <button type="submit" ng-click="logConsole(event, artists, createEventForm)" formnovalidate>
-                            LOG
-                        </button>
-                    </div>
-                </div>
             </form>
         </div>
     </div>

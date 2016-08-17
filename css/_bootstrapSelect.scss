@@ -1,5 +1,5 @@
 
-.bootstrap-select {
+.bootstrap-select.btn-group {
   position: relative;
   outline: none;
 
@@ -9,22 +9,69 @@
     border-bottom: 2px solid white;
     border-radius: 0;
     color: $text-color-transparent;
+    outline: none;
     padding: 10px 10px 10px 0;
     font-size: 16px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+
+    &:focus {
+      outline: none;
+    }
   }
 
-  .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+  .dropdown-menu {
+    padding: 15px 0 5px;
+  }
+
+  .btn-default:active:hover,
+  .btn-default:active:focus,
+  .btn-default:active.focus,
+  .btn-default.active:hover,
+  .btn-default.active:focus,
+  .btn-default.active.focus,
+  .open > .btn-default.dropdown-toggle:hover,
+  .open > .btn-default.dropdown-toggle:focus,
+  .open > .btn-default.dropdown-toggle.focus {
     background-color: transparent;
     color: $text-color-transparent;
+    outline: none;
+  }
+
+  &.btn-default:active,
+  &.btn-default.active,
+  &.open > .btn-default.dropdown-toggle {
+    background-color: transparent;
+    color: $text-color-transparent;
+    outline: none;
+    border-bottom: 2px solid $primary-color;
+    
+    .caret {
+      color: $primary-color;
+    }
+  }
+
+  .dropdown-menu li a {
+    color: $text-color-dark;
+    font-weight: 500;
+    font-family: "Lato", sans-serif;
+  }
+
+  .dropdown-menu li.selected a {
+    color: $primary-color;
+  }
+
+  .bs-searchbox,
+  .bs-actionsbox,
+  .bs-donebutton {
+    input {
+      padding: 6px 12px;
+    }
   }
 }
 
-.bootstrap-select .dropdown-toggle:focus {
-  outline: none;
-}
 
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
   width: 100%;
+  outline: none;
 }
