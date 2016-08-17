@@ -1,0 +1,30 @@
+
+.bootstrap-select {
+  position: relative;
+  outline: none;
+
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    color: $text-color-transparent;
+    padding: 10px 10px 10px 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+  }
+
+  .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+    background-color: transparent;
+    color: $text-color-transparent;
+  }
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none;
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+}

@@ -4,7 +4,24 @@
 
 starbeats_event.controller('CreateEventController',
     function CreateEventController($scope, $http, $rootScope, CreateEventService, Upload){
-        $scope.createEvent = function(artist, createEventForm) {
+
+        $scope.event = [];
+        $scope.event.artists = [''];
+
+        $scope.logConsole = function(event, createEventForm) {
+            console.log(event);
+            console.log(createEventForm);
+        };
+
+        $scope.addArtist = function() {
+            $scope.event.artists.push({name: ''});
+        };
+        
+        $scope.removeArtist = function(ind) {
+            $scope.event.artists.splice(ind, 1);
+        };
+        
+        $scope.createEvent = function(event, artits, createEventForm) {
             console.log($scope.event);
 
             if(createEventForm.$valid) {

@@ -12,7 +12,6 @@
 
 </head>
 <body>
-
 <div class="container-fluid headContainer">
     <div class="container">
         <div class="row">
@@ -176,9 +175,25 @@
                         <div class='date' >
                             <input type="text"
                                    datetimepicker
-                                   placeholder="Date"
+                                   datetimepicker-options="{debug:true, format: false}"
+                                   placeholder="Start Time"
                                    name="date"
-                                   ng-model="event.date"
+                                   ng-model="event.date.start"
+                            />
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 inputFields">
+                        <div class='date'>
+                            <label class="control-label">End Time</label>
+                            <input type="text"
+                                   datetimepicker
+                                   datetimepicker-options="{debug:true, format: false}"
+                                   name="date"
+                                   ng-model="event.date.end"
                             />
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
@@ -187,32 +202,42 @@
                 </div>
 
 
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="Start Time" ng-model="event.start_time" placeholder="Start Time (hh:mm)" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 inputFields">
-                        <input type="text" name="End Time" ng-model="event.end_time" placeholder="End Time (hh:mm)">
-                    </div>
-                </div>
-                <div class="row">
+                <!--<div class="row">-->
+                    <!--<div class="col-xs-6 inputFields">-->
+                        <!--<input type="text" name="Start Time" ng-model="event.start_time" placeholder="Start Time (hh:mm)" required>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="col-xs-6 inputFields">-->
+                        <!--<input type="text" name="End Time" ng-model="event.end_time" placeholder="End Time (hh:mm)">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <div class="row" ng-repeat="artist in event.artists">
                     <div class="col-xs-12 inputFields">
-                        <input type="text" name="Artist/Headliner" ng-model="event.artist" placeholder="Artist/Headliner" required>
+                        <input type="text" name="Artist/Headliner" ng-model="artist.name"  placeholder="Artist/Headliner" required>
                     </div>
+                    <button formnovalidate ng-click="removeArtist($index)">
+                        REMOVE
+                    </button>
+
+
                 </div>
+                <button formnovalidate ng-click="addArtist()">
+                    ADD NEW <i class="fa fa-plus"></i>
+                </button>
+
                 <div class="row">
                     <div class="col-xs-6 inputFields">
                         <input type="text" name="Ticket price at the door" ng-model="event.price" placeholder="Ticket price at the door" required>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <select name="Genre" ng-model="event.genre" required>
-                            <option value="" disabled selected>Genre</option>
-                            <option value="Techno">Techno</option>
-                            <option value="House">House</option>
+                    <div class="col-xs-12">
+                        <select class="selectpicker" title="Genre" multiple>
+                            <option>Mustard</option>
+                            <option>Ketchup</option>
+                            <option>Relish</option>
                         </select>
                     </div>
                 </div>
@@ -241,6 +266,14 @@
                     <div class="col-xs-12">
                         <button type="submit" id="createEventButton"  ng-click="createEvent(event, createEventForm)">
                             CREATE EVENT
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button type="submit" ng-click="logConsole(event, artists, createEventForm)" formnovalidate>
+                            LOG
                         </button>
                     </div>
                 </div>
@@ -275,6 +308,21 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-sm-3 switchCity">
+                <p>SWITCH CITY:</p>
+                <span class="current">Barcelona</span>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">Barcelona</a>
+                        </li>
+                        <li>
+                            <a href="#">Madrid</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -325,6 +373,7 @@
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/modal.js"></script>
 
+
 <script>
     $( document ).ready(function() {
         var form = $("#createEventForm");
@@ -347,16 +396,22 @@
 <script src="js/controllers/CreateEventController.js"></script>
 <script src="js/directives/angular-bootstrap-datetimepicker-directive.min.js"></script>
 
-<script src="js/transition.js"></script>
-<script src="js/collapse.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/moment.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 <script type="text/javascript">
+//    $(function () {
+//        $('#datetimepicker').datetimepicker({
+//            minDate: moment().add(1,'days'), // minimum Date : tomorrow
+//            debug: true // keep the datetimepicker open
+//        });
+//    });
+</script>
+
+<script>
     $(function () {
-        $('#datetimepicker').datetimepicker({
-//            format: 'DD/MM/YYYY',
-            minDate: moment().add(1,'days'), // minimum Date : tomorrow
-            debug: true // keep the datetimepicker open
+        $('.selectpicker').selectpicker({
         });
     });
 </script>
