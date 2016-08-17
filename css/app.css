@@ -4992,6 +4992,8 @@ select.selectpicker {
       outline: none; }
   .bootstrap-select.btn-group .dropdown-menu {
     padding: 15px 0 5px; }
+  .bootstrap-select.btn-group .dropdown-menu > .active > a, .bootstrap-select.btn-group .dropdown-menu > .active > a:hover, .bootstrap-select.btn-group .dropdown-menu > .active > a:focus {
+    background-color: transparent; }
   .bootstrap-select.btn-group .btn-default:active:hover,
   .bootstrap-select.btn-group .btn-default:active:focus,
   .bootstrap-select.btn-group .btn-default:active.focus,
