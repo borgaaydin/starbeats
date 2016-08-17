@@ -132,6 +132,10 @@ button {
   }
 }
 
+select {
+  color: $text-color-dark;
+}
+
 caption,
 .caption {
   font-size: 12px;
@@ -1027,10 +1031,12 @@ $eventTextColor: #0b0912;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.2em;
-    color: $text-color-transparent;
   }
   textarea {
     text-align: left;
+  }
+  select{
+    color: $text-color-transparent;
   }
 }
 
@@ -1186,11 +1192,6 @@ ol.artistTopTracks {
   }
 }
 
-#createEventForm button,
-#createArtistForm button {
-  margin-bottom: 60px;
-}
-
 #successModal {
 
   .modal-content {
@@ -1293,4 +1294,69 @@ ol.artistTopTracks {
     background: transparent;
     outline: none;
   }
+}
+
+.switchCity {
+  .current {
+    color: $primary-color;
+  }
+  .glyphicon-chevron-up,
+  .glyphicon-chevron-down{
+    color: $primary-color;
+    font-size: 12px;
+  }
+  &:hover .dropdown {
+    display: inline-block;
+    position: absolute;
+    top: -80px;
+
+    &:before {
+      content: none;
+    }
+
+    &:after {
+      content: " ";
+      position: absolute;
+      left: calc(50% - 15px);
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+
+      border-top: 15px solid white;
+    }
+  }
+}
+
+.searchLookBy {
+  margin: 10px 0;
+  >div {
+    display: inline-block;
+  }
+  .item {
+    margin: 0 8px;
+    font-weight: 500;
+    position: relative;
+
+    &:hover {
+      .dropdown {
+        display: inline-block;
+        top: 44px;
+        left: -64px;
+        width: 224px;
+      }
+      .glyphicon {
+         color: $primary-color;
+      }
+    }
+
+    .glyphicon {
+      color: $primary-color;
+      margin: 0 6px 0 0;
+    }
+  }
+}
+
+#createEventButton {
+  margin: 30px 0;
 }
