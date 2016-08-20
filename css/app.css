@@ -4091,6 +4091,7 @@ caption,
   .inputFields input[type="password"] {
     background: none;
     border: none;
+    border-radius: 0;
     outline: none;
     border-bottom: 2px solid white;
     width: 100%;
