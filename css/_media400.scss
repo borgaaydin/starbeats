@@ -1,0 +1,28 @@
+@media screen and (max-width: 480px) {
+  .authContainer {
+    margin: 0;
+    padding: 0;
+
+    .container-fluid {
+      margin: 0;
+      padding: 20px;
+    }
+
+    button {
+      margin: 16px 0;
+    }
+
+    .line {
+      margin-top: 6px;
+    }
+
+    h3 {
+      font-size: 12px;
+      margin-top: 1px;
+    }
+
+    .inputFields {
+      margin-top: 12px;
+    }
+  }
+}
