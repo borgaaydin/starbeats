@@ -3626,7 +3626,7 @@ body {
   background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png), url(../img/SliderContainerBackground.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top left, top right, top center;
-  background-size: auto, auto, contain; }
+  background-size: auto, auto, cover; }
 
 h1, h2, h3, h4 {
   font-family: "Lato", sans-serif;
@@ -4014,7 +4014,6 @@ caption,
   .appContainer img {
     display: inline-block;
     width: auto;
-    height: 60px;
     margin: 30px 10px 30px 10px; }
 
 .promoteContainer {
@@ -4548,7 +4547,7 @@ ol.artistTopTracks {
   margin: 30px 0; }
 
 .mobileIcons {
-  margin-top: 24px; }
+  margin-top: 18px; }
   .mobileIcons > a {
     display: inline-block; }
     .mobileIcons > a .glyphicon-search {
@@ -5143,6 +5142,19 @@ select.selectpicker {
 @media screen and (max-width: 480px) {
   body.index {
     background-image: none; }
+
+  .promoteContainer button {
+    padding: 10px 30px; }
+
+  .footerMenu {
+    padding: 0;
+    text-align: center; }
+    .footerMenu li {
+      display: block;
+      padding: 8px 0; }
+
+  .switchCity {
+    text-align: center; }
 
   .logoContainer {
     padding: 0;

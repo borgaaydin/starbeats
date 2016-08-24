@@ -13,6 +13,24 @@
     background-image: none;
   }
 
+  .promoteContainer button {
+    padding: 10px 30px;
+  }
+
+  .footerMenu {
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: block;
+      padding: 8px 0;
+    }
+  }
+
+  .switchCity {
+    text-align: center;
+  }
+
   .logoContainer {
     padding: 0;
     margin-top: 10px;
