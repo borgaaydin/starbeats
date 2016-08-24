@@ -24,7 +24,9 @@ $(document).ready(function(){
             {
                 breakpoint: 1024,
                 settings: {
-                    variableWidth: false
+                    variableWidth: false,
+                    centerMode: false,
+                    slidesToScroll: 1
                 }
             }
         ]
