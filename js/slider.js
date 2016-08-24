@@ -9,8 +9,9 @@ $(document).ready(function(){
             timer = setTimeout(callback, ms);
         };
     })();
+    var window = $(window);
 
-    var centerPaddingCalc = ($(window).width()-945)/2;
+    var centerPaddingCalc = (window.width()-945)/2;
     var slider = $('.mainSlider');
 
     slider.slick({
@@ -18,7 +19,15 @@ $(document).ready(function(){
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
-        arrows: true
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    variableWidth: false
+                }
+            }
+        ]
     });
 
     $('.artistListSlider').slick({

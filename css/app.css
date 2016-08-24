@@ -5029,6 +5029,12 @@ select.selectpicker {
   width: 100%;
   outline: none; }
 
+@media screen and (max-width: 1024px) {
+  .slick-next {
+    right: 0; }
+
+  .slick-prev {
+    left: inherit; } }
 @media screen and (max-width: 480px) {
   .authContainer {
     margin: 0;
