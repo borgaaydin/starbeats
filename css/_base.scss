@@ -19,7 +19,7 @@ $background-color-dark-transparent : rgba(0,0,0,0.502);
 
 html {
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,7 +33,7 @@ body {
   font-size: 14px;
   color: $text-color;
 
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .index {
@@ -1361,6 +1361,22 @@ ol.artistTopTracks {
   }
 }
 
-#createEventButton {
+#createEventButton,
+#createArtistButton {
   margin: 30px 0;
+}
+
+.mobileIcons {
+  margin-top: 24px;
+  &>a {
+    display: inline-block;
+
+    .glyphicon-search {
+      font-size: 22px;
+      margin-right: 10px;
+    }
+  }
+  #nav-icon3 {
+    display: inline-block;
+  }
 }
