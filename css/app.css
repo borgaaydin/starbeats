@@ -3618,7 +3618,8 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  color: white; }
+  color: white;
+  overflow: hidden; }
 
 .index {
   background-image: url(../img/FlareTopLeft.png), url(../img/FlareRight.png), url(../img/SliderContainerBackground.jpg);
