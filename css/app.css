@@ -4254,7 +4254,8 @@ caption,
     height: 200px;
     overflow: hidden; }
   .event25Full a {
-    color: #ff005e; }
+    color: #ff005e;
+    margin: 0; }
   .event25Full p, .event25Full a {
     font-size: 12px; }
   .event25Full h2 > span {
