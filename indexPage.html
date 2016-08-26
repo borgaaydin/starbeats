@@ -68,10 +68,10 @@
                 </a>
             </div>
             <div class="col-xs-4 visible-xs mobileIcons text-right">
-                <a href="">
+                <a id="searchMenuButton" href="#">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                 </a>
-                <a href="">
+                <a id="navMenuButton" href="#" >
                     <div id="nav-icon3">
                         <span></span>
                         <span></span>
@@ -492,7 +492,141 @@
     </div>
 </footer>
 
+<div id="navMenuModal" class="modal fade" role="menu">
+    <div class="modal-dialog">
+        <div class="modal-content text-center">
+            <ul class="mainMobileMenu">
+                <li>
+                    <a class="active">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        EVENTS
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        ARTISTS
+                    </a>
+                </li>
+            </ul>
+            <button class="signUpButton">
+                SIGN UP
+            </button>
+            <button class="logInButton">
+                LOG IN
+            </button>
+            <button class="submitEvent">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                SUBMIT EVENT
+            </button>
+            <div class="row">
+                <div class="col-xs-6 switchCity text-right">
+                    <p>LANGUAGE:</p>
+                    <span class="current">English</span>
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Spanish</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 switchCity text-left">
+                    <p>SWITCH CITY:</p>
+                    <span class="current">Barcelona</span>
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">Barcelona</a>
+                            </li>
+                            <li>
+                                <a href="#">Madrid</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="searchMenuModal" class="modal fade" role="menu">
+    <div class="modal-dialog">
+        <div class="modal-content text-center">
+            <ul class="mainMobileMenu">
+                <li>
+                    <a class="active">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        EVENTS
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        ARTISTS
+                    </a>
+                </li>
+            </ul>
+            <button class="signUpButton">
+                SIGN UP
+            </button>
+            <button class="logInButton">
+                LOG IN
+            </button>
+            <button class="submitEvent">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                SUBMIT EVENT
+            </button>
+            <div class="row">
+                <div class="col-xs-6 switchCity text-right">
+                    <p>LANGUAGE:</p>
+                    <span class="current">English</span>
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Spanish</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 switchCity text-left">
+                    <p>SWITCH CITY:</p>
+                    <span class="current">Barcelona</span>
+                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">Barcelona</a>
+                            </li>
+                            <li>
+                                <a href="#">Madrid</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
 <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <!--<script src="js/angular.min.js"></script>-->
 <script src="js/slick.min.js"></script>
 <script src="js/slider.js"></script>
@@ -500,6 +634,24 @@
 <script src="js/maps.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIm1oifthT2AcUJCGDhj6EiIAhzrCxQro&callback=initMap">
+</script>
+
+<script>
+    $( document ).ready(function() {
+        $('#navMenuModal').modal({
+            show: false
+        });
+
+        $( "#navMenuButton" ).click(function(){
+            $('#searchMenuModal').modal('hide');
+            $('#navMenuModal').modal('toggle');
+        });
+
+        $( "#searchMenuButton" ).click(function(){
+            $('#navMenuModal').modal('hide');
+            $('#searchMenuModal').modal('toggle');
+        });
+    });
 </script>
 
 <script src="js/angular.min.js"></script>

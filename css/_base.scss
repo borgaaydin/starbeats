@@ -1367,6 +1367,7 @@ ol.artistTopTracks {
 
 .mobileIcons {
   margin-top: 18px;
+  z-index: 1200;
   &>a {
     display: inline-block;
 
@@ -1379,3 +1380,57 @@ ol.artistTopTracks {
     display: inline-block;
   }
 }
+
+#navMenuModal {
+  .modal-dialog {
+    margin:0;
+    height: 100%;
+  }
+
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    padding: 56px 20px;
+  }
+
+  .mainMobileMenu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    li {
+      border-bottom: 4px transparent;
+      padding: 16px;
+      a {
+        color: $text-color;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .signUpButton,
+  .logInButton,
+  .submitEvent{
+    width: 100%;
+    margin: 0 0 12px;
+  }
+
+  .logInButton {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $text-color-dark;
+  }
+}
+
+#searchMenuModal {
+  .modal-dialog {
+    margin:0;
+    height: 100%;
+  }
+
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    padding: 56px 20px;
+  }
+}
+

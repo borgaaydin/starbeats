@@ -4547,7 +4547,8 @@ ol.artistTopTracks {
   margin: 30px 0; }
 
 .mobileIcons {
-  margin-top: 18px; }
+  margin-top: 18px;
+  z-index: 1200; }
   .mobileIcons > a {
     display: inline-block; }
     .mobileIcons > a .glyphicon-search {
@@ -4555,6 +4556,41 @@ ol.artistTopTracks {
       margin-right: 10px; }
   .mobileIcons #nav-icon3 {
     display: inline-block; }
+
+#navMenuModal .modal-dialog {
+  margin: 0;
+  height: 100%; }
+#navMenuModal .modal-content {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  padding: 56px 20px; }
+#navMenuModal .mainMobileMenu {
+  list-style: none;
+  padding: 0;
+  text-align: center; }
+  #navMenuModal .mainMobileMenu li {
+    border-bottom: 4px transparent;
+    padding: 16px; }
+    #navMenuModal .mainMobileMenu li a {
+      color: white;
+      font-size: 16px; }
+#navMenuModal .signUpButton,
+#navMenuModal .logInButton,
+#navMenuModal .submitEvent {
+  width: 100%;
+  margin: 0 0 12px; }
+#navMenuModal .logInButton {
+  background-color: yellow;
+  border-color: yellow;
+  color: #070011; }
+
+#searchMenuModal .modal-dialog {
+  margin: 0;
+  height: 100%; }
+#searchMenuModal .modal-content {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 100%;
+  padding: 56px 20px; }
 
 /* Slider */
 .slick-slider {
@@ -5145,6 +5181,15 @@ select.selectpicker {
 
   .promoteContainer button {
     padding: 10px 30px; }
+
+  .event50 .eventDescription {
+    padding: 6px 20px 20px 16px; }
+
+  .eventsContainerTonight {
+    padding-top: 0; }
+
+  .headingGroup div h1, .headingGroup div h2, .headingGroup div h3, .headingGroup div h4, .headingGroup div span, .headingGroup div p.title, .headingGroup div a.title {
+    font-size: 24px; }
 
   .footerMenu {
     padding: 0;
