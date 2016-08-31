@@ -5649,6 +5649,9 @@ ol.artistTopTracks {
 .floatLabel.social label {
   left: 48px; }
 
+.authContainer .floatLabel label {
+  left: 48px; }
+
 .trackRow {
   margin-bottom: 10px; }
   .trackRow .inputFields {

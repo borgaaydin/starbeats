@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="starbeats">
 <head>
     <meta charset="UTF-8">
     <title>Starbeats</title>
@@ -10,7 +10,7 @@
 </head>
 <body id="auth">
 
-<div class="container-fluid authContainer">
+<div class="container-fluid authContainer" ng-controller="AuthController">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
@@ -40,15 +40,17 @@
         </div>
         <form>
             <div class="row">
-                <div class="col-xs-12 inputFields">
+                <div class="col-xs-12 inputFields floatLabel">
                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                    <input type="email" name="E-mail Address" placeholder="Your E-mail Address" required>
+                    <input type="email" name="E-mail Address" placeholder=" " ng-model="user.email" required>
+                    <label>Your E-mail Address</label>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 inputFields">
+                <div class="col-xs-12 inputFields floatLabel">
                     <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
-                    <input type="password" name="Password" placeholder="Password" required>
+                    <input type="password" name="Password" placeholder=" " ng-model="user.password" required>
+                    <label>Password</label>
                 </div>
             </div>
             <div class="row">
@@ -79,6 +81,10 @@
 
     </div>
 </div>
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services/AuthService.js"></script>
+<script src="js/controllers/AuthController.js"></script>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/slick.min.js"></script>
