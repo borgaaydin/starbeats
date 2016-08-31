@@ -4319,7 +4319,8 @@ caption,
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  height: 46px; }
 .inputFields textarea {
   text-align: left; }
 .inputFields select {
@@ -4592,6 +4593,33 @@ ol.artistTopTracks {
   background-color: rgba(0, 0, 0, 0.75);
   height: 100%;
   padding: 56px 20px; }
+
+.floatLabel input:focus ~ label, .floatLabel input:not(:placeholder-shown) ~ label {
+  top: -16px;
+  font-size: 13px;
+  color: #ff005e; }
+.floatLabel textarea:focus ~ label, .floatLabel textarea:not(:placeholder-shown) ~ label {
+  top: -16px;
+  font-size: 13px;
+  color: #ff005e; }
+.floatLabel label {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  pointer-events: none;
+  left: 16px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all; }
+.floatLabel.social label {
+  left: 48px; }
+
+.trackRow {
+  margin-bottom: 10px; }
+  .trackRow .inputFields {
+    margin: 16px 0; }
 
 /* Slider */
 .slick-slider {

@@ -166,27 +166,31 @@
             </div>
             <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Artist Name" placeholder="Artist Name" ng-model="artist.name" required>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" placeholder=" " name="Artist Name" ng-model="artist.name" required>
+                        <label>Artist Name</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 floatLabel">
                         <country-select class="selectpicker" data-live-search="true" ng-model="artist.country" required></country-select>
+                        <label>Country</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <select class="selectpicker" title="Genre" ng-model="artist.genre" multiple>
+                        <select class="selectpicker" ng-model="artist.genre" multiple>
                             <option>Mustard</option>
                             <option>Ketchup</option>
                             <option>Relish</option>
                         </select>
+                        <label>Genre</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <textarea placeholder="About Me"></textarea>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <textarea placeholder=" "></textarea>
+                        <label>About Me</label>
                     </div>
                 </div>
                 <h1>
@@ -195,84 +199,114 @@
                 <p>
                     Please insert your soundcloud or mixcloud track links
                 </p>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Track Title" placeholder="1. Track Title" ng-model="artist.tracks.track1.title">
-                        <input type="url" name="Track URL" placeholder="Track URL" ng-model="artist.tracks.track1.url">
+                <div class="row trackRow">
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" name="Track Title" placeholder=" " ng-model="artist.tracks.track1.title" required>
+                        <label>Track Title</label>
+                    </div>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="url" name="Track URL" placeholder=" " ng-model="artist.tracks.track1.url" required>
+                        <label>Track URL</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Track Title" placeholder="2. Track Title" ng-model="artist.tracks.track2.title">
-                        <input type="url" name="Track URL" placeholder="Track URL" ng-model="artist.tracks.track2.url">
+                <div class="row trackRow">
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" name="Track Title" placeholder=" " ng-model="artist.tracks.track2.title" required>
+                        <label>Track Title</label>
+                    </div>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="url" name="Track URL" placeholder=" " ng-model="artist.tracks.track2.url" required>
+                        <label>Track URL</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Track Title" placeholder="3. Track Title" ng-model="artist.tracks.track3.title">
-                        <input type="url" name="Track URL" placeholder="Track URL" ng-model="artist.tracks.track3.url">
+                <div class="row trackRow">
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" name="Track Title" placeholder=" " ng-model="artist.tracks.track3.title" required>
+                        <label>Track Title</label>
+                    </div>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="url" name="Track URL" placeholder=" " ng-model="artist.tracks.track3.url" required>
+                        <label>Track URL</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Track Title" placeholder="4. Track Title" ng-model="artist.tracks.track4.title">
-                        <input type="url" name="Track URL" placeholder="Track URL" ng-model="artist.tracks.track4.url">
+                <div class="row trackRow">
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" name="Track Title" placeholder=" " ng-model="artist.tracks.track4.title" required>
+                        <label>Track Title</label>
+                    </div>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="url" name="Track URL" placeholder=" " ng-model="artist.tracks.track4.url" required>
+                        <label>Track URL</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Track Title" placeholder="5. Track Title" ng-model="artist.tracks.track5.title">
-                        <input type="url" name="Track URL" placeholder="Track URL" ng-model="artist.tracks.track5.url">
+                <div class="row trackRow">
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" name="Track Title" placeholder=" " ng-model="artist.tracks.track5.title" required>
+                        <label>Track Title</label>
+                    </div>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="url" name="Track URL" placeholder=" " ng-model="artist.tracks.track5.url" required>
+                        <label>Track URL</label>
                     </div>
                 </div>
+
+
                 <h1>SOCIAL MEDIA</h1>
                 <p>Please insert your social profile accounts</p>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        <input type="url" name="Facebook URL" placeholder="Facebook URL" ng-model="artist.social.facebook">
+                        <input type="url" name="Facebook URL" placeholder=" " ng-model="artist.social.facebook">
+                        <label>Facebook URL</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <input type="url" name="Instagram URL" placeholder="Instagram URL" ng-model="artist.social.instagram">
+                        <input type="url" name="Instagram URL" placeholder=" " ng-model="artist.social.instagram">
+                        <label>Instagram URL</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-soundcloud" aria-hidden="true"></i>
-                        <input type="url" name="Soundcloud URL" placeholder="Souncloud URL" ng-model="artist.social.soundcloud">
+                        <input type="url" name="Soundcloud URL" placeholder=" " ng-model="artist.social.soundcloud">
+                        <label>Souncloud URL</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-spotify" aria-hidden="true"></i>
-                        <input type="url" name="Spotify URL" placeholder="Spotify URL" ng-model="artist.social.spotify">
+                        <input type="url" name="Spotify URL" placeholder=" " ng-model="artist.social.spotify">
+                        <label>Spotify URL</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-headphones" aria-hidden="true"></i>
-                        <input type="url" name="Beatport URL" placeholder="Beatport URL" ng-model="artist.social.beatport">
+                        <input type="url" name="Beatport URL" placeholder=" " ng-model="artist.social.beatport">
+                        <label>Beatport URL</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-circle" aria-hidden="true"></i>
-                        <input type="url" name="Discog URL" placeholder="Discog URL" ng-model="artist.social.discog">
+                        <input type="url" name="Discog URL" placeholder=" " ng-model="artist.social.discog">
+                        <label>Discog URL</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-user-secret" aria-hidden="true"></i>
-                        <input type="url" name="Booking Agency URL" placeholder="Booking Agency URL" ng-model="artist.social.booking">
+                        <input type="url" name="Booking Agency URL" placeholder=" " ng-model="artist.social.booking">
+                        <label>Booking Agency URL</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
+                    <div class="col-xs-12 inputFields floatLabel social">
                         <i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="url" name="Personal Website URL" placeholder="Personal Website URL" ng-model="artist.social.website">
+                        <input type="url" name="Personal Website URL" placeholder=" " ng-model="artist.social.website">
+                        <label>Personal Website URL</label>
                     </div>
                 </div>
                 <div class="row">
