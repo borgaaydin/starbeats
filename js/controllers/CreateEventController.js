@@ -18,7 +18,7 @@ starbeats_event.controller('CreateEventController',
         };
         
         $scope.removeArtist = function(ind) {
-            $scope.event.artists.splice(ind, 1);
+            if($scope.event.artists.length>1) $scope.event.artists.splice(ind, 1);
         };
         
         $scope.createEvent = function(event, artits, createEventForm) {

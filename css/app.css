@@ -5145,6 +5145,14 @@ caption,
     top: 2px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.6); }
+  .inputFields .close {
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+    left: calc(100% - 32px); }
+    .inputFields .close:hover {
+      color: #ff005e;
+      cursor: pointer; }
 
 .imagePlaceholder {
   position: relative;

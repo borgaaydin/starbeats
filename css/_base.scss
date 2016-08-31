@@ -758,6 +758,18 @@ $eventTextColor: #0b0912;
     font-size: 16px;
     color: $text-color-transparent;
   }
+
+  .close {
+    font-size: 20px;
+    position: absolute;
+    top: 14px;
+    left: calc(100% - 32px);
+
+    &:hover {
+      color: $primary-color;
+      cursor: pointer;
+    }
+  }
 }
 
 .imagePlaceholder {

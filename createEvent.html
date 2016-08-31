@@ -216,16 +216,15 @@
                 <div class="row" ng-repeat="artist in event.artists">
                     <div class="col-xs-12 inputFields">
                         <input type="text" name="Artist/Headliner" ng-model="artist.name"  placeholder="Artist/Headliner" required>
+                        <i class="fa fa-times close" style="font-size:20px;" aria-hidden="true" ng-click="removeArtist($index)"></i>
                     </div>
-                    <button formnovalidate ng-click="removeArtist($index)">
-                        REMOVE
-                    </button>
-
 
                 </div>
-                <button formnovalidate ng-click="addArtist()">
-                    ADD NEW <i class="fa fa-plus"></i>
-                </button>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" ng-click="addArtist()">One more...</a>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-xs-6 inputFields">
