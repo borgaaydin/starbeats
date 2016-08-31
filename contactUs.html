@@ -114,32 +114,35 @@
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
             <form id="contactUsForm" name="contactUsForm">
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="First Name" ng-model="message.first_name" placeholder="First Name" required>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" name="First Name" ng-model="message.first_name" placeholder=" " required>
+                        <label>First Name</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="text" name="Last Name" ng-model="message.last_name" placeholder="Last Name" required>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="text" name="Last Name" ng-model="message.last_name" placeholder=" " required>
+                        <label>Last Name</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <input type="email" name="Email" ng-model="message.email" placeholder="Email" required>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <input type="email" name="Email" ng-model="message.email" placeholder=" " required>
+                        <label>Email</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <select name="UserType" ng-model="message.user_type" required>
-                            <option value="" disabled selected>I'm a...</option>
+                    <div class="col-xs-12 floatLabel">
+                        <select class="selectpicker" title=" " floatingLabel="User Type" ng-model="message.userType" multiple required>
                             <option value="Artist">Artist</option>
                             <option value="Producer">Producer</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 inputFields">
-                        <textarea placeholder="Description" ng-model="message.content" required></textarea>
+                    <div class="col-xs-12 inputFields floatLabel">
+                        <textarea placeholder=" " ng-model="message.content" required></textarea>
+                        <label>Description</label>
                     </div>
                 </div>
                 <div class="row">
@@ -257,7 +260,8 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
-<script src="js/modal.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
 
 <script>
     $( document ).ready(function() {
@@ -270,6 +274,14 @@
             if(form.valid()) {
                 $('#successModal').modal('show');
             }
+        });
+    });
+</script>
+<script>
+    $(function () {
+        $('.selectpicker').selectpicker({
+            noneSelectedText: ' ',
+            liveSearchPlaceholder: ' '
         });
     });
 </script>

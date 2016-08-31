@@ -1493,3 +1493,11 @@ ol.artistTopTracks {
   }
   margin-bottom: 10px;
 }
+
+#contactUsForm {
+  .inputFields{
+    input[type] {
+      padding-left: 0;
+    }
+  }
+}

@@ -5653,6 +5653,9 @@ ol.artistTopTracks {
   .trackRow .inputFields {
     margin: 16px 0; }
 
+#contactUsForm .inputFields input[type] {
+  padding-left: 0; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -6252,11 +6255,6 @@ select.selectpicker {
   .slick-prev {
     left: inherit; } }
 @media screen and (max-width: 480px) {
-  h1, h2, h3, h4,
-  h1.title,
-  h2.title,
-  h3.title,
-  h4.title,
   .title {
     font-size: 32px; }
 
@@ -6266,7 +6264,8 @@ select.selectpicker {
   .imagePlaceholder .fa-picture-o {
     font-size: 60px; }
 
-  body.index {
+  body.index,
+  body {
     background-image: none; }
 
   .promoteContainer button {
@@ -6314,6 +6313,9 @@ select.selectpicker {
   .formContainer {
     padding: 0; }
     .formContainer .container {
-      padding: 0; } }
+      padding: 0; }
+
+  .contactUsContainer .container {
+    padding: 0; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -9,8 +9,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  h1,
-  h1.title,
   .title{
     font-size: 32px;
   }
@@ -23,7 +21,8 @@
     font-size: 60px;
   }
 
-  body.index {
+  body.index,
+  body{
     background-image: none;
   }
 
@@ -93,6 +92,12 @@
 
   .formContainer {
     padding: 0;
+    .container {
+      padding: 0;
+    }
+  }
+
+  .contactUsContainer {
     .container {
       padding: 0;
     }
