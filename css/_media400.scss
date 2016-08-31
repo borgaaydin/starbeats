@@ -9,6 +9,20 @@
 }
 
 @media screen and (max-width: 480px) {
+  h1,
+  h1.title,
+  .title{
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .imagePlaceholder .fa-picture-o {
+    font-size: 60px;
+  }
+
   body.index {
     background-image: none;
   }

@@ -6252,6 +6252,20 @@ select.selectpicker {
   .slick-prev {
     left: inherit; } }
 @media screen and (max-width: 480px) {
+  h1, h2, h3, h4,
+  h1.title,
+  h2.title,
+  h3.title,
+  h4.title,
+  .title {
+    font-size: 32px; }
+
+  h3 {
+    font-size: 12px; }
+
+  .imagePlaceholder .fa-picture-o {
+    font-size: 60px; }
+
   body.index {
     background-image: none; }
 
