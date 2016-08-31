@@ -5391,7 +5391,8 @@ ol.artistTopTracks {
 
 .alphabeticList {
   list-style: none;
-  float: right; }
+  float: left;
+  padding-left: 0; }
   .alphabeticList li {
     display: block; }
 
@@ -5655,6 +5656,14 @@ ol.artistTopTracks {
 
 #contactUsForm .inputFields input[type] {
   padding-left: 0; }
+
+.artistListContainer {
+  max-width: 630px;
+  margin: 0 auto; }
+
+.searchArtistsCheckbox label {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 16px 0 8px; }
 
 /* Slider */
 .slick-slider {
