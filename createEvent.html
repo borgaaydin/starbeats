@@ -230,6 +230,7 @@
                 <div class="row">
                     <div class="col-xs-6 inputFields">
                         <input type="text" name="Ticket price at the door" ng-model="event.price" placeholder="Ticket price at the door" required>
+                        <label class="currency">EUR</label>
                     </div>
                 </div>
                 <div class="row">
@@ -264,7 +265,7 @@
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <button type="submit" id="createEventButton"  ng-click="createEvent(event, createEventForm)">
+                        <button type="submit" id="createEventButton" ng-click="createEvent(event, createEventForm)">
                             CREATE EVENT
                         </button>
                     </div>

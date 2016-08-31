@@ -5139,6 +5139,12 @@ caption,
     color: yellow; }
   .inputFields:focus span {
     color: yellow; }
+  .inputFields .currency {
+    position: absolute;
+    right: 16px;
+    top: 2px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6); }
 
 .imagePlaceholder {
   position: relative;
@@ -5193,15 +5199,13 @@ caption,
     display: block;
     filter: blur(10px);
     -webkit-filter: blur(10px);
-    position: relative;
+    position: absolute;
     overflow: hidden;
     z-index: -1;
-    height: 355px; }
+    height: 355px;
+    width: 100%; }
   .eventImageContainer img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    position: relative;
     z-index: 2;
     margin: 0 auto; }
 

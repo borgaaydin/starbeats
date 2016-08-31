@@ -750,6 +750,14 @@ $eventTextColor: #0b0912;
     }
     span {color: $secondary-color}
   }
+
+  .currency {
+    position: absolute;
+    right: 16px;
+    top: 2px;
+    font-size: 16px;
+    color: $text-color-transparent;
+  }
 }
 
 .imagePlaceholder {
@@ -811,16 +819,14 @@ $eventTextColor: #0b0912;
     display: block;
     filter: blur(10px);
     -webkit-filter: blur(10px);
-    position: relative;
+    position: absolute;
     overflow: hidden;
     z-index: -1;
     height: 355px;
+    width: 100%;
   }
   img {
-    position: absolute;
-    top:0;
-    right:0;
-    left:0;
+    position: relative;
     z-index: 2;
     margin: 0 auto;
   }
