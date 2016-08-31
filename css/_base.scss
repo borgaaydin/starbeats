@@ -754,6 +754,7 @@ $eventTextColor: #0b0912;
   .currency {
     position: absolute;
     right: 16px;
+    left: inherit;
     top: 2px;
     font-size: 16px;
     color: $text-color-transparent;
