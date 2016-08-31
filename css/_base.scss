@@ -1437,20 +1437,13 @@ ol.artistTopTracks {
 }
 
 .floatLabel {
-  input{
+  input,
+  textarea{
     &:focus ~ label,
     &:not(:placeholder-shown) ~ label {
       top:-16px;
       font-size:13px;
-      color: $primary-color;
-    }
-  }
-  textarea {
-    &:focus ~ label,
-    &:not(:placeholder-shown) ~ label {
-      top:-16px;
-      font-size:13px;
-      color: $primary-color;
+      color: $text-color-transparent;
     }
   }
   select {

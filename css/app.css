@@ -4594,14 +4594,12 @@ ol.artistTopTracks {
   height: 100%;
   padding: 56px 20px; }
 
-.floatLabel input:focus ~ label, .floatLabel input:not(:placeholder-shown) ~ label {
+.floatLabel input:focus ~ label, .floatLabel input:not(:placeholder-shown) ~ label,
+.floatLabel textarea:focus ~ label,
+.floatLabel textarea:not(:placeholder-shown) ~ label {
   top: -16px;
   font-size: 13px;
-  color: #ff005e; }
-.floatLabel textarea:focus ~ label, .floatLabel textarea:not(:placeholder-shown) ~ label {
-  top: -16px;
-  font-size: 13px;
-  color: #ff005e; }
+  color: rgba(255, 255, 255, 0.6); }
 .floatLabel label {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
