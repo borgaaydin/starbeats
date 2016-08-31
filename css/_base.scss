@@ -1459,16 +1459,15 @@ ol.artistTopTracks {
   input,
   textarea{
     &:focus ~ label,
-    &:not(:placeholder-shown) ~ label {
+    &.ng-not-empty ~ label{
       top:-16px;
       font-size:13px;
       color: $text-color-transparent;
     }
   }
-  select {
 
-  }
-  label {
+  label,
+  label.float{
     color: $text-color-transparent;
     font-size:16px;
     font-weight:700;

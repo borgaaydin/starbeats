@@ -172,30 +172,32 @@
                 <!--</div>-->
 
                 <div class="row">
-                    <div class="col-xs-6 inputFields">
+                    <div class="col-xs-6 inputFields floatLabel">
                         <div class='date' >
                             <input type="text"
                                    datetimepicker
                                    datetimepicker-options="{debug:true, format: false}"
-                                   placeholder="Start Time"
+                                   placeholder=" "
                                    name="date"
                                    ng-model="event.date.start"
                             />
+                            <label>Start Time</label>
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
                         <br/>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-6 inputFields">
+                    <div class="col-xs-6 inputFields floatLabel">
                         <div class='date'>
-                            <label class="control-label">End Time</label>
                             <input type="text"
                                    datetimepicker
                                    datetimepicker-options="{debug:true, format: false}"
+                                   placeholder=" "
                                    name="date"
                                    ng-model="event.date.end"
                             />
+                            <label>End Time</label>
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
                         <br/>
@@ -383,6 +385,13 @@
                 $('#successModal').modal('show');
             }
         });
+
+        var value=$.trim($(".floatLabel input").val());
+
+        if(value.length>0)
+        {
+            this.addClass("float");
+        }
     });
 </script>
 <script src="js/angular.min.js"></script>

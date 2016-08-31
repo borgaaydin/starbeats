@@ -5627,13 +5627,14 @@ ol.artistTopTracks {
   height: 100%;
   padding: 56px 20px; }
 
-.floatLabel input:focus ~ label, .floatLabel input:not(:placeholder-shown) ~ label,
+.floatLabel input:focus ~ label, .floatLabel input.ng-not-empty ~ label,
 .floatLabel textarea:focus ~ label,
-.floatLabel textarea:not(:placeholder-shown) ~ label {
+.floatLabel textarea.ng-not-empty ~ label {
   top: -16px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.6); }
-.floatLabel label {
+.floatLabel label,
+.floatLabel label.float {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 700;
@@ -6140,11 +6141,7 @@ select.selectpicker {
 .bootstrap-select {
   margin: 20px 0 10px; }
   .bootstrap-select label {
-    position: absolute;
-    left: 0;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all; }
+    left: 0; }
   .bootstrap-select select.ng-not-empty ~ button label,
   .bootstrap-select button:not(.bs-placeholder) > label {
     top: -16px;
@@ -6298,6 +6295,11 @@ select.selectpicker {
       font-size: 12px;
       margin-top: 1px; }
     .authContainer .inputFields {
-      margin-top: 12px; } }
+      margin-top: 12px; }
+
+  .formContainer {
+    padding: 0; }
+    .formContainer .container {
+      padding: 0; } }
 
 /*# sourceMappingURL=app.css.map */

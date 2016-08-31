@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div class="container-fluid headContainer">
+<header class="container-fluid headContainer">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-right">
@@ -62,9 +62,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-9 col-sm-3">
+            <div class="col-xs-8 col-sm-3 logoContainer">
                 <a href="#">
                     <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-4 visible-xs mobileIcons text-right">
+                <a id="searchMenuButton" href="#">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </a>
+                <a id="navMenuButton" href="#" >
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </a>
             </div>
             <div class="col-sm-6">
@@ -94,7 +107,7 @@
             </div>
         </div>
     </div>
-</div>
+</header>
 
 <div class="container-fluid titleContainer">
     <div class="container text-center">
@@ -321,7 +334,7 @@
     </div>
 </div>
 
-<div class="container-fluid footerContainer">
+<footer class="container-fluid footerContainer">
     <div class="container">
         <div class="row">
             <div class="col-xs-9 col-sm-3">
@@ -329,7 +342,7 @@
                     <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
                 </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-xs-12 col-sm-6">
                 <ul class="footerMenu">
                     <li>
                         <a class="active">
@@ -348,10 +361,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-3 switchCity">
+            <div class="col-xs-12 col-sm-3 switchCity">
                 <p>SWITCH CITY:</p>
                 <span class="current">Barcelona</span>
-                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
                 <div class="dropdown">
                     <ul>
                         <li>
@@ -389,7 +402,7 @@
             </ul>
         </div>
     </div>
-</div>
+</footer>
 
 <div id="successModal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog">
