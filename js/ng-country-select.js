@@ -764,7 +764,9 @@
         only: '@csOnly',
         except: '@csExcept'
       },
-      template: '<select ng-options="country.code as country.name for country in countries"> <option value="" ng-if="isSelectionOptional" disabled selected>Country</option> </select>',
+      template: '<select title=" " floatingLabel="Country" ng-options="country.code as country.name for country in countries">' +
+      // '<option value="" ng-if="isSelectionOptional" disabled selected>Country</option> ' +
+      '</select>',
       controller: [
         '$scope', '$attrs', function($scope, $attrs) {
           var countryCodesIn, findCountriesIn, includeOnlyRequestedCountries, removeCountry, removeExcludedCountries, separator, updateWithPriorityCountries;

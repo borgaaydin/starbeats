@@ -79,3 +79,25 @@
   width: 100%;
   outline: none;
 }
+
+.bootstrap-select {
+  margin: 20px 0 10px ;
+  label {
+    left: 0;
+  }
+
+  select.ng-not-empty ~ button label,
+  button:not(.bs-placeholder)>label{
+    top:-16px;
+    font-size:13px;
+    color: $text-color-transparent;
+  }
+}
+
+.bootstrap-select.open {
+  label {
+    top:-16px;
+    font-size:13px;
+    color: $text-color-transparent;
+  }
+}

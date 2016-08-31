@@ -5104,6 +5104,21 @@ select.selectpicker {
   width: 100%;
   outline: none; }
 
+.bootstrap-select {
+  margin: 20px 0 10px; }
+  .bootstrap-select label {
+    left: 0; }
+  .bootstrap-select select.ng-not-empty ~ button label,
+  .bootstrap-select button:not(.bs-placeholder) > label {
+    top: -16px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6); }
+
+.bootstrap-select.open label {
+  top: -16px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6); }
+
 /* Icon 1 */
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 24px;
