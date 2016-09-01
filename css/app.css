@@ -4975,7 +4975,8 @@ caption,
     padding: 20px 20px 20px 24px; }
     .event50 .eventDescription h3 {
       margin-top: 0;
-      color: #070011; }
+      color: #070011;
+      min-height: 50px; }
     .event50 .eventDescription h4 {
       margin: 0;
       color: #0b0912; }
@@ -5004,6 +5005,8 @@ caption,
     width: 100%; }
   .event25:hover h3 {
     color: yellow; }
+  .event25 h3 {
+    min-height: 42px; }
   .event25 h4 a:first-child {
     color: white; }
     .event25 h4 a:first-child:hover {

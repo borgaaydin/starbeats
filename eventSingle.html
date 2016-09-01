@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<div class="container-fluid headContainer">
+<header class="container-fluid headContainer">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-right">
@@ -29,32 +29,65 @@
                         LOG IN
                     </a>
                 </div>
-                <a class="cityButton hidden-xs">
+                <div class="cityButton hidden-xs">
                     <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-                    BARCELONA
+                    <span>BARCELONA</span>
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                </a>
-                <a class="langButton hidden-xs">
-                    ENG
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">Barcelona</a>
+                            </li>
+                            <li>
+                                <a href="#">Madrid</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="langButton hidden-xs">
+                    <span>ENG</span>
                     <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                </a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">English</a>
+                            </li>
+                            <li>
+                                <a href="#">Español</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-9 col-sm-3">
+            <div class="col-xs-8 col-sm-3 logoContainer">
                 <a href="#">
                     <img src="./img/Starbeats_Logo.png" alt="Starbeats.es Logo" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-4 visible-xs mobileIcons text-right">
+                <a id="searchMenuButton" href="#">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </a>
+                <a id="navMenuButton" href="#" >
+                    <div id="nav-icon3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </a>
             </div>
             <div class="col-sm-6">
                 <ul class="mainMenu hidden-xs">
                     <li>
-                        <a>
+                        <a class="active">
                             HOME
                         </a>
                     </li>
                     <li>
-                        <a class="active">
+                        <a>
                             EVENTS
                         </a>
                     </li>
@@ -73,7 +106,7 @@
             </div>
         </div>
     </div>
-</div>
+</header>
 
 <div class="eventSingleContainer">
     <div class="container-fluid eventImageContainer">

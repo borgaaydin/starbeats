@@ -512,6 +512,7 @@ $eventTextColor: #0b0912;
     h3 {
       margin-top: 0;
       color: $eventTitleColor;
+      min-height: 50px;
     }
     h4 {
       margin: 0;
@@ -563,6 +564,10 @@ $eventTextColor: #0b0912;
     h3 {
       color: $secondary-color;
     }
+  }
+
+  h3 {
+    min-height: 42px;
   }
 
   h4 {
