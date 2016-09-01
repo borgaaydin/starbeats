@@ -14,7 +14,7 @@ starbeats_event.controller('CreateEventController',
         };
 
         $scope.addArtist = function() {
-            $scope.event.artists.push({name: ''});
+            if($scope.event.artists.length<10) $scope.event.artists.push({name: ''});
         };
         
         $scope.removeArtist = function(ind) {
