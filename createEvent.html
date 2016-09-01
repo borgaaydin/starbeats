@@ -159,7 +159,7 @@
                 <div class="row">
                     <div class="col-xs-12 inputFields floatLabel">
                         <input type="text" name="Name of the Event" ng-model="event.name" placeholder=" " required>
-                        <label>Name of the Event</label>
+                        <label class="float">Name of the Event</label>
                     </div>
                 </div>
                 <!--<div class="row">-->
@@ -181,7 +181,7 @@
                                    name="date"
                                    ng-model="event.date.start"
                             />
-                            <label>Start Time</label>
+                            <label class="float">Start Time</label>
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
                         <br/>
@@ -197,7 +197,7 @@
                                    name="date"
                                    ng-model="event.date.end"
                             />
-                            <label>End Time</label>
+                            <label class="float">End Time</label>
                             <span class="glyphicon glyphicon-calendar"></span>
                         </div>
                         <br/>
@@ -219,7 +219,7 @@
                 <div class="row" ng-repeat="artist in event.artists">
                     <div class="col-xs-12 inputFields floatLabel">
                         <input type="text" name="Artist/Headliner" ng-model="artist.name"  placeholder=" " required>
-                        <label>Artist/Headliner</label>
+                        <label class="float">Artist/Headliner</label>
                         <i class="fa fa-times close" style="font-size:20px;" aria-hidden="true" ng-click="removeArtist($index)"></i>
                     </div>
 
@@ -233,7 +233,7 @@
                 <div class="row">
                     <div class="col-xs-12 inputFields floatLabel">
                         <input type="text" name="Ticket price at the door" ng-model="event.price" placeholder=" " required>
-                        <label>Ticket price at the door</label>
+                        <label class="float">Ticket price at the door</label>
                         <span class="currency">EUR</span>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                 <div class="row">
                     <div class="col-xs-12 inputFields floatLabel">
                         <textarea placeholder=" " ng-model="event.description" required></textarea>
-                        <label>Description</label>
+                        <label class="float">Description</label>
                     </div>
                 </div>
 

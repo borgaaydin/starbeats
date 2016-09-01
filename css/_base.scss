@@ -1488,15 +1488,14 @@ ol.artistTopTracks {
 .floatLabel {
   input,
   textarea{
-    &:focus ~ label,
-    &.ng-not-empty ~ label{
+    &:focus ~ label.float,
+    &.ng-not-empty ~ label.float{
       top:-16px;
       font-size:13px;
       color: $text-color-transparent;
     }
   }
 
-  label,
   label.float{
     color: $text-color-transparent;
     font-size:16px;
@@ -1511,7 +1510,7 @@ ol.artistTopTracks {
   }
 
   &.social {
-    label {
+    label.float {
       left: 48px;
     }
   }

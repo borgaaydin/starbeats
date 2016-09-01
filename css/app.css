@@ -5652,13 +5652,12 @@ ol.artistTopTracks {
   height: 100%;
   padding: 56px 20px; }
 
-.floatLabel input:focus ~ label, .floatLabel input.ng-not-empty ~ label,
-.floatLabel textarea:focus ~ label,
-.floatLabel textarea.ng-not-empty ~ label {
+.floatLabel input:focus ~ label.float, .floatLabel input.ng-not-empty ~ label.float,
+.floatLabel textarea:focus ~ label.float,
+.floatLabel textarea.ng-not-empty ~ label.float {
   top: -16px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.6); }
-.floatLabel label,
 .floatLabel label.float {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
@@ -5670,7 +5669,7 @@ ol.artistTopTracks {
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all; }
-.floatLabel.social label {
+.floatLabel.social label.float {
   left: 48px; }
 
 .authContainer .floatLabel label {
@@ -6180,7 +6179,16 @@ select.selectpicker {
 .bootstrap-select {
   margin: 20px 0 10px; }
   .bootstrap-select label {
-    left: 0; }
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
   .bootstrap-select select.ng-not-empty ~ button label,
   .bootstrap-select button:not(.bs-placeholder) > label {
     top: -16px;
