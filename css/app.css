@@ -5567,7 +5567,7 @@ ol.artistTopTracks {
   .searchLookBy > div {
     display: inline-block; }
   .searchLookBy .item {
-    margin: 0 8px;
+    margin: 0 6px;
     font-weight: 500;
     position: relative; }
     .searchLookBy .item:hover .dropdown {
@@ -5579,7 +5579,7 @@ ol.artistTopTracks {
       color: #ff005e; }
     .searchLookBy .item .glyphicon {
       color: #ff005e;
-      margin: 0 6px 0 0; }
+      margin: 0 2px 0 0; }
 
 #createEventButton,
 #createArtistButton {
@@ -6331,6 +6331,9 @@ select.selectpicker {
       padding: 0; }
 
   .contactUsContainer .container {
-    padding: 0; } }
+    padding: 0; }
+
+  .searchLookBy .item {
+    margin: 0 4px; } }
 
 /*# sourceMappingURL=app.css.map */
