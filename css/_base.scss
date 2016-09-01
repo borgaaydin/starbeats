@@ -43,6 +43,12 @@ body {
   background-size: auto, auto, cover;
 }
 
+#bgvid {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -621,7 +627,7 @@ $eventTextColor: #0b0912;
 }
 
 .promoteContainer {
-  background: $background-color-navy url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
+  background: transparent ;
   padding: 50px;
 
   h2 {

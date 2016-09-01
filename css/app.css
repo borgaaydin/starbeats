@@ -4648,6 +4648,11 @@ body {
   background-position: top left, top right, top center;
   background-size: auto, auto, cover; }
 
+#bgvid {
+  position: fixed;
+  top: 0;
+  z-index: -1; }
+
 h1, h2, h3, h4 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -5040,7 +5045,7 @@ caption,
     margin: 30px 10px 30px 10px; }
 
 .promoteContainer {
-  background: #150022 url("../img/SliderContainerBackground.jpg") top/cover no-repeat;
+  background: transparent;
   padding: 50px; }
   .promoteContainer h2 {
     margin-bottom: 20px; }
@@ -6283,8 +6288,10 @@ select.selectpicker {
   body {
     background-image: none; }
 
-  .promoteContainer button {
-    padding: 10px 30px; }
+  .promoteContainer {
+    background: #150022 url("../img/SliderContainerBackground.jpg") top/cover no-repeat; }
+    .promoteContainer button {
+      padding: 10px 30px; }
 
   .event50 .eventDescription {
     padding: 6px 20px 20px 16px; }

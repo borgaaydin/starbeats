@@ -26,8 +26,11 @@
     background-image: none;
   }
 
-  .promoteContainer button {
-    padding: 10px 30px;
+  .promoteContainer {
+    background: $background-color-navy url("../img/SliderContainerBackground.jpg") top/cover no-repeat ;
+    button {
+      padding: 10px 30px;
+    }
   }
 
   .event50 .eventDescription {
