@@ -5550,6 +5550,31 @@ ol.artistTopTracks {
   background-color: #ff005e;
   color: white; }
 
+.inputFields .bootstrap-datetimepicker-widget {
+  color: #000;
+  border: none; }
+  .inputFields .bootstrap-datetimepicker-widget span, .inputFields .bootstrap-datetimepicker-widget input {
+    color: #000; }
+  .inputFields .bootstrap-datetimepicker-widget:hover span, .inputFields .bootstrap-datetimepicker-widget:hover input {
+    color: #000; }
+
+.bootstrap-datetimepicker-widget {
+  color: #000; }
+  .bootstrap-datetimepicker-widget span, .bootstrap-datetimepicker-widget input {
+    color: #000; }
+  .bootstrap-datetimepicker-widget:hover span, .bootstrap-datetimepicker-widget:hover input {
+    color: #000; }
+  .bootstrap-datetimepicker-widget .glyphicon {
+    color: #000; }
+    .bootstrap-datetimepicker-widget .glyphicon:hover {
+      color: #ff005e; }
+  .bootstrap-datetimepicker-widget .btn-primary {
+    background-color: #ff005e;
+    opacity: 1;
+    border: none; }
+    .bootstrap-datetimepicker-widget .btn-primary:hover {
+      background-color: #ff005e; }
+
 .getInTouch {
   width: 100%;
   border: 1px solid #ff005e;

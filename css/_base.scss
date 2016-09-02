@@ -1337,6 +1337,56 @@ ol.artistTopTracks {
   color: white;
 }
 
+.inputFields .bootstrap-datetimepicker-widget {
+  color: #000;
+  border: none;
+
+  span, input {
+    color: #000;
+  }
+
+  &:hover {
+    span, input {
+      color: #000;
+    }
+  }
+}
+
+
+.bootstrap-datetimepicker-widget {
+  color: #000;
+
+  span, input {
+    color: #000;
+  }
+
+  &:hover {
+    span, input {
+      color: #000;
+    }
+  }
+
+  .glyphicon {
+    color: #000;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .collapse {
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    opacity: 1;
+    border: none;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
 .getInTouch {
   width:100%;
   border:1px solid $primary-color;
