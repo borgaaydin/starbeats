@@ -55,6 +55,7 @@ $(document).ready(function(){
         arrows: false,
         autoplay: true,
         autoplaySpeed: 2000,
-        mobileFirst: true
+        mobileFirst: true,
+        adaptiveHeight: true
     });
 });

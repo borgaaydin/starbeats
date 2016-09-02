@@ -4687,6 +4687,9 @@ h4 {
   font-size: 14px;
   text-transform: none; }
 
+.highlight {
+  color: yellow; }
+
 .link {
   font-size: 16px;
   font-family: "Lato", sans-serif;
@@ -5037,6 +5040,9 @@ caption,
 
 .mapsContainer {
   padding: 0; }
+  .mapsContainer .eventMarker {
+    position: absolute;
+    bottom: 50px; }
 
 #map {
   height: 400px;
@@ -5690,6 +5696,12 @@ ol.artistTopTracks {
 .searchArtistsCheckbox label {
   color: rgba(255, 255, 255, 0.6);
   padding: 0 16px 0 8px; }
+
+.artistPhotosSlider img {
+  height: 200px; }
+
+.moreEventsContainer h2 {
+  margin: 40px 0; }
 
 /* Slider */
 .slick-slider {
