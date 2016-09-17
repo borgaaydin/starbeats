@@ -4774,6 +4774,9 @@ caption,
 .headContainer {
   margin-bottom: 40px; }
 
+.sliderContainer {
+  z-index: 99; }
+
 .upNavBar {
   display: inline-block;
   background-color: #070011;

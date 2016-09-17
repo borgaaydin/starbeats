@@ -176,7 +176,7 @@
                         <div class='date' >
                             <input type="text"
                                    datetimepicker
-                                   datetimepicker-options="{format: false}"
+                                   datetimepicker-options="{format: false, collapse: false, locale: 'es' }"
                                    placeholder=" "
                                    name="date"
                                    ng-model="event.date.start"
@@ -192,7 +192,7 @@
                         <div class='date'>
                             <input type="text"
                                    datetimepicker
-                                   datetimepicker-options="{format: false}"
+                                   datetimepicker-options="{format: false, collapse: false, locale: 'es' }"
                                    placeholder=" "
                                    name="date"
                                    ng-model="event.date.end"
@@ -403,7 +403,7 @@
 <script src="js/directives/angular-bootstrap-datetimepicker-directive.min.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-select.js"></script>
 <script type="text/javascript">
