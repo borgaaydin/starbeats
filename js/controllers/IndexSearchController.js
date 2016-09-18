@@ -4,6 +4,7 @@
 
 starbeats_index.controller('IndexSearchController',
     function IndexSearchController($scope){
+        $scope.eventDate = null;
         $scope.selectedNumber = null;
 
         // instantiate the bloodhound suggestion engine
@@ -83,6 +84,7 @@ starbeats_index.controller('IndexSearchController',
             }];
 
         $scope.search = function (searchTerm) {
+            console.log(eventDate.value);
             if(searchTerm===undefined || searchTerm===null) searchTerm = "" ;
             IndexSearchService.getSearchResults(searchTerm).then(function successCallback(response) {
                 $scope.searchResults = response.data;

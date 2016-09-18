@@ -8,7 +8,7 @@ var starbeats = angular.module('starbeats', [])
         $rootScope.API = "http://localhost/";
     });
 
-var starbeats_index = angular.module('starbeats_index', ['siyfion.sfTypeahead']);
+var starbeats_index = angular.module('starbeats_index', ['siyfion.sfTypeahead', 'datetimepicker']);
 
 var starbeats_artist = angular.module('starbeats_artist', ['starbeats', 'ngFileUpload', 'ngImgCrop', 'countrySelect']);
 

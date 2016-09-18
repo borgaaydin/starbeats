@@ -217,7 +217,12 @@
                                 <span class="name">DATE</span>
                                 <div class="outer-dropdown">
                                     <div class="dropdown">
-                                        <label>Underclub</label>
+                                        <div datetimepicker
+                                             datetimepicker-options="{format: 'dd/MM/YYYY', collapse: false, locale: 'en-GB', inline: true }"
+                                             placeholder=" "
+                                             name="date"
+                                             ng-model="ctrl.date">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -254,10 +259,10 @@
                                 </p>
                                 <i class="fa fa-times-circle" aria-hidden="true" ng-click="venue.value=false;"></i>
                             </span>
-                            <span class="filter-box" ng-if="eventDate.value">
+                            <span class="filter-box" ng-if="ctrl.date">
                                 <span class="glyphicon glyphicon-date" aria-hidden="true"></span>
                                 <p>
-                                    {{eventDate.value}}
+                                    {{ctrl.date}}
                                 </p>
                                 <i class="fa fa-times-circle" aria-hidden="true" ng-click="eventDate.value=false;"></i>
                             </span>
@@ -273,7 +278,7 @@
 
                 </div>
                 <div class="col-sm-4">
-                    <button>
+                    <button ng-click="search()">
                         SEARCH
                     </button>
                 </div>
