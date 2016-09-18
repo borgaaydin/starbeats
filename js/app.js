@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var starbeats = angular.module('starbeats', [])
+var starbeats = angular.module('starbeats', ['siyfion.sfTypeahead'])
     .run(function ($rootScope) {
         $rootScope.API = "http://localhost/";
     });

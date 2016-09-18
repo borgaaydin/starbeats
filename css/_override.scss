@@ -1,0 +1,92 @@
+
+.bootstrap-datetimepicker-widget table td.day {
+  color: #000;
+}
+
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: $primary-color;
+  color: white;
+}
+
+.bootstrap-datetimepicker-widget table td.disabled,
+.bootstrap-datetimepicker-widget table td.disabled:hover {
+  color: #777777;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  color: $primary-color;
+  background-color: transparent;
+}
+
+.bootstrap-datetimepicker-widget table td.today:before {
+  display: none;
+}
+
+.bootstrap-datetimepicker-widget table th.dow {
+  color: $primary-color;
+}
+
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  color: black;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover {
+  background-color: $primary-color;
+  color: white;
+}
+
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover {
+  background-color: $primary-color;
+  color: white;
+}
+
+.inputFields .bootstrap-datetimepicker-widget {
+  color: #000;
+  border: none;
+
+  span, input {
+    color: #000;
+  }
+
+  &:hover {
+    span, input {
+      color: #000;
+    }
+  }
+}
+
+
+.bootstrap-datetimepicker-widget {
+  color: #000;
+
+  span, input {
+    color: #000;
+  }
+
+  &:hover {
+    span, input {
+      color: #000;
+    }
+  }
+
+  .glyphicon {
+    color: #000;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .collapse {
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    opacity: 1;
+    border: none;
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}

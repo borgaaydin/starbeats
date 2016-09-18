@@ -4912,9 +4912,9 @@ caption,
   max-width: 630px;
   margin: 0 auto 32px;
   padding: 0; }
-  .searchContainer div {
+  .searchContainer > div {
     padding: 0; }
-  .searchContainer .searchBar span {
+  .searchContainer .searchBar .glyphicon {
     position: absolute;
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
@@ -5528,56 +5528,6 @@ ol.artistTopTracks {
   padding-left: 0;
   list-style: none; }
 
-.bootstrap-datetimepicker-widget table td.day {
-  color: #000; }
-
-.bootstrap-datetimepicker-widget table td.disabled,
-.bootstrap-datetimepicker-widget table td.disabled:hover {
-  color: #777777; }
-
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover {
-  color: #ff005e;
-  background-color: transparent; }
-
-.bootstrap-datetimepicker-widget table td.today:before {
-  display: none; }
-
-.bootstrap-datetimepicker-widget table th.dow {
-  color: #ff005e; }
-
-.bootstrap-datetimepicker-widget table th.picker-switch {
-  color: black; }
-
-.bootstrap-datetimepicker-widget table td.day:hover {
-  background-color: #ff005e;
-  color: white; }
-
-.inputFields .bootstrap-datetimepicker-widget {
-  color: #000;
-  border: none; }
-  .inputFields .bootstrap-datetimepicker-widget span, .inputFields .bootstrap-datetimepicker-widget input {
-    color: #000; }
-  .inputFields .bootstrap-datetimepicker-widget:hover span, .inputFields .bootstrap-datetimepicker-widget:hover input {
-    color: #000; }
-
-.bootstrap-datetimepicker-widget {
-  color: #000; }
-  .bootstrap-datetimepicker-widget span, .bootstrap-datetimepicker-widget input {
-    color: #000; }
-  .bootstrap-datetimepicker-widget:hover span, .bootstrap-datetimepicker-widget:hover input {
-    color: #000; }
-  .bootstrap-datetimepicker-widget .glyphicon {
-    color: #000; }
-    .bootstrap-datetimepicker-widget .glyphicon:hover {
-      color: #ff005e; }
-  .bootstrap-datetimepicker-widget .btn-primary {
-    background-color: #ff005e;
-    opacity: 1;
-    border: none; }
-    .bootstrap-datetimepicker-widget .btn-primary:hover {
-      background-color: #ff005e; }
-
 .getInTouch {
   width: 100%;
   border: 1px solid #ff005e;
@@ -5618,23 +5568,42 @@ ol.artistTopTracks {
     border-top: 15px solid white; }
 
 .searchLookBy {
-  margin: 10px 0; }
-  .searchLookBy > div {
+  margin: 10px 0;
+  height: 50px; }
+  .searchLookBy > div > div {
     display: inline-block; }
   .searchLookBy .item {
     margin: 0 6px;
     font-weight: 500;
     position: relative; }
+    .searchLookBy .item:hover .outer-dropdown {
+      position: absolute;
+      padding: 60px; }
     .searchLookBy .item:hover .dropdown {
       display: inline-block;
-      top: 44px;
+      top: 20px;
       left: -64px;
       width: 224px; }
     .searchLookBy .item:hover .glyphicon {
       color: #ff005e; }
+    .searchLookBy .item label {
+      color: #070011; }
+      .searchLookBy .item label:hover {
+        color: #ff005e; }
+    .searchLookBy .item .name {
+      font-weight: 700; }
     .searchLookBy .item .glyphicon {
       color: #ff005e;
       margin: 0 2px 0 0; }
+  .searchLookBy .filter-box {
+    padding: 2px 6px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0.64);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.6); }
+    .searchLookBy .filter-box p, .searchLookBy .filter-box a {
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.6); }
 
 #createEventButton,
 #createArtistButton {
@@ -5936,6 +5905,83 @@ ol.artistTopTracks {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+/* scaffolding */
+/* ----------- */
+.twitter-typeahead {
+  width: 100%; }
+
+.tt-dropdown-menu,
+.gist {
+  text-align: left; }
+
+.ng-invalid {
+  border-color: #ff005e !important;
+  /* just for visual */ }
+
+/* site theme */
+/* ---------- */
+.typeahead,
+.tt-query,
+.tt-hint {
+  width: 396px;
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  outline: none; }
+
+.typeahead {
+  background-color: #fff; }
+
+.typeahead:focus {
+  border: 2px solid #ff005e; }
+
+.tt-query {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+.tt-hint {
+  color: #999; }
+
+.tt-menu {
+  width: 422px;
+  margin: 12px 0;
+  padding: 8px 12px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.tt-suggestion {
+  padding: 2px 8px;
+  line-height: 24px;
+  color: black;
+  font-size: 14px;
+  font-weight: 400; }
+
+.tt-suggestion:hover {
+  cursor: pointer;
+  color: #ff005e; }
+
+.tt-suggestion.tt-cursor {
+  color: #ff005e; }
+
+.tt-suggestion p, .tt-suggestion a {
+  margin: 0; }
+
+.search-category-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #aeaeae; }
 
 /*!
  * Datetimepicker for Bootstrap 3
@@ -6522,6 +6568,64 @@ select.selectpicker {
   top: 8px;
   width: 0;
   left: 50%; }
+
+.bootstrap-datetimepicker-widget table td.day {
+  color: #000; }
+
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: #ff005e;
+  color: white; }
+
+.bootstrap-datetimepicker-widget table td.disabled,
+.bootstrap-datetimepicker-widget table td.disabled:hover {
+  color: #777777; }
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  color: #ff005e;
+  background-color: transparent; }
+
+.bootstrap-datetimepicker-widget table td.today:before {
+  display: none; }
+
+.bootstrap-datetimepicker-widget table th.dow {
+  color: #ff005e; }
+
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  color: black; }
+
+.bootstrap-datetimepicker-widget table td.day:hover {
+  background-color: #ff005e;
+  color: white; }
+
+.bootstrap-datetimepicker-widget table td.day:hover, .bootstrap-datetimepicker-widget table td.hour:hover, .bootstrap-datetimepicker-widget table td.minute:hover, .bootstrap-datetimepicker-widget table td.second:hover {
+  background-color: #ff005e;
+  color: white; }
+
+.inputFields .bootstrap-datetimepicker-widget {
+  color: #000;
+  border: none; }
+  .inputFields .bootstrap-datetimepicker-widget span, .inputFields .bootstrap-datetimepicker-widget input {
+    color: #000; }
+  .inputFields .bootstrap-datetimepicker-widget:hover span, .inputFields .bootstrap-datetimepicker-widget:hover input {
+    color: #000; }
+
+.bootstrap-datetimepicker-widget {
+  color: #000; }
+  .bootstrap-datetimepicker-widget span, .bootstrap-datetimepicker-widget input {
+    color: #000; }
+  .bootstrap-datetimepicker-widget:hover span, .bootstrap-datetimepicker-widget:hover input {
+    color: #000; }
+  .bootstrap-datetimepicker-widget .glyphicon {
+    color: #000; }
+    .bootstrap-datetimepicker-widget .glyphicon:hover {
+      color: #ff005e; }
+  .bootstrap-datetimepicker-widget .btn-primary {
+    background-color: #ff005e;
+    opacity: 1;
+    border: none; }
+    .bootstrap-datetimepicker-widget .btn-primary:hover {
+      background-color: #ff005e; }
 
 @media screen and (max-width: 1024px) {
   .slick-next {

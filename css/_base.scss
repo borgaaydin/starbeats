@@ -407,12 +407,12 @@ caption,
   margin: 0 auto 32px;
   padding: 0;
 
-  div {
+  >div {
     padding: 0;
   }
 
   .searchBar {
-    span {
+    .glyphicon {
       position: absolute;
       color: $text-color-transparent;
       font-size: 16px;
@@ -1306,87 +1306,6 @@ ol.artistTopTracks {
   list-style: none;
 }
 
-.bootstrap-datetimepicker-widget table td.day {
-  color: #000;
-}
-
-.bootstrap-datetimepicker-widget table td.disabled,
-.bootstrap-datetimepicker-widget table td.disabled:hover {
-  color: #777777;
-}
-
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover {
-  color: $primary-color;
-  background-color: transparent;
-}
-
-.bootstrap-datetimepicker-widget table td.today:before {
-  display: none;
-}
-
-.bootstrap-datetimepicker-widget table th.dow {
-  color: $primary-color;
-}
-
-.bootstrap-datetimepicker-widget table th.picker-switch {
-  color: black;
-}
-
-.bootstrap-datetimepicker-widget table td.day:hover {
-  background-color: $primary-color;
-  color: white;
-}
-
-.inputFields .bootstrap-datetimepicker-widget {
-  color: #000;
-  border: none;
-
-  span, input {
-    color: #000;
-  }
-
-  &:hover {
-    span, input {
-      color: #000;
-    }
-  }
-}
-
-
-.bootstrap-datetimepicker-widget {
-  color: #000;
-
-  span, input {
-    color: #000;
-  }
-
-  &:hover {
-    span, input {
-      color: #000;
-    }
-  }
-
-  .glyphicon {
-    color: #000;
-
-    &:hover {
-      color: $primary-color;
-    }
-  }
-
-  .collapse {
-  }
-
-  .btn-primary {
-    background-color: $primary-color;
-    opacity: 1;
-    border: none;
-    &:hover {
-      background-color: $primary-color;
-    }
-  }
-}
 
 .getInTouch {
   width:100%;
@@ -1444,7 +1363,8 @@ ol.artistTopTracks {
 
 .searchLookBy {
   margin: 10px 0;
-  >div {
+  height: 50px;
+  >div>div {
     display: inline-block;
   }
   .item {
@@ -1453,9 +1373,13 @@ ol.artistTopTracks {
     position: relative;
 
     &:hover {
+      .outer-dropdown {
+        position: absolute;
+        padding: 60px;
+      }
       .dropdown {
         display: inline-block;
-        top: 44px;
+        top: 20px;
         left: -64px;
         width: 224px;
       }
@@ -1463,10 +1387,36 @@ ol.artistTopTracks {
          color: $primary-color;
       }
     }
+    
+    label {
+      color: $text-color-dark;
+      
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .name {
+      font-weight: 700;
+    }
 
     .glyphicon {
       color: $primary-color;
       margin: 0 2px 0 0;
+    }
+  }
+
+  .filter-box {
+    padding: 2px 6px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0.64);
+    border-radius: 2px;
+    color: $text-color-transparent;
+
+    p {
+      display: inline-block;
+      color: $text-color-transparent;
+
     }
   }
 }

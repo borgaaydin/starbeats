@@ -5,8 +5,6 @@
     <title>Starbeats</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"
-          href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css">
     <link rel="stylesheet" href="./css/app.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
@@ -162,21 +160,13 @@
                         <label class="float">Name of the Event</label>
                     </div>
                 </div>
-                <!--<div class="row">-->
-                    <!--<div class="col-xs-6 inputFields">-->
-                        <!--<div class='date' >-->
-                            <!--<input type='text' name="date" ng-model="event.date" class="" id='datetimepicker' required>-->
-                            <!--<span class="glyphicon glyphicon-calendar"></span>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
 
                 <div class="row">
                     <div class="col-sm-6 col-xs-12 inputFields floatLabel">
                         <div class='date' >
                             <input type="text"
                                    datetimepicker
-                                   datetimepicker-options="{format: false, collapse: false, locale: 'es' }"
+                                   datetimepicker-options="{format: false, collapse: false, locale: 'en-GB' }"
                                    placeholder=" "
                                    name="date"
                                    ng-model="event.date.start"
@@ -192,7 +182,7 @@
                         <div class='date'>
                             <input type="text"
                                    datetimepicker
-                                   datetimepicker-options="{format: false, collapse: false, locale: 'es' }"
+                                   datetimepicker-options="{format: false, collapse: false, locale: 'en-GB' }"
                                    placeholder=" "
                                    name="date"
                                    ng-model="event.date.end"
@@ -203,18 +193,6 @@
                         <br/>
                     </div>
                 </div>
-
-
-                <!--<div class="row">-->
-                    <!--<div class="col-xs-6 inputFields">-->
-                        <!--<input type="text" name="Start Time" ng-model="event.start_time" placeholder="Start Time (hh:mm)" required>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="row">-->
-                    <!--<div class="col-xs-6 inputFields">-->
-                        <!--<input type="text" name="End Time" ng-model="event.end_time" placeholder="End Time (hh:mm)">-->
-                    <!--</div>-->
-                <!--</div>-->
 
                 <div class="row" ng-repeat="artist in event.artists">
                     <div class="col-xs-12 inputFields floatLabel">
