@@ -2,7 +2,7 @@
  * Created by borga on 05/06/16.
  */
 
-starbeats.controller('IndexSearchController',
+starbeats_index.controller('IndexSearchController',
     function IndexSearchController($scope){
         $scope.selectedNumber = null;
 
