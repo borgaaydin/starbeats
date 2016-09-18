@@ -3,10 +3,12 @@
  */
 'use strict';
 
-var starbeats = angular.module('starbeats', ['siyfion.sfTypeahead'])
+var starbeats = angular.module('starbeats', [])
     .run(function ($rootScope) {
         $rootScope.API = "http://localhost/";
     });
+
+var starbeats_index = angular.module('starbeats_index', ['siyfion.sfTypeahead']);
 
 var starbeats_artist = angular.module('starbeats_artist', ['starbeats', 'ngFileUpload', 'ngImgCrop', 'countrySelect']);
 
