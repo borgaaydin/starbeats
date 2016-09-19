@@ -47,11 +47,11 @@ function initMap() {
 
     var contentString =
         '<div class="mapsInfoWindow">'+
-            '<h3 style="color: #000;">UNDERCLUB<br>SAM PAGANINI</h3>'+
+            '<h3>UNDERCLUB<br>SAM PAGANINI</h3>'+
             '<div id="bodyContent">'+
-                '<p style="color: #000;">Saturday, March 12th</p>'+
-                '<p style="color: #000;">23:59 - 06:00</p>'+
-                '<p style="color: #000;">at <a href="#">UNDERCLUB</a> </p>'+
+                '<p>Saturday, March 12th</p>'+
+                '<p>23:59 - 06:00</p>'+
+                '<p>at <a href="#">UNDERCLUB</a> </p>'+
             '</div>'+
         '</div>';
 

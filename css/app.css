@@ -5987,16 +5987,52 @@ ol.artistTopTracks {
   background-color: #070011;
   border: 6px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  height: 240px;
+  height: 246px;
   position: absolute;
   width: 180px;
   top: 32px;
-  padding: 10px;
+  padding: 0;
   right: 100px; }
+  #mapsSearchPanel label, #mapsSearchPanel p, #mapsSearchPanel a {
+    color: rgba(255, 255, 255, 0.6); }
+  #mapsSearchPanel label {
+    margin-left: 20px; }
+  #mapsSearchPanel p, #mapsSearchPanel a {
+    font-size: 12px;
+    margin: 8px 8px 8px 20px; }
   #mapsSearchPanel .criteriaList {
-    list-style: none; }
-  #mapsSearchPanel .mapsInfoWindow h3 {
-    color: #070011; }
+    list-style: none;
+    padding: 0; }
+    #mapsSearchPanel .criteriaList > li {
+      background-color: #150022;
+      padding: 12px 20px;
+      border-radius: 2px;
+      margin-bottom: 2px; }
+      #mapsSearchPanel .criteriaList > li .glyphicon {
+        color: #ff005e;
+        float: right; }
+      #mapsSearchPanel .criteriaList > li:hover .dropdown {
+        display: block;
+        top: 0;
+        left: -245px; }
+        #mapsSearchPanel .criteriaList > li:hover .dropdown:before {
+          content: none; }
+      #mapsSearchPanel .criteriaList > li .dropdown {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: -245px;
+        background: white;
+        z-index: 10;
+        border-radius: 2px; }
+
+.mapsInfoWindow h3, .mapsInfoWindow p, .mapsInfoWindow a {
+  color: #070011; }
+.mapsInfoWindow a {
+  color: #ff005e; }
+  .mapsInfoWindow a:hover {
+    color: #ff005e;
+    text-decoration: underline; }
 
 /*!
  * Datetimepicker for Bootstrap 3

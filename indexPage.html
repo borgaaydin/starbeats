@@ -477,10 +477,21 @@
             FILTER BY:
         </p>
         <ul class="criteriaList">
-            <li>DATE</li>
-            <li>VENUE</li>
-            <li>BAND/DJ</li>
-            <li>MUSIC GENRE</li>
+            <li>
+                DATE
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <div class="dropdown">
+                    <div datetimepicker
+                         datetimepicker-options="{format: 'dd/MM/YYYY', collapse: false, locale: 'en-GB', inline: true }"
+                         placeholder=" "
+                         name="date"
+                         ng-model="maps.date">
+                    </div>
+                </div>
+            </li>
+            <li>VENUE<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
+            <li>BAND/DJ<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
+            <li>MUSIC GENRE<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
         </ul>
     </div>
 </div>
