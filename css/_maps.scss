@@ -13,8 +13,8 @@
     color: $text-color-transparent;
   }
 
-  label {
-    margin-left: 20px;
+  >label {
+    margin: 6px 0 2px 20px;
   }
 
   p {
@@ -30,7 +30,7 @@
       padding: 12px 20px;
       border-radius: 2px;
       margin-bottom: 2px;
-
+      
       .glyphicon {
         color: $primary-color;
         float: right;
@@ -40,7 +40,7 @@
         .dropdown {
           display: block;
           top: 0;
-          left: -245px;
+          left: -250px;
 
           &:before {
             content: none;
@@ -56,6 +56,20 @@
         background: white;
         z-index: 10;
         border-radius: 2px;
+        min-width: 250px;
+        height: 268px;
+        overflow: scroll;
+        
+        label {
+          color: $text-color-dark;
+          
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+      .selectedValue {
+        color: $secondary-color;
       }
     }
   }

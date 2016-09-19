@@ -5995,8 +5995,8 @@ ol.artistTopTracks {
   right: 100px; }
   #mapsSearchPanel label, #mapsSearchPanel p, #mapsSearchPanel a {
     color: rgba(255, 255, 255, 0.6); }
-  #mapsSearchPanel label {
-    margin-left: 20px; }
+  #mapsSearchPanel > label {
+    margin: 6px 0 2px 20px; }
   #mapsSearchPanel p, #mapsSearchPanel a {
     font-size: 12px;
     margin: 8px 8px 8px 20px; }
@@ -6014,7 +6014,7 @@ ol.artistTopTracks {
       #mapsSearchPanel .criteriaList > li:hover .dropdown {
         display: block;
         top: 0;
-        left: -245px; }
+        left: -250px; }
         #mapsSearchPanel .criteriaList > li:hover .dropdown:before {
           content: none; }
       #mapsSearchPanel .criteriaList > li .dropdown {
@@ -6024,7 +6024,16 @@ ol.artistTopTracks {
         left: -245px;
         background: white;
         z-index: 10;
-        border-radius: 2px; }
+        border-radius: 2px;
+        min-width: 250px;
+        height: 268px;
+        overflow: scroll; }
+        #mapsSearchPanel .criteriaList > li .dropdown label {
+          color: #070011; }
+          #mapsSearchPanel .criteriaList > li .dropdown label:hover {
+            color: #ff005e; }
+      #mapsSearchPanel .criteriaList > li .selectedValue {
+        color: yellow; }
 
 .mapsInfoWindow h3, .mapsInfoWindow p, .mapsInfoWindow a {
   color: #070011; }

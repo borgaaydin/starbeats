@@ -489,9 +489,141 @@
                     </div>
                 </div>
             </li>
-            <li>VENUE<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
-            <li>BAND/DJ<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
-            <li>MUSIC GENRE<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></li>
+            <li>
+                <span ng-hide="mapsvenue.value">VENUE</span>
+                <span class="selectedValue" ng-if="mapsvenue.value">{{mapsvenue.value}} <i class="fa fa-times-circle" aria-hidden="true" ng-click="mapsvenue.value=false;"></i></span>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsvenue.value"
+                                       ng-true-value="'Underclub'" ng-false-value=""/>
+                                Underclub</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsvenue.value"
+                                       ng-true-value="'Club'" ng-false-value="" />
+                                Club</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsvenue.value"
+                                       ng-true-value="'Under'" ng-false-value="" />
+                                Under</label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span ng-hide="mapsartist.value">BAND/DJ</span>
+                <span class="selectedValue" ng-if="mapsartist.value">{{mapsartist.value}} <i class="fa fa-times-circle" aria-hidden="true" ng-click="mapsartist.value=false;"></i></span>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Sam Paganini'" ng-false-value=""/>
+                                Sam Paganini</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Sam'" ng-false-value="" />
+                                Sam</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Paganini'" ng-false-value="" />
+                                Paganini</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Bernard'" ng-false-value=""/>
+                                Bernard</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Jack'" ng-false-value="" />
+                                Jack</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Gogo'" ng-false-value="" />
+                                Gogo</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Nini'" ng-false-value=""/>
+                                Nini</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Jackson'" ng-false-value="" />
+                                Jackson</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'John'" ng-false-value="" />
+                                John</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Doe'" ng-false-value=""/>
+                                Doe</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Craig'" ng-false-value="" />
+                                Craig</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsartist.value"
+                                       ng-true-value="'Juston'" ng-false-value="" />
+                                Juston</label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <span ng-hide="mapsgenre.value">MUSIC GENRE</span>
+                <span class="selectedValue" ng-if="mapsgenre.value">{{mapsgenre.value}} <i class="fa fa-times-circle" aria-hidden="true" ng-click="mapsgenre.value=false;"></i></span>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsgenre.value"
+                                       ng-true-value="'Dance'" ng-false-value=""/>
+                                Dance</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsgenre.value"
+                                       ng-true-value="'Deep House'" ng-false-value="" />
+                                Deep House</label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="radio" ng-model="mapsgenre.value"
+                                       ng-true-value="'Techno'" ng-false-value="" />
+                                Techno</label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
