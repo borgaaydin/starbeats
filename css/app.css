@@ -5993,6 +5993,10 @@ ol.artistTopTracks {
   top: 32px;
   padding: 10px;
   right: 100px; }
+  #mapsSearchPanel .criteriaList {
+    list-style: none; }
+  #mapsSearchPanel .mapsInfoWindow h3 {
+    color: #070011; }
 
 /*!
  * Datetimepicker for Bootstrap 3
