@@ -973,7 +973,7 @@ $eventTextColor: #0b0912;
 .event25Full {
   padding: 10px ;
 
-  h2, h4, p {
+  h2, h3, h4, p {
     color: $text-color-dark;
   }
 
@@ -1007,7 +1007,6 @@ $eventTextColor: #0b0912;
 
   &:hover {
     h3 {
-      color: $secondary-color;
     }
   }
 
@@ -1047,6 +1046,25 @@ $eventTextColor: #0b0912;
   .eventDescription {
     padding: 0 10px;
     background-color:white;
+
+    .bookmarkButton {
+      background-image: url("../img/bookmarkIcons/BOOKMARK_inactive.png");
+      background-repeat: no-repeat;
+      height: 34px;
+      width: 24px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+
+      &:hover {
+        background-image: url("../img/bookmarkIcons/BOOKMARK_hover.png");
+      }
+
+      &.active {
+        background-image: url("../img/bookmarkIcons/BOOKMARK_active.png");
+      }
+    }
+
   }
 
   .eventDetails {

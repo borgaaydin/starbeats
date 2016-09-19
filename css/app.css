@@ -5311,7 +5311,7 @@ caption,
 
 .event25Full {
   padding: 10px; }
-  .event25Full h2, .event25Full h4, .event25Full p, .event25Full a {
+  .event25Full h2, .event25Full h3, .event25Full h4, .event25Full p, .event25Full a {
     color: #070011; }
   .event25Full h4, .event25Full p, .event25Full a {
     font-weight: 400; }
@@ -5329,8 +5329,6 @@ caption,
     vertical-align: super; }
   .event25Full img {
     width: 100%; }
-  .event25Full:hover h3 {
-    color: yellow; }
   .event25Full h2 {
     margin: 4px 0; }
   .event25Full h4 {
@@ -5354,6 +5352,18 @@ caption,
   .event25Full .eventDescription {
     padding: 0 10px;
     background-color: white; }
+    .event25Full .eventDescription .bookmarkButton {
+      background-image: url("../img/bookmarkIcons/BOOKMARK_inactive.png");
+      background-repeat: no-repeat;
+      height: 34px;
+      width: 24px;
+      position: absolute;
+      top: 0;
+      right: 10px; }
+      .event25Full .eventDescription .bookmarkButton:hover {
+        background-image: url("../img/bookmarkIcons/BOOKMARK_hover.png"); }
+      .event25Full .eventDescription .bookmarkButton.active {
+        background-image: url("../img/bookmarkIcons/BOOKMARK_active.png"); }
   .event25Full .eventDetails {
     padding: 12px 10px; }
   .event25Full .onlineTicket,
