@@ -8,6 +8,9 @@ It is best to use Gulp!
 
 
 ## Getting started
+
+You need to have [npm](https://www.npmjs.com/) installed on your computer.
+
 ```console
 npm install
 bower install
