@@ -1,5 +1,6 @@
 .idea/
 .sass-cache/
+.env
 
 ### BOWER ###
 bower_components/
